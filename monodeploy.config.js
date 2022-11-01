@@ -1,4 +1,6 @@
+/* eslint-disable no-console */
 const branch = require('child_process').execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
+
 const prereleaseBranches = ['next', 'alpha', 'beta'];
 
 /**

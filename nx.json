@@ -21,7 +21,8 @@
         "^build"
       ],
       "inputs": [
-        "{projectRoot}/src"
+        "{projectRoot}/**/*",
+        "{workspaceRoot}/scripts/build.sh"
       ],
       "outputs": [
         "{projectRoot}/dist",

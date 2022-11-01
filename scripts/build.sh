@@ -3,6 +3,4 @@
 echo "module.exports = require('./dist/index.js').default;\n" > index.js
 echo "Created index.js"
 
-tsup src/index.ts
-#  --dts \
-#  --minify
+tsup src/index.ts --dts $1

@@ -11,8 +11,8 @@
     "packages/**"
   ],
   "scripts": {
-    "build": "nx run-many --target=build --output-style stream --parallel 10",
-    "clean": "nx run-many --target=clean --output-style stream --parallel 10",
+    "build": "nx run-many --target=build --parallel 10",
+    "clean": "nx run-many --target=clean --parallel 10",
     "prepare": "is-ci || husky install"
   },
   "lint-staged": {
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@monodeploy/plugin-github": "^0.6.2",
+    "@myparcel-eslint/eslint-config-es6": "workspace:^",
     "@myparcel-eslint/eslint-config-esnext": "workspace:^",
     "@myparcel-eslint/eslint-config-typescript": "workspace:^",
     "@types/eslint": "^8.4.9",
