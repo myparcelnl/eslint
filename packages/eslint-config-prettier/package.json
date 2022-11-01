@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-prettier",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "license": "MIT",
   "types": "dist/index.d.ts",
   "files": [
