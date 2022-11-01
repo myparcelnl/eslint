@@ -1,0 +1,19 @@
+{
+  "name": "@myparcel-eslint/utils",
+  "version": "1.0.0-alpha.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "clean": "rimraf dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
