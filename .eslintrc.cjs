@@ -3,19 +3,23 @@
  */
 module.exports = {
   root: true,
+  extends: '@myparcel-eslint/eslint-config-es6',
   rules: {
     'no-magic-numbers': 'off',
   },
   overrides: [
     {
       files: [
+        './*.js',
         './packages/*/*.js',
       ],
-      extends: '@myparcel-eslint/eslint-config-node',
+      extends: [
+        '@myparcel-eslint/eslint-config-node',
+      ],
     },
     {
       files: [
-        './packages/**/*.ts',
+        'packages/**/*.ts',
       ],
       extends: '@myparcel-eslint/eslint-config-typescript',
       rules: {
