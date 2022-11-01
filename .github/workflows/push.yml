@@ -39,8 +39,7 @@ jobs:
         run: |
           yarn monodeploy \
             --config-file monodeploy.config.cjs \
-            --log-level 0 \
-            --dry-run
+            --log-level 0
         env:
           GH_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
           NPM_PUBLISH_TOKEN: ${{ secrets.NPM_TOKEN }}
