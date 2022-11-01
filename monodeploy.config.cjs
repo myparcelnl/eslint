@@ -9,6 +9,7 @@ const config = {
   changelogFilename: '<packageDir>/CHANGELOG.md',
   changesetFilename: '-',
   conventionalChangelogConfig: 'conventional-changelog-conventionalcommits',
+  packageGroupManifestField: 'publishConfig.access',
   persistVersions: true,
   plugins: [
     '@monodeploy/plugin-github',
