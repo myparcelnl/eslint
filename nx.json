@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "main",
+  "npmScope": "@myparcel-eslint",
+  "workspaceLayout": {
+    "appsDir": "packages",
+    "libsDir": "packages"
+  },
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/src"
+    ],
+    "dist": [
+      "{projectRoot}/dist",
+      "{projectRoot}/index.js"
+    ]
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "{projectRoot}/src"
+      ],
+      "outputs": [
+        "{projectRoot}/dist",
+        "{projectRoot}/index.js"
+      ]
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build"
+        ]
+      }
+    }
+  }
+}

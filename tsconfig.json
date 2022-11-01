@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "paths": {
+      "@myparcel-eslint/*": [
+        "./packages/*/src"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

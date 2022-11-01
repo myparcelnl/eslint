@@ -1,0 +1,47 @@
+name: 'Publish new release 🚀'
+
+on:
+  push:
+    branches:
+      - main
+      - alpha
+      - beta
+      - next
+      - rc
+
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: myparcelnl/actions/yarn2-install@v2
+
+      - name: 'Handle Nx cache'
+        uses: actions/cache@v3
+        id: cache-nx
+        with:
+          path: node_modules/.cache/nx
+          key: ${{ runner.os }}-nx-${{ hashFiles('package.json') }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-nx-${{ hashFiles('package.json') }}-
+
+      - name: 'Build packages'
+        run: |
+          yarn build
+
+      - uses: myparcelnl/actions/setup-git-credentials@v2
+        with:
+          token: ${{ secrets.GH_REPO_TOKEN }}
+
+      - name: 'Run monodeploy'
+        run: |
+          yarn monodeploy \
+            --config-file monodeploy.config.cjs \
+            --log-level 0 \
+            --dry-run
+        env:
+          GH_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
+          NPM_PUBLISH_TOKEN: ${{ secrets.NPM_TOKEN }}
