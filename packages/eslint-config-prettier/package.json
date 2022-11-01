@@ -12,14 +12,11 @@
     "clean": "sh ./../../scripts/clean.sh"
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-default": "workspace:^",
     "@myparcel/prettier-config": "^1.1.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1"
-  },
-  "peerDependencies": {
     "eslint": "*",
-    "prettier": ">=2.0.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "*"
   },
   "publishConfig": {
     "access": "public"

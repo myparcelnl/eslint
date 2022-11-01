@@ -1,7 +1,7 @@
 import {ESLint} from 'eslint';
 
 const es5Config: ESLint.ConfigData = {
-  extends      : '@myparcel-eslint/eslint-config',
+  extends      : require.resolve('@myparcel-eslint/eslint-config'),
   parserOptions: {
     ecmaVersion: 5,
   },

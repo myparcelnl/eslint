@@ -11,10 +11,9 @@
     "clean": "sh ./../../scripts/clean.sh"
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-vue3": "workspace:^"
-  },
-  "peerDependencies": {
-    "eslint": "*"
+    "@myparcel-eslint/eslint-config-vue3": "workspace:^",
+    "eslint": "*",
+    "eslint-plugin-vue": "^9.0.0"
   },
   "publishConfig": {
     "access": "public"

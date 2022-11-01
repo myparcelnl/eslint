@@ -12,11 +12,9 @@
     "clean": "sh ./../../scripts/clean.sh"
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-default": "workspace:^",
+    "@myparcel-eslint/utils": "workspace:^",
+    "eslint": "*",
     "eslint-plugin-tailwindcss": "^3.6.2"
-  },
-  "peerDependencies": {
-    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"

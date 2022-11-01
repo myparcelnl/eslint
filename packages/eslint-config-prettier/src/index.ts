@@ -8,15 +8,39 @@ const prettierConfig: ESLint.ConfigData = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'implicit-arrow-linebreak': 'off',
-    'no-extra-parens'         : 'off',
-    'operator-linebreak'      : 'off',
-    'prettier/prettier'       : [
+    'prettier/prettier': [
       'warn',
       {
         printWidth: 120,
       },
     ],
+
+    // Disable rules that are unnecessary or conflict with Prettier.
+    'array-bracket-newline'         : 'off',
+    'array-element-newline'         : 'off',
+    'function-call-argument-newline': 'off',
+    'function-paren-newline'        : 'off',
+    'implicit-arrow-linebreak'      : 'off',
+    'newline-after-var'             : 'off',
+    'newline-before-return'         : 'off',
+    'newline-per-chained-call'      : 'off',
+    'no-extra-parens'               : 'off',
+    'no-mixed-spaces-and-tabs'      : 'off',
+    'no-multi-spaces'               : 'off',
+    'no-multiple-empty-lines'       : 'off',
+    'no-tabs'                       : 'off',
+    'no-trailing-spaces'            : 'off',
+    'no-whitespace-before-property' : 'off',
+    'object-curly-newline'          : 'off',
+    'object-property-newline'       : 'off',
+    'operator-linebreak'            : 'off',
+    quotes                          : 'off',
+    semi                            : 'off',
+    'space-before-blocks'           : 'off',
+    'space-before-function-paren'   : 'off',
+    'space-in-parens'               : 'off',
+    'space-infix-ops'               : 'off',
+    'space-unary-ops'               : 'off',
   },
 };
 

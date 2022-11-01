@@ -11,9 +11,7 @@
     "clean": "sh ./../../scripts/clean.sh"
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-default": "workspace:^"
-  },
-  "peerDependencies": {
+    "@myparcel-eslint/eslint-config": "workspace:^",
     "eslint": "*"
   },
   "publishConfig": {

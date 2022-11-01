@@ -1,71 +1,32 @@
+import {ESLint} from 'eslint';
 import defaultConfig from '@myparcel-eslint/eslint-config';
 import es6Config from '@myparcel-eslint/eslint-config-es6';
-import {ESLint, Linter} from 'eslint';
-
-/**
- * Note: If you're using tailwindcss, you need to disable either tailwindcss/classnames-order or
- * vue/static-class-names-order, depending on which functionality you want to preserve.
- */
-const overrides: Record<string, RuleEntry> = {
-  'prefer-template'       : 'off',
-  'generator-star-spacing': 'off',
-  'id-length'             : [
-    'warn',
-    {
-      exceptions: [
-        '$',
-        '_',
-        'i',
-        'h',
-        'e',
-        'v',
-      ],
-    },
-  ],
-  'no-else-return' : 'warn',
-  'no-extra-parens': [
-    'warn',
-    'all',
-    {
-      nestedBinaryExpressions: false,
-    },
-  ],
-  'babel/object-curly-spacing': [
-    'warn',
-    'always',
-  ],
-  'operator-linebreak': [
-    'warn',
-    'before',
-  ],
-};
-
-import RuleEntry = Linter.RuleEntry;
+import {overridePluginRule} from '@myparcel-eslint/utils';
 
 const vue2Config: ESLint.ConfigData = {
+  env: {
+    node: true,
+  },
+  extends: [
+    require.resolve('@myparcel-eslint/eslint-config-esnext'),
+    'plugin:vue/recommended',
+  ],
   parserOptions: {
-    parser                     : '@babel/eslint-parser',
     allowImportExportEverywhere: true,
     ecmaFeatures               : {
       jsx: true,
     },
-    ecmaVersion        : 2021,
     extraFileExtensions: [
       '.vue',
     ],
     sourceType: 'module',
   },
-  env: {
-    node: true,
-  },
-  extends: [
-    'plugin:vue/recommended',
-  ],
   rules: {
-    ...overrides,
-
-    // Add some defined types to JSDoc plugin
-    'jsdoc/no-undefined-types': [
+    ...overridePluginRule('babel/object-curly-spacing', [
+      'warn',
+      'always',
+    ]),
+    ...overridePluginRule('jsdoc/no-undefined-types', [
       'warn',
       {
         definedTypes: [
@@ -73,6 +34,34 @@ const vue2Config: ESLint.ConfigData = {
           'webpack',
         ],
       },
+    ]),
+
+    'prefer-template'       : 'off',
+    'generator-star-spacing': 'off',
+    'id-length'             : [
+      'warn',
+      {
+        exceptions: [
+          '$',
+          '_',
+          'i',
+          'h',
+          'e',
+          'v',
+        ],
+      },
+    ],
+    'no-else-return' : 'warn',
+    'no-extra-parens': [
+      'warn',
+      'all',
+      {
+        nestedBinaryExpressions: false,
+      },
+    ],
+    'operator-linebreak': [
+      'warn',
+      'before',
     ],
 
     'vue/array-bracket-newline'            : defaultConfig.rules['array-bracket-newline'],
@@ -232,7 +221,7 @@ const vue2Config: ESLint.ConfigData = {
     'vue/no-v-text'                                : 'off',
     'vue/no-watch-after-await'                     : 'error',
     'vue/object-curly-newline'                     : defaultConfig.rules['object-curly-newline'],
-    'vue/object-curly-spacing'                     : overrides['babel/object-curly-spacing'],
+    'vue/object-curly-spacing'                     : defaultConfig.rules['object-curly-spacing'],
     'vue/object-property-newline'                  : defaultConfig.rules['object-property-newline'],
     'vue/one-component-per-file'                   : 'error',
     'vue/operator-linebreak'                       : defaultConfig.rules['operator-linebreak'],

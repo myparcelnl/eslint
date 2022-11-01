@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@myparcel-eslint/eslint-config-typescript": "workspace:^",
-    "@myparcel-eslint/eslint-config-vue": "workspace:^"
-  },
-  "peerDependencies": {
-    "eslint": "*"
+    "@myparcel-eslint/eslint-config-vue": "workspace:^",
+    "@vue/eslint-config-typescript": "*",
+    "eslint": "*",
+    "eslint-plugin-vue": "*"
   },
   "publishConfig": {
     "access": "public"

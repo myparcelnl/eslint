@@ -43,22 +43,19 @@ const overrides: Record<string, RuleEntry> = {
 };
 
 const typescriptConfig: ESLint.ConfigData = {
-  parser : '@typescript-eslint/parser',
   extends: [
+    require.resolve('@myparcel-eslint/eslint-config-esnext'),
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
+  parser       : '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
+    project        : 'tsconfig.json',
+    tsconfigRootDir: '.',
   },
   plugins: [
     '@typescript-eslint',
   ],
-  settings: {
-    jsdoc: {
-      mode: 'typescript',
-    },
-  },
   rules: {
     ...overrides,
     // Default extensions
@@ -294,6 +291,11 @@ const typescriptConfig: ESLint.ConfigData = {
     ],
     '@typescript-eslint/unbound-method'    : 'off',
     '@typescript-eslint/unified-signatures': 'warn',
+  },
+  settings: {
+    jsdoc: {
+      mode: 'typescript',
+    },
   },
 };
 

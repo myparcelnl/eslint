@@ -1,7 +1,7 @@
 import {ESLint} from 'eslint';
 
 const esnextConfig: ESLint.ConfigData = {
-  extends: '@myparcel-eslint/eslint-config-es6',
+  extends: require.resolve('@myparcel-eslint/eslint-config-es6'),
   env    : {
     es2022: true,
   },

@@ -15,9 +15,7 @@
     "@myparcel-eslint/eslint-config-es6": "workspace:^",
     "@myparcel-eslint/eslint-config-esnext": "workspace:^",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0"
-  },
-  "peerDependencies": {
+    "@typescript-eslint/parser": "^5.42.0",
     "eslint": "*"
   },
   "publishConfig": {

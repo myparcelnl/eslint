@@ -1,7 +1,7 @@
 import {ESLint} from 'eslint';
 
 const es6Config: ESLint.ConfigData = {
-  extends: '@myparcel-eslint/eslint-config',
+  extends: require.resolve('@myparcel-eslint/eslint-config'),
   env    : {
     es6: true,
   },

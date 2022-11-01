@@ -13,11 +13,10 @@
   },
   "dependencies": {
     "@myparcel-eslint/eslint-config-prettier": "workspace:^",
-    "@myparcel-eslint/eslint-config-vue": "workspace:^"
-  },
-  "peerDependencies": {
+    "@myparcel-eslint/eslint-config-vue": "workspace:^",
+    "@vue/eslint-config-prettier": "*",
     "eslint": "*",
-    "prettier": ">=2.0.0"
+    "prettier": "*"
   },
   "publishConfig": {
     "access": "public"
