@@ -1,10 +1,10 @@
 {
   "name": "@myparcel-eslint/monorepo",
   "version": "0.0.0-alpha.0",
-  "description": "",
   "private": true,
-  "license": "MIT",
+  "description": "",
   "repository": "github:myparcelnl/eslint",
+  "license": "MIT",
   "author": "Edie Lemoine <edie@myparcel.nl>",
   "main": "index.js",
   "workspaces": [
@@ -20,6 +20,7 @@
     "package.json": "npx sort-package-json"
   },
   "devDependencies": {
+    "@monodeploy/plugin-github": "^0.6.2",
     "@myparcel-eslint/eslint-config-esnext": "workspace:^",
     "@myparcel-eslint/eslint-config-typescript": "workspace:^",
     "@types/eslint": "^8.4.9",

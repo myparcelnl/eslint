@@ -7,7 +7,6 @@ on:
       - alpha
       - beta
       - next
-      - rc
 
 jobs:
   release:
