@@ -1,0 +1,23 @@
+{
+  "name": "@myparcel-eslint/eslint-config-prettier-typescript",
+  "version": "1.0.0-alpha.0",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "sh ./../../scripts/build.sh",
+    "clean": "sh ./../../scripts/clean.sh"
+  },
+  "dependencies": {
+    "@myparcel-eslint/eslint-config-prettier": "workspace:^",
+    "@myparcel-eslint/eslint-config-typescript": "workspace:^",
+    "eslint": "*",
+    "prettier": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
