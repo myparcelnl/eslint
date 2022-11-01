@@ -1,0 +1,23 @@
+{
+  "name": "@myparcel-eslint/eslint-config-node",
+  "version": "0.0.0.alpha-1",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "sh ./../../scripts/build.sh",
+    "clean": "sh ./../../scripts/clean.sh"
+  },
+  "dependencies": {
+    "@myparcel-eslint/eslint-config-default": "workspace:^"
+  },
+  "peerDependencies": {
+    "eslint": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
