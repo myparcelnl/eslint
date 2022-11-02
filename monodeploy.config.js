@@ -10,7 +10,6 @@ const config = {
   autoCommitMessage: 'chore: release [skip ci]',
   changelogFilename: '<packageDir>/CHANGELOG.md',
   conventionalChangelogConfig: 'conventional-changelog-conventionalcommits',
-  packageGroupManifestField: 'publishConfig.access',
   persistVersions: true,
   plugins: [
     '@monodeploy/plugin-github',
