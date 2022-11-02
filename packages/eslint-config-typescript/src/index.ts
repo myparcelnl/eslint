@@ -259,7 +259,7 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/prefer-return-this-type'             : 'off',
     '@typescript-eslint/prefer-string-starts-ends-with'      : 'warn',
     '@typescript-eslint/prefer-ts-expect-error'              : 'off',
-    '@typescript-eslint/promise-function-async'              : 'warn',
+    '@typescript-eslint/promise-function-async'              : 'off',
     '@typescript-eslint/quotes'                              : defaultConfig.rules.quotes,
     '@typescript-eslint/require-array-sort-compare'          : 'off',
     '@typescript-eslint/require-await'                       : es6Config.rules['require-await'],
