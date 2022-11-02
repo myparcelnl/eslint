@@ -9,7 +9,6 @@ const prereleaseBranches = ['next', 'alpha', 'beta'];
 const config = {
   autoCommitMessage: 'chore: release [skip ci]',
   changelogFilename: '<packageDir>/CHANGELOG.md',
-  changesetFilename: '-',
   conventionalChangelogConfig: 'conventional-changelog-conventionalcommits',
   packageGroupManifestField: 'publishConfig.access',
   persistVersions: true,
