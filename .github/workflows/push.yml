@@ -37,10 +37,6 @@ jobs:
         with:
           token: ${{ secrets.GH_REPO_TOKEN }}
 
-      - name: 'Log'
-        run: |
-          git log --format=%H -n 1 HEAD
-
       - name: 'Run monodeploy'
         run: |
           yarn monodeploy --log-level 0
