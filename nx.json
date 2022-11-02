@@ -34,6 +34,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
+        "parallel": 10,
         "cacheableOperations": [
           "build"
         ]
