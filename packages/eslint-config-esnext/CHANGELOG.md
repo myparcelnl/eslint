@@ -2,6 +2,11 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-esnext@1.0.0-alpha.2...@myparcel-eslint/eslint-config-esnext@1.0.0-alpha.3) "@myparcel-eslint/eslint-config-esnext" (2022-11-02)
+
+
+
+
 ## [1.0.0-alpha.2](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-esnext@1.0.0-alpha.0...@myparcel-eslint/eslint-config-esnext@1.0.0-alpha.2) "@myparcel-eslint/eslint-config-esnext" (2022-11-02)
 
 

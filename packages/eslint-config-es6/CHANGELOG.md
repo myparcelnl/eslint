@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-es6@1.0.0-alpha.2...@myparcel-eslint/eslint-config-es6@1.0.0-alpha.3) "@myparcel-eslint/eslint-config-es6" (2022-11-02)
+
+
+### Bug Fixes
+
+* **es6:** add missing files entry ([ce423c9](https://github/myparcelnl/eslint/commit/ce423c94dd52891431fcb0a6374c5a122ad8d9f2))
+
+
+
+
 ## [1.0.0-alpha.2](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-es6@1.0.0-alpha.0...@myparcel-eslint/eslint-config-es6@1.0.0-alpha.2) "@myparcel-eslint/eslint-config-es6" (2022-11-02)
 
 
