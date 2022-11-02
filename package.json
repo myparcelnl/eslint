@@ -2,7 +2,7 @@
   "name": "@myparcel-eslint/monorepo",
   "version": "1.0.0-alpha.0",
   "private": true,
-  "description": "",
+  "description": "A collection of ESLint configurations.",
   "repository": "github:myparcelnl/eslint",
   "license": "MIT",
   "author": "Edie Lemoine <edie@myparcel.nl>",
@@ -16,7 +16,7 @@
     "prepare": "is-ci || husky install"
   },
   "lint-staged": {
-    "*.{ts,vue}": "eslint --fix",
+    "*.{ts}": "eslint --fix",
     "package.json": "npx sort-package-json"
   },
   "devDependencies": {

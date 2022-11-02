@@ -1,6 +1,14 @@
 {
   "name": "@myparcel-eslint/eslint-config-prettier-vue",
   "version": "1.0.0-alpha.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "prettier",
+    "vue",
+    "vue3"
+  ],
+  "repository": "github:myparcelnl/eslint",
   "license": "MIT",
   "types": "dist/index.d.ts",
   "files": [

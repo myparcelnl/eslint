@@ -1,6 +1,12 @@
 {
   "name": "@myparcel-eslint/eslint-config-tailwindcss",
   "version": "1.0.0-alpha.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "tailwindcss"
+  ],
+  "repository": "github:myparcelnl/eslint",
   "license": "MIT",
   "types": "dist/index.d.ts",
   "files": [

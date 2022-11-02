@@ -1,6 +1,13 @@
 {
   "name": "@myparcel-eslint/eslint-config-prettier-typescript",
   "version": "1.0.0-alpha.1",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "prettier",
+    "typescript"
+  ],
+  "repository": "github:myparcelnl/eslint",
   "license": "MIT",
   "types": "dist/index.d.ts",
   "files": [

@@ -1,6 +1,12 @@
 {
   "name": "@myparcel-eslint/eslint-config-esnext",
   "version": "1.0.0-alpha.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "esnext"
+  ],
+  "repository": "github:myparcelnl/eslint",
   "license": "MIT",
   "types": "dist/index.d.ts",
   "files": [

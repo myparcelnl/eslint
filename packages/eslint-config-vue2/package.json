@@ -1,6 +1,13 @@
 {
   "name": "@myparcel-eslint/eslint-config-vue2",
   "version": "1.0.0-alpha.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "vue",
+    "vue2"
+  ],
+  "repository": "github:myparcelnl/eslint",
   "license": "MIT",
   "files": [
     "dist",

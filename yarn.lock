@@ -292,7 +292,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
-    "@myparcel-eslint/eslint-config": "workspace:^"
     eslint: "*"
     eslint-plugin-cypress: ^2.12.1
   languageName: unknown
@@ -482,6 +481,8 @@ __metadata:
 "@myparcel-eslint/utils@workspace:*, @myparcel-eslint/utils@workspace:^, @myparcel-eslint/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/utils@workspace:packages/utils"
+  dependencies:
+    eslint: ^8.26.0
   languageName: unknown
   linkType: soft
 
