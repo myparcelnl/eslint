@@ -167,6 +167,10 @@ const typescriptConfig: ESLint.ConfigData = {
         format  : [
           'strictCamelCase',
         ],
+        filter: {
+          regex: '^_$',
+          match: false,
+        },
       },
       {
         selector: 'variable',
@@ -174,6 +178,10 @@ const typescriptConfig: ESLint.ConfigData = {
           'strictCamelCase',
           'UPPER_CASE',
         ],
+        filter: {
+          regex: '^_$',
+          match: false,
+        },
       },
       {
         selector: 'property',
@@ -225,6 +233,10 @@ const typescriptConfig: ESLint.ConfigData = {
           'strictCamelCase',
         ],
         leadingUnderscore: 'allow',
+      },
+      {
+        selector: 'typeParameter',
+        format  : null,
       },
     ],
     '@typescript-eslint/no-array-constructor'           : defaultConfig.rules['no-array-constructor'],
