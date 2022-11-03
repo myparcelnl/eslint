@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-tailwindcss",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -18,7 +18,7 @@
     "clean": "sh ./../../scripts/clean.sh"
   },
   "dependencies": {
-    "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.2",
+    "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.3",
     "eslint": "*",
     "eslint-plugin-tailwindcss": "^3.6.2"
   },
