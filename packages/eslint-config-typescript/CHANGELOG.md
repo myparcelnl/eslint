@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.0.0-alpha.3...@myparcel-eslint/eslint-config-typescript@1.0.0-alpha.4) "@myparcel-eslint/eslint-config-typescript" (2022-11-03)
+
+
+### Bug Fixes
+
+* **typescript:** remove unnecessary overrides ([50a7823](https://github/myparcelnl/eslint/commit/50a7823fd22c365db635a24c5a86a3fff5dcba4a))
+
+
+
+
 ## [1.0.0-alpha.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.0.0-alpha.2...@myparcel-eslint/eslint-config-typescript@1.0.0-alpha.3) "@myparcel-eslint/eslint-config-typescript" (2022-11-02)
 
 
