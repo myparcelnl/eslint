@@ -7,7 +7,6 @@ import RuleEntry = Linter.RuleEntry;
  * Overridden rules from other plugins or presets.
  */
 const overrides: Record<string, RuleEntry> = {
-  // Default
   'brace-style'                : 'off',
   camelcase                    : 'off',
   'comma-dangle'               : 'off',
@@ -15,6 +14,7 @@ const overrides: Record<string, RuleEntry> = {
   'func-call-spacing'          : 'off',
   indent                       : 'off',
   'no-array-constructor'       : 'off',
+  'no-dupe-class-members'      : 'off',
   'no-empty-function'          : 'off',
   'no-extra-parens'            : 'off',
   'no-extra-semi'              : 'off',
@@ -25,21 +25,11 @@ const overrides: Record<string, RuleEntry> = {
   'no-unused-expressions'      : 'off',
   'no-unused-vars'             : 'off',
   'no-use-before-define'       : 'off',
+  'no-useless-constructor'     : 'off',
   quotes                       : 'off',
+  'require-await'              : 'off',
   semi                         : 'off',
   'space-before-function-paren': 'off',
-
-  // ES6
-  'no-dupe-class-members' : 'off',
-  'no-useless-constructor': 'off',
-  'require-await'         : 'off',
-
-  // Jsdoc plugin
-  'jsdoc/require-param'       : 'off',
-  'jsdoc/require-property'    : 'off',
-  'jsdoc/require-returns'     : 'off',
-  'jsdoc/require-returns-type': 'off',
-  'jsdoc/require-param-type'  : 'off',
 };
 
 const typescriptConfig: ESLint.ConfigData = {
@@ -58,7 +48,6 @@ const typescriptConfig: ESLint.ConfigData = {
   ],
   rules: {
     ...overrides,
-    // Default extensions
     '@typescript-eslint/adjacent-overload-signatures'   : 'warn',
     '@typescript-eslint/array-type'                     : 'warn',
     '@typescript-eslint/await-thenable'                 : 'warn',
@@ -76,19 +65,16 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/consistent-type-imports'        : 'off',
     '@typescript-eslint/default-param-last'             : 'warn',
     '@typescript-eslint/dot-notation'                   : 'off',
-
-    // ES6 extensions
-    '@typescript-eslint/explicit-function-return-type': 'warn',
-    '@typescript-eslint/explicit-member-accessibility': 'warn',
-
-    '@typescript-eslint/explicit-module-boundary-types': 'warn',
-    '@typescript-eslint/func-call-spacing'             : defaultConfig.rules['func-call-spacing'],
-    '@typescript-eslint/indent'                        : defaultConfig.rules.indent,
-    '@typescript-eslint/init-declarations'             : 'off',
-    '@typescript-eslint/keyword-spacing'               : 'off',
-    '@typescript-eslint/lines-between-class-members'   : 'off',
-    '@typescript-eslint/member-delimiter-style'        : 'warn',
-    '@typescript-eslint/member-ordering'               : [
+    '@typescript-eslint/explicit-function-return-type'  : 'warn',
+    '@typescript-eslint/explicit-member-accessibility'  : 'warn',
+    '@typescript-eslint/explicit-module-boundary-types' : 'warn',
+    '@typescript-eslint/func-call-spacing'              : defaultConfig.rules['func-call-spacing'],
+    '@typescript-eslint/indent'                         : defaultConfig.rules.indent,
+    '@typescript-eslint/init-declarations'              : 'off',
+    '@typescript-eslint/keyword-spacing'                : 'off',
+    '@typescript-eslint/lines-between-class-members'    : 'off',
+    '@typescript-eslint/member-delimiter-style'         : 'warn',
+    '@typescript-eslint/member-ordering'                : [
       'warn',
       {
         default: [
