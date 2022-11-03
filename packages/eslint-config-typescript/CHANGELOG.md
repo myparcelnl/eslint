@@ -2,6 +2,17 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.6](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.0.0-alpha.5...@myparcel-eslint/eslint-config-typescript@1.0.0-alpha.6) "@myparcel-eslint/eslint-config-typescript" (2022-11-03)
+
+
+### Bug Fixes
+
+* **typescript:** update naming-convention ([d7813e2](https://github/myparcelnl/eslint/commit/d7813e2a717b08703535781d6473f7097d9e7c05))
+* **typescript:** update padding-line-between-statements ([c350738](https://github/myparcelnl/eslint/commit/c35073842deb9cbaedb0bc3a9c87c1ddbd9abc15))
+
+
+
+
 ## [1.0.0-alpha.5](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.0.0-alpha.4...@myparcel-eslint/eslint-config-typescript@1.0.0-alpha.5) "@myparcel-eslint/eslint-config-typescript" (2022-11-03)
 
 

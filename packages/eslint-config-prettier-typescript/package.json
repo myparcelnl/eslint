@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-prettier-typescript",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0-alpha.6",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.4",
-    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.0.0-alpha.5",
+    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.0.0-alpha.6",
     "eslint": "*",
     "prettier": "*"
   },
