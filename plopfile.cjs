@@ -33,6 +33,11 @@ module.exports = (plop) => {
         path: 'packages/eslint-{{ kebabCase type }}-{{ kebabCase name }}/index.js',
         templateFile: 'plop-templates/index.js.hbs',
       },
+      {
+        type: 'add',
+        path: 'packages/eslint-{{ kebabCase type }}-{{ kebabCase name }}/README.md',
+        templateFile: 'plop-templates/readme.md.hbs',
+      },
     ],
   });
 };
