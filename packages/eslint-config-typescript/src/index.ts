@@ -1,35 +1,37 @@
 import {ESLint, Linter} from 'eslint';
 import defaultConfig from '@myparcel-eslint/eslint-config';
 import es6Config from '@myparcel-eslint/eslint-config-es6';
+
 import RuleEntry = Linter.RuleEntry;
 
 /**
  * Overridden rules from other plugins or presets.
  */
 const overrides: Record<string, RuleEntry> = {
-  'brace-style'                : 'off',
-  camelcase                    : 'off',
-  'comma-dangle'               : 'off',
-  'comma-spacing'              : 'off',
-  'func-call-spacing'          : 'off',
-  indent                       : 'off',
-  'no-array-constructor'       : 'off',
-  'no-dupe-class-members'      : 'off',
-  'no-empty-function'          : 'off',
-  'no-extra-parens'            : 'off',
-  'no-extra-semi'              : 'off',
-  'no-implied-eval'            : 'off',
-  'no-magic-numbers'           : 'off',
-  'no-throw-literal'           : 'off',
-  'no-undef'                   : 'off',
-  'no-unused-expressions'      : 'off',
-  'no-unused-vars'             : 'off',
-  'no-use-before-define'       : 'off',
-  'no-useless-constructor'     : 'off',
-  quotes                       : 'off',
-  'require-await'              : 'off',
-  semi                         : 'off',
-  'space-before-function-paren': 'off',
+  'brace-style'                    : 'off',
+  camelcase                        : 'off',
+  'comma-dangle'                   : 'off',
+  'comma-spacing'                  : 'off',
+  'func-call-spacing'              : 'off',
+  indent                           : 'off',
+  'no-array-constructor'           : 'off',
+  'no-dupe-class-members'          : 'off',
+  'no-empty-function'              : 'off',
+  'no-extra-parens'                : 'off',
+  'no-extra-semi'                  : 'off',
+  'no-implied-eval'                : 'off',
+  'no-magic-numbers'               : 'off',
+  'no-throw-literal'               : 'off',
+  'no-undef'                       : 'off',
+  'no-unused-expressions'          : 'off',
+  'no-unused-vars'                 : 'off',
+  'no-use-before-define'           : 'off',
+  'no-useless-constructor'         : 'off',
+  'padding-line-between-statements': 'off',
+  quotes                           : 'off',
+  'require-await'                  : 'off',
+  semi                             : 'off',
+  'space-before-function-paren'    : 'off',
 };
 
 const typescriptConfig: ESLint.ConfigData = {
@@ -91,6 +93,70 @@ const typescriptConfig: ESLint.ConfigData = {
           'protected-method',
           'private-method',
         ],
+      },
+    ],
+    '@typescript-eslint/padding-line-between-statements': [
+      'warn',
+      {
+        blankLine: 'always',
+        prev     : 'export',
+        next     : '*',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'export',
+        next     : 'export',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'import',
+        next     : '*',
+      },
+      {
+        blankLine: 'never',
+        prev     : 'import',
+        next     : 'import',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'block-like',
+        next     : '*',
+      },
+      {
+        blankLine: 'always',
+        prev     : '*',
+        next     : 'block',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'block',
+        next     : '*',
+      },
+      {
+        blankLine: 'always',
+        prev     : '*',
+        next     : 'if',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'if',
+        next     : '*',
+      },
+      {
+        blankLine: 'always',
+        prev     : '*',
+        next     : [
+          'interface',
+          'type',
+        ],
+      },
+      {
+        blankLine: 'always',
+        prev     : [
+          'interface',
+          'type',
+        ],
+        next: '*',
       },
     ],
     '@typescript-eslint/method-signature-style': 'off',
@@ -228,7 +294,6 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/no-var-requires'                     : 'warn',
     '@typescript-eslint/non-nullable-type-assertion-style'   : 'off',
     '@typescript-eslint/object-curly-spacing'                : 'off',
-    '@typescript-eslint/padding-line-between-statements'     : 'off',
     '@typescript-eslint/prefer-as-const'                     : 'off',
     '@typescript-eslint/prefer-enum-initializers'            : 'off',
     '@typescript-eslint/prefer-for-of'                       : 'warn',
