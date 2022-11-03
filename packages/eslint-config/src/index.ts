@@ -442,28 +442,8 @@ const defaultConfig: ESLint.ConfigData = {
       'warn',
       {
         blankLine: 'always',
-        prev     : '*',
-        next     : 'cjs-export',
-      },
-      {
-        blankLine: 'always',
         prev     : 'cjs-import',
         next     : '*',
-      },
-      {
-        blankLine: 'always',
-        prev     : 'export',
-        next     : '*',
-      },
-      {
-        blankLine: 'always',
-        prev     : 'import',
-        next     : '*',
-      },
-      {
-        blankLine: 'any',
-        prev     : 'cjs-export',
-        next     : 'cjs-export',
       },
       {
         blankLine: 'never',
@@ -471,14 +451,64 @@ const defaultConfig: ESLint.ConfigData = {
         next     : 'cjs-import',
       },
       {
-        blankLine: 'any',
+        blankLine: 'always',
+        prev     : '*',
+        next     : 'cjs-export',
+      },
+      {
+        blankLine: 'never',
+        prev     : 'cjs-export',
+        next     : 'cjs-export',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'export',
+        next     : '*',
+      },
+      {
+        blankLine: 'always',
         prev     : 'export',
         next     : 'export',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'import',
+        next     : '*',
       },
       {
         blankLine: 'never',
         prev     : 'import',
         next     : 'import',
+      },
+      {
+        blankLine: 'always',
+        prev     : '*',
+        next     : 'block-like',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'block-like',
+        next     : '*',
+      },
+      {
+        blankLine: 'always',
+        prev     : '*',
+        next     : 'block',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'block',
+        next     : '*',
+      },
+      {
+        blankLine: 'always',
+        prev     : '*',
+        next     : 'if',
+      },
+      {
+        blankLine: 'always',
+        prev     : 'if',
+        next     : '*',
       },
     ],
     'prefer-exponentiation-operator': 'warn',
