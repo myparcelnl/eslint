@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-vue",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0-alpha.6",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -18,7 +18,7 @@
     "clean": "sh ./../../scripts/clean.sh"
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-vue3": "workspace:^1.0.0-alpha.5",
+    "@myparcel-eslint/eslint-config-vue3": "workspace:^1.0.0-alpha.6",
     "eslint": "*",
     "eslint-plugin-vue": "^9.0.0"
   },

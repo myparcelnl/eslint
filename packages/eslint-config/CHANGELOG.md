@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.5](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config@1.0.0-alpha.4...@myparcel-eslint/eslint-config@1.0.0-alpha.5) "@myparcel-eslint/eslint-config" (2022-11-10)
+
+
+### Bug Fixes
+
+* **default:** add / as marker to spaced-comment ([95fdbb3](https://github/myparcelnl/eslint/commit/95fdbb3a6a04429eb338795b100244b033a68fc6))
+
+
+
+
 ## [1.0.0-alpha.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config@1.0.0-alpha.3...@myparcel-eslint/eslint-config@1.0.0-alpha.4) "@myparcel-eslint/eslint-config" (2022-11-03)
 
 
