@@ -571,6 +571,9 @@ const defaultConfig: ESLint.ConfigData = {
         block: {
           balanced: true,
         },
+        markers: [
+          '/',
+        ],
       },
     ],
     strict                : 'off',
