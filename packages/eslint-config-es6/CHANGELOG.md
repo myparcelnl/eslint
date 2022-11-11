@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.7](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-es6@1.0.0-alpha.6...@myparcel-eslint/eslint-config-es6@1.0.0-alpha.7) "@myparcel-eslint/eslint-config-es6" (2022-11-11)
+
+
+### Bug Fixes
+
+* **es6:** set parserOptions.ecmaVersion properly ([1a9efd3](https://github/myparcelnl/eslint/commit/1a9efd3c5b552da01aed7876f44758f9b4a0db01))
+
+
+
+
 ## [1.0.0-alpha.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-es6@1.0.0-alpha.3...@myparcel-eslint/eslint-config-es6@1.0.0-alpha.4) "@myparcel-eslint/eslint-config-es6" (2022-11-03)
 
 

@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.7](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-esnext@1.0.0-alpha.6...@myparcel-eslint/eslint-config-esnext@1.0.0-alpha.7) "@myparcel-eslint/eslint-config-esnext" (2022-11-11)
+
+
+### Bug Fixes
+
+* **esnext:** set parserOptions.ecmaVersion properly ([6c4a231](https://github/myparcelnl/eslint/commit/6c4a2311cae36b9313a5181993b289e882e228d5))
+
+
+
+
 ## [1.0.0-alpha.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-esnext@1.0.0-alpha.3...@myparcel-eslint/eslint-config-esnext@1.0.0-alpha.4) "@myparcel-eslint/eslint-config-esnext" (2022-11-03)
 
 

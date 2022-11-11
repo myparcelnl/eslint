@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-prettier-typescript-vue",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0-alpha.8",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.4",
-    "@myparcel-eslint/eslint-config-typescript-vue": "workspace:^1.0.0-alpha.7",
+    "@myparcel-eslint/eslint-config-typescript-vue": "workspace:^1.0.0-alpha.8",
     "@vue/eslint-config-prettier": "*",
     "@vue/eslint-config-typescript": "*",
     "eslint": "*",
