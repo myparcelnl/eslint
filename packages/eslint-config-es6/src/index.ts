@@ -1,9 +1,9 @@
 import {ESLint} from 'eslint';
 
 const es6Config: ESLint.ConfigData = {
-  extends: require.resolve('@myparcel-eslint/eslint-config'),
-  env    : {
-    es6: true,
+  extends      : require.resolve('@myparcel-eslint/eslint-config'),
+  parserOptions: {
+    ecmaVersion: 6,
   },
   rules: {
     // Default overrides
