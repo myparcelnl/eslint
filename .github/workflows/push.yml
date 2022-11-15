@@ -22,7 +22,6 @@ jobs:
 
       - name: 'Handle Nx cache'
         uses: actions/cache@v3
-        id: cache-nx
         with:
           path: node_modules/.cache/nx
           key: ${{ runner.os }}-nx-${{ hashFiles('package.json') }}-${{ github.sha }}
@@ -39,7 +38,9 @@ jobs:
 
       - name: 'Run monodeploy'
         run: |
-          yarn monodeploy --log-level 0
+          yarn monodeploy \
+            --config-file monodeploy.config.cjs \
+            --log-level 0
         env:
           GH_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
