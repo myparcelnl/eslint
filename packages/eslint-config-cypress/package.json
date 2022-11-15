@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "eslint": "*",
-    "eslint-plugin-cypress": "^2.12.1"
+    "eslint-plugin-cypress": "*"
   },
   "publishConfig": {
     "access": "public"

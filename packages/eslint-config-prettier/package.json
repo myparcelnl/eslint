@@ -18,10 +18,10 @@
     "clean": "sh ./../../scripts/clean.sh"
   },
   "dependencies": {
-    "@myparcel/prettier-config": "^1.1.0",
+    "@myparcel/prettier-config": "*",
     "eslint": "*",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-prettier": "*",
     "prettier": "*"
   },
   "publishConfig": {

@@ -21,7 +21,7 @@
     "@myparcel-eslint/eslint-config-esnext": "workspace:^1.0.0-alpha.7",
     "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.3",
     "eslint": "*",
-    "eslint-plugin-vue": "^9.0.0"
+    "eslint-plugin-vue": "*"
   },
   "publishConfig": {
     "access": "public"

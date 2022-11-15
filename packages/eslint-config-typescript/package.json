@@ -20,8 +20,8 @@
   "dependencies": {
     "@myparcel-eslint/eslint-config-es6": "workspace:^1.0.0-alpha.7",
     "@myparcel-eslint/eslint-config-esnext": "workspace:^1.0.0-alpha.7",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
     "eslint": "*"
   },
   "publishConfig": {

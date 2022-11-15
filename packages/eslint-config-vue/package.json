@@ -20,7 +20,7 @@
   "dependencies": {
     "@myparcel-eslint/eslint-config-vue3": "workspace:^1.0.0-alpha.7",
     "eslint": "*",
-    "eslint-plugin-vue": "^9.0.0"
+    "eslint-plugin-vue": "*"
   },
   "publishConfig": {
     "access": "public"

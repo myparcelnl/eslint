@@ -15,7 +15,7 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
-    "eslint": "^8.26.0"
+    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"
