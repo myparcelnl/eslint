@@ -6,7 +6,6 @@ on:
       - main
       - alpha
       - beta
-      - next
 
   workflow_dispatch:
 
@@ -31,7 +30,7 @@ jobs:
 
       - name: 'Build packages'
         run: |
-          yarn build
+          yarn build --output-style stream
 
       - uses: myparcelnl/actions/setup-git-credentials@v2
         with:
