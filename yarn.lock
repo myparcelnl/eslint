@@ -337,8 +337,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-prettier-typescript-vue@workspace:packages/eslint-config-prettier-typescript-vue"
   dependencies:
-    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.4"
-    "@myparcel-eslint/eslint-config-typescript-vue": "workspace:^1.0.0-alpha.8"
+    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.5"
+    "@myparcel-eslint/eslint-config-typescript-vue": "workspace:^1.0.0-alpha.9"
     "@vue/eslint-config-prettier": "*"
     "@vue/eslint-config-typescript": "*"
     eslint: "*"
@@ -351,8 +351,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-prettier-typescript@workspace:packages/eslint-config-prettier-typescript"
   dependencies:
-    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.4"
-    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.0.0-alpha.8"
+    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.5"
+    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.0.0-alpha.9"
     eslint: "*"
     prettier: "*"
   languageName: unknown
@@ -362,15 +362,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-prettier-vue@workspace:packages/eslint-config-prettier-vue"
   dependencies:
-    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.4"
-    "@myparcel-eslint/eslint-config-vue": "workspace:^1.0.0-alpha.7"
+    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.5"
+    "@myparcel-eslint/eslint-config-vue": "workspace:^1.0.0-alpha.8"
     "@vue/eslint-config-prettier": "*"
     eslint: "*"
     prettier: "*"
   languageName: unknown
   linkType: soft
 
-"@myparcel-eslint/eslint-config-prettier@workspace:^1.0.0-alpha.4, @myparcel-eslint/eslint-config-prettier@workspace:packages/eslint-config-prettier":
+"@myparcel-eslint/eslint-config-prettier@workspace:^1.0.0-alpha.5, @myparcel-eslint/eslint-config-prettier@workspace:packages/eslint-config-prettier":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-prettier@workspace:packages/eslint-config-prettier"
   dependencies:
@@ -386,25 +386,25 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-tailwindcss@workspace:packages/eslint-config-tailwindcss"
   dependencies:
-    "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.3"
+    "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.4"
     eslint: "*"
     eslint-plugin-tailwindcss: "*"
   languageName: unknown
   linkType: soft
 
-"@myparcel-eslint/eslint-config-typescript-vue@workspace:^1.0.0-alpha.8, @myparcel-eslint/eslint-config-typescript-vue@workspace:packages/eslint-config-typescript-vue":
+"@myparcel-eslint/eslint-config-typescript-vue@workspace:^1.0.0-alpha.9, @myparcel-eslint/eslint-config-typescript-vue@workspace:packages/eslint-config-typescript-vue":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-typescript-vue@workspace:packages/eslint-config-typescript-vue"
   dependencies:
-    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.0.0-alpha.8"
-    "@myparcel-eslint/eslint-config-vue": "workspace:^1.0.0-alpha.7"
+    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.0.0-alpha.9"
+    "@myparcel-eslint/eslint-config-vue": "workspace:^1.0.0-alpha.8"
     "@vue/eslint-config-typescript": "*"
     eslint: "*"
     eslint-plugin-vue: "*"
   languageName: unknown
   linkType: soft
 
-"@myparcel-eslint/eslint-config-typescript@workspace:*, @myparcel-eslint/eslint-config-typescript@workspace:^1.0.0-alpha.8, @myparcel-eslint/eslint-config-typescript@workspace:packages/eslint-config-typescript":
+"@myparcel-eslint/eslint-config-typescript@workspace:*, @myparcel-eslint/eslint-config-typescript@workspace:^1.0.0-alpha.9, @myparcel-eslint/eslint-config-typescript@workspace:packages/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-typescript@workspace:packages/eslint-config-typescript"
   dependencies:
@@ -416,31 +416,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@myparcel-eslint/eslint-config-vue2@workspace:^1.0.0-alpha.7, @myparcel-eslint/eslint-config-vue2@workspace:packages/eslint-config-vue2":
+"@myparcel-eslint/eslint-config-vue2@workspace:^1.0.0-alpha.8, @myparcel-eslint/eslint-config-vue2@workspace:packages/eslint-config-vue2":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-vue2@workspace:packages/eslint-config-vue2"
   dependencies:
     "@myparcel-eslint/eslint-config-esnext": "workspace:^1.0.0-alpha.7"
-    "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.3"
+    "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.4"
     eslint: "*"
     eslint-plugin-vue: "*"
   languageName: unknown
   linkType: soft
 
-"@myparcel-eslint/eslint-config-vue3@workspace:^1.0.0-alpha.7, @myparcel-eslint/eslint-config-vue3@workspace:packages/eslint-config-vue3":
+"@myparcel-eslint/eslint-config-vue3@workspace:^1.0.0-alpha.8, @myparcel-eslint/eslint-config-vue3@workspace:packages/eslint-config-vue3":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-vue3@workspace:packages/eslint-config-vue3"
   dependencies:
-    "@myparcel-eslint/eslint-config-vue2": "workspace:^1.0.0-alpha.7"
+    "@myparcel-eslint/eslint-config-vue2": "workspace:^1.0.0-alpha.8"
     eslint: "*"
   languageName: unknown
   linkType: soft
 
-"@myparcel-eslint/eslint-config-vue@workspace:^1.0.0-alpha.7, @myparcel-eslint/eslint-config-vue@workspace:packages/eslint-config-vue":
+"@myparcel-eslint/eslint-config-vue@workspace:^1.0.0-alpha.8, @myparcel-eslint/eslint-config-vue@workspace:packages/eslint-config-vue":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-vue@workspace:packages/eslint-config-vue"
   dependencies:
-    "@myparcel-eslint/eslint-config-vue3": "workspace:^1.0.0-alpha.7"
+    "@myparcel-eslint/eslint-config-vue3": "workspace:^1.0.0-alpha.8"
     eslint: "*"
     eslint-plugin-vue: "*"
   languageName: unknown
@@ -478,7 +478,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@myparcel-eslint/utils@workspace:^1.0.0-alpha.3, @myparcel-eslint/utils@workspace:packages/utils":
+"@myparcel-eslint/utils@workspace:^1.0.0-alpha.4, @myparcel-eslint/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/utils@workspace:packages/utils"
   dependencies:

@@ -2,6 +2,11 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.8](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-vue2@1.0.0-alpha.7...@myparcel-eslint/eslint-config-vue2@1.0.0-alpha.8) "@myparcel-eslint/eslint-config-vue2" (2022-11-15)
+
+
+
+
 ## [1.0.0-alpha.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-vue2@1.0.0-alpha.3...@myparcel-eslint/eslint-config-vue2@1.0.0-alpha.4) "@myparcel-eslint/eslint-config-vue2" (2022-11-03)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-prettier-vue",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0-alpha.8",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -20,8 +20,8 @@
     "clean": "sh ./../../scripts/clean.sh"
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.4",
-    "@myparcel-eslint/eslint-config-vue": "workspace:^1.0.0-alpha.7",
+    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.5",
+    "@myparcel-eslint/eslint-config-vue": "workspace:^1.0.0-alpha.8",
     "@vue/eslint-config-prettier": "*",
     "eslint": "*",
     "prettier": "*"

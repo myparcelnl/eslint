@@ -2,6 +2,11 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0-alpha.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/utils@1.0.0-alpha.3...@myparcel-eslint/utils@1.0.0-alpha.4) "@myparcel-eslint/utils" (2022-11-15)
+
+
+
+
 ## [1.0.0-alpha.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/utils@1.0.0-alpha.2...@myparcel-eslint/utils@1.0.0-alpha.3) "@myparcel-eslint/utils" (2022-11-03)
 
 
