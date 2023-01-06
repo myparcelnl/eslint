@@ -1,12 +1,10 @@
 import {ESLint} from 'eslint';
 
-const prettierTypescriptVueConfig: ESLint.ConfigData = {
-  extends: [
-    require.resolve('@myparcel-eslint/eslint-config-typescript-vue'),
-    require.resolve('@myparcel-eslint/eslint-config-prettier'),
+export const config: ESLint.ConfigData = {
+  'extends': [
+    '@myparcel-eslint/eslint-config-typescript-vue',
+    '@myparcel-eslint/eslint-config-prettier',
     '@vue/eslint-config-typescript/recommended',
     '@vue/eslint-config-prettier',
   ],
 };
-
-export default prettierTypescriptVueConfig;

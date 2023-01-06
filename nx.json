@@ -8,26 +8,20 @@
   },
   "namedInputs": {
     "default": [
-      "{projectRoot}/src"
-    ],
-    "dist": [
-      "{projectRoot}/dist",
-      "{projectRoot}/index.js"
+      "{projectRoot}/**/*",
+      "{workspaceRoot}/package.json",
+      "{workspaceRoot}/tsconfig.json"
     ]
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "{projectRoot}/**/*",
-        "{workspaceRoot}/scripts/build.sh"
-      ],
-      "outputs": [
-        "{projectRoot}/dist",
-        "{projectRoot}/index.js"
-      ]
+      "dependsOn": ["^dts", "^build"],
+      "inputs": ["default", "{workspaceRoot}/scripts/build.sh"],
+      "outputs": ["{projectRoot}/dist/index.js", "{projectRoot}/index.js"]
+    },
+    "dts": {
+      "dependsOn": ["^dts"],
+      "outputs": ["{projectRoot}/dist/index.d.ts"]
     }
   },
   "tasksRunnerOptions": {
@@ -35,9 +29,7 @@
       "runner": "nx/tasks-runners/default",
       "options": {
         "parallel": 10,
-        "cacheableOperations": [
-          "build"
-        ]
+        "cacheableOperations": ["build"]
       }
     }
   }

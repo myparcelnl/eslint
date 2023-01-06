@@ -1,10 +1,74 @@
-import {ESLint} from 'eslint';
+import {Linter} from 'eslint';
 
-const defaultConfig: ESLint.ConfigData = {
-  env: {
-    browser: true,
+export const braceStyle: Linter.RuleEntry = [
+  'warn',
+  '1tbs',
+];
+
+export const commaDangle: Linter.RuleEntry = [
+  'warn',
+  'always-multiline',
+];
+
+export const commaSpacing: Linter.RuleEntry = [
+  'warn',
+  {
+    'before': false,
+    'after' : true,
   },
-  rules: {
+];
+
+export const funcCallSpacing: Linter.RuleEntry = [
+  'warn',
+  'never',
+];
+
+export const indent: Linter.RuleEntry = [
+  'warn',
+  2,
+  {
+    'SwitchCase': 1,
+  },
+];
+
+export const noArrayConstructor: Linter.RuleEntry = 'warn';
+
+export const noEmptyFunction: Linter.RuleEntry = 'warn';
+
+export const noExtraParens: Linter.RuleEntry = 'warn';
+
+export const noExtraSemi: Linter.RuleEntry = 'warn';
+
+export const noImpliedEval: Linter.RuleEntry = 'warn';
+
+export const noThrowLiteral: Linter.RuleEntry = 'off';
+
+export const noUnusedExpressions: Linter.RuleEntry = 'warn';
+
+export const noUnusedVars: Linter.RuleEntry = [
+  'warn',
+  {
+    'ignoreRestSiblings': true,
+  },
+];
+
+export const noUseBeforeDefine: Linter.RuleEntry = 'off';
+
+export const quotes: Linter.RuleEntry = [
+  'warn',
+  'single',
+];
+
+export const semi: Linter.RuleEntry = [
+  'warn',
+  'always',
+];
+
+export const config = {
+  'env': {
+    'browser': true,
+  },
+  'rules': {
     'accessor-pairs'       : 'off',
     'array-bracket-newline': [
       'warn',
@@ -21,37 +85,25 @@ const defaultConfig: ESLint.ConfigData = {
     ],
     'block-scoped-var': 'warn',
     'block-spacing'   : 'warn',
-    'brace-style'     : [
-      'warn',
-      '1tbs',
-    ],
-    'callback-return': 'off',
-    camelcase        : [
+    'brace-style'     : braceStyle,
+    'callback-return' : 'off',
+    'camelcase'       : [
       'warn',
       {
-        ignoreDestructuring: true,
-        ignoreImports      : true,
-        properties         : 'never',
+        'ignoreDestructuring': true,
+        'ignoreImports'      : true,
+        'properties'         : 'never',
       },
     ],
     'capitalized-comments'  : 'off',
     'class-methods-use-this': 'warn',
-    'comma-dangle'          : [
-      'warn',
-      'always-multiline',
-    ],
-    'comma-spacing': [
-      'warn',
-      {
-        before: false,
-        after : true,
-      },
-    ],
-    'comma-style': 'warn',
-    complexity   : [
+    'comma-dangle'          : commaDangle,
+    'comma-spacing'         : commaSpacing,
+    'comma-style'           : 'warn',
+    'complexity'            : [
       'warn',
       {
-        max: 10,
+        'max': 10,
       },
     ],
     'computed-property-spacing': [
@@ -63,7 +115,7 @@ const defaultConfig: ESLint.ConfigData = {
       'warn',
       'self',
     ],
-    curly               : 'warn',
+    'curly'             : 'warn',
     'default-case'      : 'off',
     'default-case-last' : 'warn',
     'default-param-last': 'warn',
@@ -73,22 +125,19 @@ const defaultConfig: ESLint.ConfigData = {
     ],
     'dot-notation': 'warn',
     'eol-last'    : 'warn',
-    eqeqeq        : [
+    'eqeqeq'      : [
       'warn',
       'smart',
     ],
-    'for-direction'    : 'warn',
-    'func-call-spacing': [
-      'warn',
-      'never',
-    ],
+    'for-direction'     : 'warn',
+    'func-call-spacing' : funcCallSpacing,
     'func-name-matching': 'off',
     'func-names'        : 'off',
     'func-style'        : [
       'warn',
       'declaration',
       {
-        allowArrowFunctions: true,
+        'allowArrowFunctions': true,
       },
     ],
     'function-call-argument-newline': [
@@ -109,7 +158,7 @@ const defaultConfig: ESLint.ConfigData = {
     'id-length'             : [
       'warn',
       {
-        exceptions: [
+        'exceptions': [
           '$',
           '_',
           'i',
@@ -127,13 +176,7 @@ const defaultConfig: ESLint.ConfigData = {
       'warn',
       'beside',
     ],
-    indent: [
-      'warn',
-      2,
-      {
-        SwitchCase: 1,
-      },
-    ],
+    'indent'           : indent,
     'indent-legacy'    : 'off',
     'init-declarations': 'off',
     'jsx-quotes'       : 'off',
@@ -141,14 +184,14 @@ const defaultConfig: ESLint.ConfigData = {
     'keyword-spacing'  : [
       'warn',
       {
-        before: true,
-        after : true,
+        'before': true,
+        'after' : true,
       },
     ],
     'line-comment-position': [
       'warn',
       {
-        position: 'above',
+        'position': 'above',
       },
     ],
     'linebreak-style': [
@@ -158,17 +201,17 @@ const defaultConfig: ESLint.ConfigData = {
     'lines-around-comment': [
       'warn',
       {
-        afterBlockComment : false,
-        afterLineComment  : false,
-        allowArrayEnd     : false,
-        allowArrayStart   : true,
-        allowBlockEnd     : false,
-        allowBlockStart   : true,
-        allowClassEnd     : false,
-        allowClassStart   : true,
-        allowObjectEnd    : false,
-        allowObjectStart  : true,
-        beforeBlockComment: true,
+        'afterBlockComment' : false,
+        'afterLineComment'  : false,
+        'allowArrayEnd'     : false,
+        'allowArrayStart'   : true,
+        'allowBlockEnd'     : false,
+        'allowBlockStart'   : true,
+        'allowClassEnd'     : false,
+        'allowClassStart'   : true,
+        'allowObjectEnd'    : false,
+        'allowObjectStart'  : true,
+        'beforeBlockComment': true,
       },
     ],
     'lines-around-directive'     : 'warn',
@@ -176,14 +219,14 @@ const defaultConfig: ESLint.ConfigData = {
       'warn',
       'always',
       {
-        exceptAfterSingleLine: true,
+        'exceptAfterSingleLine': true,
       },
     ],
     'max-classes-per-file': 'warn',
     'max-depth'           : [
       'warn',
       {
-        max: 3,
+        'max': 3,
       },
     ],
     'max-len': [
@@ -194,14 +237,14 @@ const defaultConfig: ESLint.ConfigData = {
     'max-lines-per-function': [
       'warn',
       {
-        max         : 50,
-        skipComments: true,
+        'max'         : 50,
+        'skipComments': true,
       },
     ],
     'max-nested-callbacks': [
       'warn',
       {
-        max: 3,
+        'max': 3,
       },
     ],
     'max-params': [
@@ -223,7 +266,7 @@ const defaultConfig: ESLint.ConfigData = {
     'newline-before-return'   : 'off',
     'newline-per-chained-call': 'off',
     'no-alert'                : 'warn',
-    'no-array-constructor'    : 'warn',
+    'no-array-constructor'    : noArrayConstructor,
     'no-bitwise'              : 'warn',
     'no-buffer-constructor'   : 'warn',
     'no-caller'               : 'warn',
@@ -246,7 +289,7 @@ const defaultConfig: ESLint.ConfigData = {
     'no-else-return'          : 'warn',
     'no-empty'                : 'warn',
     'no-empty-character-class': 'warn',
-    'no-empty-function'       : 'warn',
+    'no-empty-function'       : noEmptyFunction,
     'no-empty-pattern'        : 'warn',
     'no-eq-null'              : 'warn',
     'no-eval'                 : 'warn',
@@ -255,8 +298,8 @@ const defaultConfig: ESLint.ConfigData = {
     'no-extra-bind'           : 'warn',
     'no-extra-boolean-cast'   : 'warn',
     'no-extra-label'          : 'warn',
-    'no-extra-parens'         : 'warn',
-    'no-extra-semi'           : 'warn',
+    'no-extra-parens'         : noExtraParens,
+    'no-extra-semi'           : noExtraSemi,
     'no-fallthrough'          : 'off',
     'no-floating-decimal'     : 'warn',
     'no-func-assign'          : 'warn',
@@ -264,11 +307,11 @@ const defaultConfig: ESLint.ConfigData = {
     'no-implicit-coercion'    : [
       'warn',
       {
-        boolean: false,
+        'boolean': false,
       },
     ],
     'no-implicit-globals'    : 'warn',
-    'no-implied-eval'        : 'warn',
+    'no-implied-eval'        : noImpliedEval,
     'no-import-assign'       : 'warn',
     'no-inline-comments'     : 'warn',
     'no-inner-declarations'  : 'off',
@@ -285,14 +328,14 @@ const defaultConfig: ESLint.ConfigData = {
     'no-magic-numbers'       : [
       'warn',
       {
-        ignore: [
+        'ignore': [
           -1,
           0,
           1,
           100,
           1000,
         ],
-        detectObjects: true,
+        'detectObjects': true,
       },
     ],
     'no-misleading-character-class': 'off',
@@ -305,9 +348,9 @@ const defaultConfig: ESLint.ConfigData = {
     'no-multiple-empty-lines'      : [
       'warn',
       {
-        max   : 1,
-        maxBOF: 0,
-        maxEOF: 0,
+        'max'   : 1,
+        'maxBOF': 0,
+        'maxEOF': 0,
       },
     ],
     'no-native-reassign'         : 'off',
@@ -352,7 +395,7 @@ const defaultConfig: ESLint.ConfigData = {
     'no-tabs'                    : 'warn',
     'no-template-curly-in-string': 'warn',
     'no-ternary'                 : 'off',
-    'no-throw-literal'           : 'off',
+    'no-throw-literal'           : noThrowLiteral,
     'no-trailing-spaces'         : 'warn',
     'no-undef'                   : 'warn',
     'no-undef-init'              : 'off',
@@ -360,27 +403,22 @@ const defaultConfig: ESLint.ConfigData = {
     'no-underscore-dangle'       : [
       'warn',
       {
-        allowAfterThis: true,
+        'allowAfterThis': true,
       },
     ],
-    'no-unexpected-multiline'        : 'warn',
-    'no-unmodified-loop-condition'   : 'warn',
-    'no-unneeded-ternary'            : 'warn',
-    'no-unreachable'                 : 'warn',
-    'no-unreachable-loop'            : 'warn',
-    'no-unsafe-finally'              : 'off',
-    'no-unsafe-negation'             : 'off',
-    'no-unsafe-optional-chaining'    : 'warn',
-    'no-unused-expressions'          : 'warn',
-    'no-unused-labels'               : 'warn',
-    'no-unused-private-class-members': 'warn',
-    'no-unused-vars'                 : [
-      'warn',
-      {
-        ignoreRestSiblings: true,
-      },
-    ],
-    'no-use-before-define'            : 'off',
+    'no-unexpected-multiline'         : 'warn',
+    'no-unmodified-loop-condition'    : 'warn',
+    'no-unneeded-ternary'             : 'warn',
+    'no-unreachable'                  : 'warn',
+    'no-unreachable-loop'             : 'warn',
+    'no-unsafe-finally'               : 'off',
+    'no-unsafe-negation'              : 'off',
+    'no-unsafe-optional-chaining'     : 'warn',
+    'no-unused-expressions'           : noUnusedExpressions,
+    'no-unused-labels'                : 'warn',
+    'no-unused-private-class-members' : 'warn',
+    'no-unused-vars'                  : noUnusedVars,
+    'no-use-before-define'            : noUseBeforeDefine,
     'no-useless-backreference'        : 'warn',
     'no-useless-call'                 : 'warn',
     'no-useless-catch'                : 'warn',
@@ -395,16 +433,16 @@ const defaultConfig: ESLint.ConfigData = {
     'object-curly-newline'            : [
       'warn',
       {
-        ObjectExpression: {
-          consistent: true,
+        'ObjectExpression': {
+          'consistent': true,
         },
-        ObjectPattern: {
-          consistent: true,
+        'ObjectPattern': {
+          'consistent': true,
         },
-        ImportDeclaration: {
-          consistent: true,
+        'ImportDeclaration': {
+          'consistent': true,
         },
-        ExportDeclaration: 'never',
+        'ExportDeclaration': 'never',
       },
     ],
     'object-curly-spacing': [
@@ -414,7 +452,7 @@ const defaultConfig: ESLint.ConfigData = {
     'object-property-newline': [
       'warn',
       {
-        allowAllPropertiesOnSameLine: true,
+        'allowAllPropertiesOnSameLine': true,
       },
     ],
     'one-var': [
@@ -433,112 +471,104 @@ const defaultConfig: ESLint.ConfigData = {
     'padded-blocks': [
       'warn',
       {
-        blocks  : 'never',
-        switches: 'never',
-        classes : 'never',
+        'blocks'  : 'never',
+        'switches': 'never',
+        'classes' : 'never',
       },
     ],
     'padding-line-between-statements': [
       'warn',
       {
-        blankLine: 'always',
-        prev     : 'cjs-import',
-        next     : '*',
+        'blankLine': 'always',
+        'prev'     : 'cjs-import',
+        'next'     : '*',
       },
       {
-        blankLine: 'never',
-        prev     : 'cjs-import',
-        next     : 'cjs-import',
+        'blankLine': 'never',
+        'prev'     : 'cjs-import',
+        'next'     : 'cjs-import',
       },
       {
-        blankLine: 'always',
-        prev     : '*',
-        next     : 'cjs-export',
+        'blankLine': 'always',
+        'prev'     : '*',
+        'next'     : 'cjs-export',
       },
       {
-        blankLine: 'never',
-        prev     : 'cjs-export',
-        next     : 'cjs-export',
+        'blankLine': 'never',
+        'prev'     : 'cjs-export',
+        'next'     : 'cjs-export',
       },
       {
-        blankLine: 'always',
-        prev     : 'export',
-        next     : '*',
+        'blankLine': 'always',
+        'prev'     : 'export',
+        'next'     : '*',
       },
       {
-        blankLine: 'always',
-        prev     : 'export',
-        next     : 'export',
+        'blankLine': 'always',
+        'prev'     : 'export',
+        'next'     : 'export',
       },
       {
-        blankLine: 'always',
-        prev     : 'import',
-        next     : '*',
+        'blankLine': 'always',
+        'prev'     : 'import',
+        'next'     : '*',
       },
       {
-        blankLine: 'never',
-        prev     : 'import',
-        next     : 'import',
+        'blankLine': 'never',
+        'prev'     : 'import',
+        'next'     : 'import',
       },
       {
-        blankLine: 'always',
-        prev     : '*',
-        next     : 'block-like',
+        'blankLine': 'always',
+        'prev'     : '*',
+        'next'     : 'block-like',
       },
       {
-        blankLine: 'always',
-        prev     : 'block-like',
-        next     : '*',
+        'blankLine': 'always',
+        'prev'     : 'block-like',
+        'next'     : '*',
       },
       {
-        blankLine: 'always',
-        prev     : '*',
-        next     : 'block',
+        'blankLine': 'always',
+        'prev'     : '*',
+        'next'     : 'block',
       },
       {
-        blankLine: 'always',
-        prev     : 'block',
-        next     : '*',
+        'blankLine': 'always',
+        'prev'     : 'block',
+        'next'     : '*',
       },
       {
-        blankLine: 'always',
-        prev     : '*',
-        next     : 'if',
+        'blankLine': 'always',
+        'prev'     : '*',
+        'next'     : 'if',
       },
       {
-        blankLine: 'always',
-        prev     : 'if',
-        next     : '*',
+        'blankLine': 'always',
+        'prev'     : 'if',
+        'next'     : '*',
       },
     ],
     'prefer-exponentiation-operator': 'warn',
-
-    // These will be overridden with babel/ equivalents if plugin-babel.js is included.
-    'prefer-named-capture-group'  : 'off',
-    'prefer-object-spread'        : 'warn',
-    'prefer-promise-reject-errors': 'off',
-    'prefer-reflect'              : 'off',
-    'prefer-regex-literals'       : 'warn',
-    'quote-props'                 : [
+    'prefer-named-capture-group'    : 'off',
+    'prefer-object-spread'          : 'warn',
+    'prefer-promise-reject-errors'  : 'off',
+    'prefer-reflect'                : 'off',
+    'prefer-regex-literals'         : 'warn',
+    'quote-props'                   : [
       'warn',
       'as-needed',
     ],
-    quotes: [
-      'warn',
-      'single',
-    ],
-    radix: [
+    'quotes': quotes,
+    'radix' : [
       'warn',
       'as-needed',
     ],
     'require-atomic-updates': 'off',
     'require-unicode-regexp': 'off',
-    semi                    : [
-      'warn',
-      'always',
-    ],
-    'semi-spacing': 'warn',
-    'semi-style'  : [
+    'semi'                  : semi,
+    'semi-spacing'          : 'warn',
+    'semi-style'            : [
       'warn',
       'last',
     ],
@@ -560,23 +590,23 @@ const defaultConfig: ESLint.ConfigData = {
     'space-unary-ops': [
       'warn',
       {
-        words   : true,
-        nonwords: false,
+        'words'   : true,
+        'nonwords': false,
       },
     ],
     'spaced-comment': [
       'warn',
       'always',
       {
-        block: {
-          balanced: true,
+        'block': {
+          'balanced': true,
         },
-        markers: [
+        'markers': [
           '/',
         ],
       },
     ],
-    strict                : 'off',
+    'strict'              : 'off',
     'switch-colon-spacing': 'warn',
     'template-tag-spacing': 'off',
     'unicode-bom'         : 'off',
@@ -585,10 +615,9 @@ const defaultConfig: ESLint.ConfigData = {
     'vars-on-top'         : 'warn',
     'wrap-iife'           : 'off',
     'wrap-regex'          : 'warn',
-    yoda                  : [
+    'yoda'                : [
       'warn',
       'never',
     ],
   },
 };
-export default defaultConfig;

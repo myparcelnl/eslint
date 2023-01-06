@@ -1,12 +1,10 @@
 import {ESLint} from 'eslint';
-import typescriptConfig from '@myparcel-eslint/eslint-config-typescript';
+import {parserOptions} from '@myparcel-eslint/eslint-config-typescript';
 
-const prettierTypescriptConfig: ESLint.ConfigData = {
-  parserOptions: typescriptConfig.parserOptions,
-  extends      : [
-    require.resolve('@myparcel-eslint/eslint-config-typescript'),
-    require.resolve('@myparcel-eslint/eslint-config-prettier'),
+export const config: ESLint.ConfigData = {
+  'parserOptions': parserOptions,
+  'extends'      : [
+    '@myparcel-eslint/eslint-config-typescript',
+    '@myparcel-eslint/eslint-config-prettier',
   ],
 };
-
-export default prettierTypescriptConfig;

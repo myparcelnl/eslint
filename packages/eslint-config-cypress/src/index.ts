@@ -1,13 +1,13 @@
 import {ESLint} from 'eslint';
 
-const cypressConfig: ESLint.ConfigData = {
-  plugins: [
+export const config: ESLint.ConfigData = {
+  'plugins': [
     'cypress',
   ],
-  env: {
+  'env': {
     'cypress/globals': true,
   },
-  rules: {
+  'rules': {
     'cypress/assertion-before-screenshot': 'warn',
     'cypress/no-assigning-return-values' : 'warn',
     'cypress/no-async-tests'             : 'warn',
@@ -15,5 +15,3 @@ const cypressConfig: ESLint.ConfigData = {
     'cypress/no-unnecessary-waiting'     : 'warn',
   },
 };
-
-export default cypressConfig;

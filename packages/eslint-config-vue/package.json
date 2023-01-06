@@ -9,13 +9,15 @@
   ],
   "repository": "github:myparcelnl/eslint",
   "license": "MIT",
+  "module": "lib/module.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "index.js"
   ],
   "scripts": {
-    "build": "sh ./../../scripts/build.sh",
-    "clean": "sh ./../../scripts/clean.sh"
+    "build": "run ws:build \"$(pwd)\"",
+    "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
     "@myparcel-eslint/eslint-config-vue3": "workspace:^1.0.0-alpha.7",

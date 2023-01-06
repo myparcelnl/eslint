@@ -9,17 +9,20 @@
   ],
   "repository": "github:myparcelnl/eslint",
   "license": "MIT",
+  "module": "lib/module.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "index.js"
   ],
   "scripts": {
-    "build": "sh ./../../scripts/build.sh",
-    "clean": "sh ./../../scripts/clean.sh"
+    "build": "run ws:build \"$(pwd)\"",
+    "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
     "@myparcel-eslint/eslint-config-esnext": "workspace:^1.0.0-alpha.7",
     "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.3",
+    "@rushstack/eslint-patch": "^1.2.0",
     "eslint": "*",
     "eslint-plugin-vue": "*"
   },
