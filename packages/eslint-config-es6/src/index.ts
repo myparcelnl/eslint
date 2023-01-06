@@ -1,41 +1,49 @@
-import {ESLint} from 'eslint';
+import {Linter} from 'eslint';
 
-const es6Config: ESLint.ConfigData = {
-  extends      : require.resolve('@myparcel-eslint/eslint-config'),
-  parserOptions: {
-    ecmaVersion: 6,
+export const noMagicNumbers: Linter.RuleLevelAndOptions = [
+  'warn',
+  {
+    'ignore': [
+      -1,
+      0,
+      1,
+      100,
+    ],
+    'detectObjects': true,
+    'enforceConst' : true,
   },
-  rules: {
-    // Default overrides
-    'func-names': [
+];
+
+export const arrowSpacing: Linter.RuleLevelAndOptions = [
+  'warn',
+  {
+    'before': true,
+    'after' : true,
+  },
+];
+
+export const noUselessConstructor: Linter.RuleEntry = 'off';
+
+export const preferTemplate: Linter.RuleEntry = 'warn';
+
+export const requireAwait: Linter.RuleEntry = 'warn';
+
+export const templateCurlySpacing: Linter.RuleEntry = 'warn';
+
+export const config: Linter.Config = {
+  'extends'      : '@myparcel-eslint/eslint-config',
+  'parserOptions': {
+    'ecmaVersion': 6,
+  },
+  'rules': {
+    'arrow-body-style' : 'off',
+    'arrow-parens'     : 'warn',
+    'arrow-spacing'    : arrowSpacing,
+    'constructor-super': 'off',
+    'func-names'       : [
       'warn',
       'as-needed',
     ],
-    'no-magic-numbers': [
-      'warn',
-      {
-        ignore: [
-          -1,
-          0,
-          1,
-          100,
-        ],
-        detectObjects: true,
-        enforceConst : true,
-      },
-    ],
-
-    // ES6+ only
-    'arrow-body-style': 'off',
-    'arrow-parens'    : 'warn',
-    'arrow-spacing'   : [
-      'warn',
-      {
-        before: true,
-        after : true,
-      },
-    ],
-    'constructor-super'        : 'off',
     'generator-star-spacing'   : 'off',
     'no-async-promise-executor': 'warn',
     'no-await-in-loop'         : 'off',
@@ -44,12 +52,13 @@ const es6Config: ESLint.ConfigData = {
     'no-const-assign'          : 'warn',
     'no-dupe-class-members'    : 'warn',
     'no-duplicate-imports'     : 'warn',
+    'no-magic-numbers'         : noMagicNumbers,
     'no-new-symbol'            : 'off',
     'no-restricted-imports'    : 'off',
     'no-return-await'          : 'warn',
     'no-this-before-super'     : 'off',
     'no-useless-computed-key'  : 'off',
-    'no-useless-constructor'   : 'off',
+    'no-useless-constructor'   : noUselessConstructor,
     'no-useless-rename'        : 'warn',
     'no-var'                   : 'warn',
     'object-shorthand'         : 'off',
@@ -58,28 +67,26 @@ const es6Config: ESLint.ConfigData = {
     'prefer-destructuring'     : [
       'warn',
       {
-        VariableDeclarator: {
-          array : false,
-          object: true,
+        'VariableDeclarator': {
+          'array' : false,
+          'object': true,
         },
-        AssignmentExpression: {
-          array : false,
-          object: false,
+        'AssignmentExpression': {
+          'array' : false,
+          'object': false,
         },
       },
     ],
     'prefer-numeric-literals': 'off',
     'prefer-rest-params'     : 'off',
     'prefer-spread'          : 'warn',
-    'prefer-template'        : 'warn',
-    'require-await'          : 'warn',
+    'prefer-template'        : preferTemplate,
+    'require-await'          : requireAwait,
     'require-yield'          : 'off',
     'rest-spread-spacing'    : 'off',
     'sort-imports'           : 'warn',
     'symbol-description'     : 'off',
-    'template-curly-spacing' : 'warn',
+    'template-curly-spacing' : templateCurlySpacing,
     'yield-star-spacing'     : 'off',
   },
 };
-
-export default es6Config;

@@ -56,6 +56,10 @@ module.exports = {
         'object-property-newline': [
           'error',
         ],
+        'quote-props': [
+          'error',
+          'always',
+        ],
         'quotes': [
           'error',
           'single',

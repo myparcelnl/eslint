@@ -1,17 +1,17 @@
 import {ESLint} from 'eslint';
 
-const prettierConfig: ESLint.ConfigData = {
-  plugins: [
+export const config: ESLint.ConfigData = {
+  'plugins': [
     'prettier',
   ],
-  extends: [
+  'extends': [
     'plugin:prettier/recommended',
   ],
-  rules: {
+  'rules': {
     'prettier/prettier': [
       'warn',
       {
-        printWidth: 120,
+        'printWidth': 120,
       },
     ],
 
@@ -34,8 +34,8 @@ const prettierConfig: ESLint.ConfigData = {
     'object-curly-newline'          : 'off',
     'object-property-newline'       : 'off',
     'operator-linebreak'            : 'off',
-    quotes                          : 'off',
-    semi                            : 'off',
+    'quotes'                        : 'off',
+    'semi'                          : 'off',
     'space-before-blocks'           : 'off',
     'space-before-function-paren'   : 'off',
     'space-in-parens'               : 'off',
@@ -43,5 +43,3 @@ const prettierConfig: ESLint.ConfigData = {
     'space-unary-ops'               : 'off',
   },
 };
-
-export default prettierConfig;

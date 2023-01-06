@@ -1,27 +1,28 @@
+import {arrowSpacing, preferTemplate, templateCurlySpacing} from '@myparcel-eslint/eslint-config-es6';
 import {ESLint} from 'eslint';
-import defaultConfig from '@myparcel-eslint/eslint-config';
-import es6Config from '@myparcel-eslint/eslint-config-es6';
 import {overridePluginRule} from '@myparcel-eslint/utils';
 
-const vue2Config: ESLint.ConfigData = {
-  env: {
-    node: true,
+require('@rushstack/eslint-patch/modern-module-resolution');
+
+export const config: ESLint.ConfigData = {
+  'env': {
+    'node': true,
   },
-  extends: [
-    require.resolve('@myparcel-eslint/eslint-config-esnext'),
+  'extends': [
+    '@myparcel-eslint/eslint-config-esnext',
     'plugin:vue/recommended',
   ],
-  parserOptions: {
-    allowImportExportEverywhere: true,
-    ecmaFeatures               : {
-      jsx: true,
+  'parserOptions': {
+    'allowImportExportEverywhere': true,
+    'ecmaFeatures'               : {
+      'jsx': true,
     },
-    extraFileExtensions: [
+    'extraFileExtensions': [
       '.vue',
     ],
-    sourceType: 'module',
+    'sourceType': 'module',
   },
-  rules: {
+  'rules': {
     ...overridePluginRule('babel/object-curly-spacing', [
       'warn',
       'always',
@@ -29,7 +30,7 @@ const vue2Config: ESLint.ConfigData = {
     ...overridePluginRule('jsdoc/no-undefined-types', [
       'warn',
       {
-        definedTypes: [
+        'definedTypes': [
           'VNode',
           'webpack',
         ],
@@ -41,7 +42,7 @@ const vue2Config: ESLint.ConfigData = {
     'id-length'             : [
       'warn',
       {
-        exceptions: [
+        'exceptions': [
           '$',
           '_',
           'i',
@@ -56,7 +57,7 @@ const vue2Config: ESLint.ConfigData = {
       'warn',
       'all',
       {
-        nestedBinaryExpressions: false,
+        'nestedBinaryExpressions': false,
       },
     ],
     'operator-linebreak': [
@@ -64,17 +65,17 @@ const vue2Config: ESLint.ConfigData = {
       'before',
     ],
 
-    'vue/array-bracket-newline'            : defaultConfig.rules['array-bracket-newline'],
-    'vue/array-bracket-spacing'            : defaultConfig.rules['array-bracket-spacing'],
-    'vue/arrow-spacing'                    : es6Config.rules['arrow-spacing'],
+    'vue/array-bracket-newline'            : arrayBracketNewline,
+    'vue/array-bracket-spacing'            : arrayBracketSpacing,
+    'vue/arrow-spacing'                    : arrowSpacing,
     'vue/attribute-hyphenation'            : 'error',
     'vue/attributes-order'                 : 'warn',
     'vue/block-lang'                       : 'warn',
-    'vue/block-spacing'                    : defaultConfig.rules['block-spacing'],
+    'vue/block-spacing'                    : blockSpacing,
     'vue/block-tag-newline'                : 'error',
-    'vue/brace-style'                      : defaultConfig.rules['brace-style'],
-    'vue/camelcase'                        : defaultConfig.rules.camelcase,
-    'vue/comma-dangle'                     : defaultConfig.rules['comma-dangle'],
+    'vue/brace-style'                      : braceStyle,
+    'vue/camelcase'                        : camelcase,
+    'vue/comma-dangle'                     : commaDangle,
     'vue/comma-spacing'                    : 'error',
     'vue/comma-style'                      : 'error',
     'vue/comment-directive'                : 'error',
@@ -84,13 +85,13 @@ const vue2Config: ESLint.ConfigData = {
       'warn',
       'PascalCase',
       {
-        registeredComponentsOnly: true,
+        'registeredComponentsOnly': true,
       },
     ],
     'vue/component-tags-order': [
       'warn',
       {
-        order: [
+        'order': [
           'template',
           'script',
           'style',
@@ -98,17 +99,17 @@ const vue2Config: ESLint.ConfigData = {
       },
     ],
     'vue/custom-event-name-casing'    : 'error',
-    'vue/dot-location'                : defaultConfig.rules['dot-location'],
+    'vue/dot-location'                : dotLocation,
     'vue/dot-notation'                : 'error',
-    'vue/eqeqeq'                      : defaultConfig.rules.eqeqeq,
+    'vue/eqeqeq'                      : eqeqeq,
     'vue/first-attribute-linebreak'   : 'error',
-    'vue/func-call-spacing'           : defaultConfig.rules['func-call-spacing'],
+    'vue/func-call-spacing'           : funcCallSpacing,
     'vue/html-button-has-type'        : 'error',
     'vue/html-closing-bracket-newline': [
       'warn',
       {
-        singleline: 'never',
-        multiline : 'never',
+        'singleline': 'never',
+        'multiline' : 'never',
       },
     ],
     'vue/html-closing-bracket-spacing'             : 'warn',
@@ -120,11 +121,11 @@ const vue2Config: ESLint.ConfigData = {
     'vue/html-quotes'                              : 'warn',
     'vue/html-self-closing'                        : 'warn',
     'vue/jsx-uses-vars'                            : 'warn',
-    'vue/key-spacing'                              : defaultConfig.rules['key-spacing'],
-    'vue/keyword-spacing'                          : defaultConfig.rules['keyword-spacing'],
+    'vue/key-spacing'                              : keySpacing,
+    'vue/keyword-spacing'                          : keywordSpacing,
     'vue/match-component-file-name'                : 'warn',
     'vue/max-attributes-per-line'                  : 'warn',
-    'vue/max-len'                                  : defaultConfig.rules['max-len'],
+    'vue/max-len'                                  : maxLen,
     'vue/multi-word-component-names'               : 'off',
     'vue/multiline-html-element-content-newline'   : 'warn',
     'vue/mustache-interpolation-spacing'           : 'warn',
@@ -162,14 +163,14 @@ const vue2Config: ESLint.ConfigData = {
     'vue/no-duplicate-attr-inheritance'            : 'warn',
     'vue/no-duplicate-attributes'                  : 'warn',
     'vue/no-empty-component-block'                 : 'warn',
-    'vue/no-empty-pattern'                         : defaultConfig.rules['no-empty-pattern'],
+    'vue/no-empty-pattern'                         : noEmptyPattern,
     'vue/no-export-in-script-setup'                : 'error',
     'vue/no-expose-after-await'                    : 'error',
-    'vue/no-extra-parens'                          : defaultConfig.rules['no-extra-parens'],
-    'vue/no-irregular-whitespace'                  : defaultConfig.rules['no-irregular-whitespace'],
+    'vue/no-extra-parens'                          : noExtraParens,
+    'vue/no-irregular-whitespace'                  : noIrregularWhitespace,
     'vue/no-lifecycle-after-await'                 : 'error',
     'vue/no-lone-template'                         : 'warn',
-    'vue/no-loss-of-precision'                     : defaultConfig.rules['no-loss-of-precision'],
+    'vue/no-loss-of-precision'                     : noLossOfPrecision,
     'vue/no-multi-spaces'                          : 'warn',
     'vue/no-multiple-objects-in-class'             : 'error',
     'vue/no-multiple-slot-args'                    : 'error',
@@ -188,13 +189,13 @@ const vue2Config: ESLint.ConfigData = {
     'vue/no-restricted-custom-event'               : 'off',
     'vue/no-restricted-props'                      : 'off',
     'vue/no-restricted-static-attribute'           : 'off',
-    'vue/no-restricted-syntax'                     : defaultConfig.rules['no-restricted-syntax'],
+    'vue/no-restricted-syntax'                     : noRestrictedSyntax,
     'vue/no-restricted-v-bind'                     : 'off',
     'vue/no-setup-props-destructure'               : 'error',
     'vue/no-shared-component-data'                 : 'warn',
     'vue/no-side-effects-in-computed-properties'   : 'warn',
     'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
-    'vue/no-sparse-arrays'                         : defaultConfig.rules['no-sparse-arrays'],
+    'vue/no-sparse-arrays'                         : noSparseArrays,
     'vue/no-static-inline-styles'                  : 'warn',
     'vue/no-template-key'                          : 'error',
     'vue/no-template-shadow'                       : 'error',
@@ -220,14 +221,14 @@ const vue2Config: ESLint.ConfigData = {
     'vue/no-v-model-argument'                      : 'off',
     'vue/no-v-text'                                : 'off',
     'vue/no-watch-after-await'                     : 'error',
-    'vue/object-curly-newline'                     : defaultConfig.rules['object-curly-newline'],
-    'vue/object-curly-spacing'                     : defaultConfig.rules['object-curly-spacing'],
-    'vue/object-property-newline'                  : defaultConfig.rules['object-property-newline'],
+    'vue/object-curly-newline'                     : objectCurlyNewline,
+    'vue/object-curly-spacing'                     : objectCurlySpacing,
+    'vue/object-property-newline'                  : objectPropertyNewline,
     'vue/one-component-per-file'                   : 'error',
-    'vue/operator-linebreak'                       : defaultConfig.rules['operator-linebreak'],
+    'vue/operator-linebreak'                       : operatorLinebreak,
     'vue/order-in-components'                      : 'warn',
     'vue/padding-line-between-blocks'              : 'warn',
-    'vue/prefer-template'                          : es6Config.rules['prefer-template'],
+    'vue/prefer-template'                          : preferTemplate,
     'vue/prop-name-casing'                         : 'warn',
     'vue/require-component-is'                     : 'error',
     'vue/require-default-prop'                     : 'warn',
@@ -249,11 +250,11 @@ const vue2Config: ESLint.ConfigData = {
     'vue/script-setup-uses-vars'                   : 'warn',
     'vue/singleline-html-element-content-newline'  : 'warn',
     'vue/sort-keys'                                : 'off',
-    'vue/space-in-parens'                          : defaultConfig.rules['space-in-parens'],
-    'vue/space-infix-ops'                          : defaultConfig.rules['space-infix-ops'],
-    'vue/space-unary-ops'                          : defaultConfig.rules['space-unary-ops'],
+    'vue/space-in-parens'                          : spaceInParens,
+    'vue/space-infix-ops'                          : spaceInfixOps,
+    'vue/space-unary-ops'                          : spaceUnaryOps,
     'vue/static-class-names-order'                 : 'warn',
-    'vue/template-curly-spacing'                   : es6Config.rules['template-curly-spacing'],
+    'vue/template-curly-spacing'                   : templateCurlySpacing,
     'vue/this-in-template'                         : 'error',
     'vue/use-v-on-exact'                           : 'warn',
     'vue/v-bind-style'                             : 'warn',
@@ -289,5 +290,3 @@ const vue2Config: ESLint.ConfigData = {
     'vue/valid-v-text'          : 'error',
   },
 };
-
-export default vue2Config;

@@ -1,19 +1,32 @@
-import {ESLint, Linter} from 'eslint';
-import defaultConfig from '@myparcel-eslint/eslint-config';
-import es6Config from '@myparcel-eslint/eslint-config-es6';
-
-import RuleEntry = Linter.RuleEntry;
+import {braceStyle,
+  commaDangle,
+  commaSpacing,
+  funcCallSpacing,
+  indent,
+  noArrayConstructor,
+  noEmptyFunction,
+  noExtraParens,
+  noExtraSemi,
+  noImpliedEval,
+  noThrowLiteral,
+  noUnusedExpressions,
+  noUnusedVars,
+  noUseBeforeDefine,
+  quotes,
+  semi} from '@myparcel-eslint/eslint-config';
+import {noMagicNumbers, noUselessConstructor, requireAwait} from '@myparcel-eslint/eslint-config-es6';
+import {Linter} from 'eslint';
 
 /**
  * Overridden rules from other plugins or presets.
  */
-const overrides: Record<string, RuleEntry> = {
+const overrides: Linter.RulesRecord = {
   'brace-style'                    : 'off',
-  camelcase                        : 'off',
+  'camelcase'                      : 'off',
   'comma-dangle'                   : 'off',
   'comma-spacing'                  : 'off',
   'func-call-spacing'              : 'off',
-  indent                           : 'off',
+  'indent'                         : 'off',
   'no-array-constructor'           : 'off',
   'no-dupe-class-members'          : 'off',
   'no-empty-function'              : 'off',
@@ -28,27 +41,29 @@ const overrides: Record<string, RuleEntry> = {
   'no-use-before-define'           : 'off',
   'no-useless-constructor'         : 'off',
   'padding-line-between-statements': 'off',
-  quotes                           : 'off',
+  'quotes'                         : 'off',
   'require-await'                  : 'off',
-  semi                             : 'off',
+  'semi'                           : 'off',
   'space-before-function-paren'    : 'off',
 };
 
-const typescriptConfig: ESLint.ConfigData = {
-  extends: [
-    require.resolve('@myparcel-eslint/eslint-config-esnext'),
+export const parserOptions: Linter.ParserOptions | undefined = {
+  'project'        : 'tsconfig.json',
+  'tsconfigRootDir': '.',
+};
+
+export const config: Linter.Config = {
+  'extends': [
+    '@myparcel-eslint/eslint-config-esnext',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
-  parser       : '@typescript-eslint/parser',
-  parserOptions: {
-    project        : 'tsconfig.json',
-    tsconfigRootDir: '.',
-  },
-  plugins: [
+  'parser' : '@typescript-eslint/parser',
+  parserOptions,
+  'plugins': [
     '@typescript-eslint',
   ],
-  rules: {
+  'rules': {
     ...overrides,
     '@typescript-eslint/adjacent-overload-signatures'   : 'warn',
     '@typescript-eslint/array-type'                     : 'warn',
@@ -56,10 +71,10 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/ban-ts-comment'                 : 'warn',
     '@typescript-eslint/ban-tslint-comment'             : 'off',
     '@typescript-eslint/ban-types'                      : 'warn',
-    '@typescript-eslint/brace-style'                    : defaultConfig.rules['brace-style'],
+    '@typescript-eslint/brace-style'                    : braceStyle,
     '@typescript-eslint/class-literal-property-style'   : 'off',
-    '@typescript-eslint/comma-dangle'                   : defaultConfig.rules['comma-dangle'],
-    '@typescript-eslint/comma-spacing'                  : defaultConfig.rules['comma-spacing'],
+    '@typescript-eslint/comma-dangle'                   : commaDangle,
+    '@typescript-eslint/comma-spacing'                  : commaSpacing,
     '@typescript-eslint/consistent-indexed-object-style': 'warn',
     '@typescript-eslint/consistent-type-assertions'     : 'warn',
     '@typescript-eslint/consistent-type-definitions'    : 'off',
@@ -70,8 +85,8 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/explicit-function-return-type'  : 'warn',
     '@typescript-eslint/explicit-member-accessibility'  : 'warn',
     '@typescript-eslint/explicit-module-boundary-types' : 'warn',
-    '@typescript-eslint/func-call-spacing'              : defaultConfig.rules['func-call-spacing'],
-    '@typescript-eslint/indent'                         : defaultConfig.rules.indent,
+    '@typescript-eslint/func-call-spacing'              : funcCallSpacing,
+    '@typescript-eslint/indent'                         : indent,
     '@typescript-eslint/init-declarations'              : 'off',
     '@typescript-eslint/keyword-spacing'                : 'off',
     '@typescript-eslint/lines-between-class-members'    : 'off',
@@ -79,7 +94,7 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/member-ordering'                : [
       'warn',
       {
-        default: [
+        'default': [
           'public-field',
           'protected-field',
           'private-field',
@@ -95,103 +110,39 @@ const typescriptConfig: ESLint.ConfigData = {
         ],
       },
     ],
-    '@typescript-eslint/padding-line-between-statements': [
-      'warn',
-      {
-        blankLine: 'always',
-        prev     : 'export',
-        next     : '*',
-      },
-      {
-        blankLine: 'always',
-        prev     : 'export',
-        next     : 'export',
-      },
-      {
-        blankLine: 'always',
-        prev     : 'import',
-        next     : '*',
-      },
-      {
-        blankLine: 'never',
-        prev     : 'import',
-        next     : 'import',
-      },
-      {
-        blankLine: 'always',
-        prev     : 'block-like',
-        next     : '*',
-      },
-      {
-        blankLine: 'always',
-        prev     : '*',
-        next     : 'block',
-      },
-      {
-        blankLine: 'always',
-        prev     : 'block',
-        next     : '*',
-      },
-      {
-        blankLine: 'always',
-        prev     : '*',
-        next     : 'if',
-      },
-      {
-        blankLine: 'always',
-        prev     : 'if',
-        next     : '*',
-      },
-      {
-        blankLine: 'always',
-        prev     : '*',
-        next     : [
-          'interface',
-          'type',
-        ],
-      },
-      {
-        blankLine: 'always',
-        prev     : [
-          'interface',
-          'type',
-        ],
-        next: '*',
-      },
-    ],
     '@typescript-eslint/method-signature-style': 'off',
     '@typescript-eslint/naming-convention'     : [
       'warn',
       {
-        selector: 'default',
-        format  : [
+        'selector': 'default',
+        'format'  : [
           'strictCamelCase',
         ],
-        filter: {
-          regex: '^_$',
-          match: false,
+        'filter': {
+          'regex': '^_$',
+          'match': false,
         },
       },
       {
-        selector: 'variable',
-        format  : [
+        'selector': 'variable',
+        'format'  : [
           'strictCamelCase',
           'UPPER_CASE',
         ],
-        filter: {
-          regex: '^_$',
-          match: false,
+        'filter': {
+          'regex': '^_$',
+          'match': false,
         },
       },
       {
-        selector: 'property',
-        format  : [
+        'selector': 'property',
+        'format'  : [
           'camelCase',
           'PascalCase',
         ],
       },
       {
-        selector: [
+        'selector': [
           'classProperty',
           'objectLiteralProperty',
           'typeProperty',
@@ -201,62 +152,62 @@ const typescriptConfig: ESLint.ConfigData = {
           'accessor',
           'enumMember',
         ],
-        format   : null,
-        modifiers: [
+        'format'   : null,
+        'modifiers': [
           'requiresQuotes',
         ],
       },
       {
-        selector: [
+        'selector': [
           'objectLiteralProperty',
         ],
-        format: null,
+        'format': null,
       },
       {
-        selector: 'typeLike',
-        format  : [
+        'selector': 'typeLike',
+        'format'  : [
           'StrictPascalCase',
         ],
       },
       {
-        selector: 'enumMember',
-        format  : [
+        'selector': 'enumMember',
+        'format'  : [
           'UPPER_CASE',
         ],
       },
       {
-        selector : 'property',
-        modifiers: [
+        'selector' : 'property',
+        'modifiers': [
           'private',
         ],
-        format: [
+        'format': [
           'strictCamelCase',
         ],
-        leadingUnderscore: 'allow',
+        'leadingUnderscore': 'allow',
       },
       {
-        selector: 'typeParameter',
-        format  : null,
+        'selector': 'typeParameter',
+        'format'  : null,
       },
     ],
-    '@typescript-eslint/no-array-constructor'           : defaultConfig.rules['no-array-constructor'],
+    '@typescript-eslint/no-array-constructor'           : noArrayConstructor,
     '@typescript-eslint/no-base-to-string'              : 'off',
     '@typescript-eslint/no-confusing-non-null-assertion': 'off',
     '@typescript-eslint/no-confusing-void-expression'   : 'off',
     '@typescript-eslint/no-dupe-class-members'          : 'off',
     '@typescript-eslint/no-duplicate-imports'           : 'off',
     '@typescript-eslint/no-dynamic-delete'              : 'warn',
-    '@typescript-eslint/no-empty-function'              : defaultConfig.rules['no-empty-function'],
+    '@typescript-eslint/no-empty-function'              : noEmptyFunction,
     '@typescript-eslint/no-empty-interface'             : 'warn',
     '@typescript-eslint/no-explicit-any'                : 'warn',
     '@typescript-eslint/no-extra-non-null-assertion'    : 'warn',
-    '@typescript-eslint/no-extra-parens'                : defaultConfig.rules['no-extra-parens'],
-    '@typescript-eslint/no-extra-semi'                  : defaultConfig.rules['no-extra-semi'],
+    '@typescript-eslint/no-extra-parens'                : noExtraParens,
+    '@typescript-eslint/no-extra-semi'                  : noExtraSemi,
     '@typescript-eslint/no-extraneous-class'            : 'warn',
     '@typescript-eslint/no-floating-promises'           : 'warn',
     '@typescript-eslint/no-for-in-array'                : 'warn',
     '@typescript-eslint/no-implicit-any-catch'          : 'off',
-    '@typescript-eslint/no-implied-eval'                : defaultConfig.rules['no-implied-eval'],
+    '@typescript-eslint/no-implied-eval'                : noImpliedEval,
     '@typescript-eslint/no-inferrable-types'            : 'warn',
     '@typescript-eslint/no-invalid-this'                : 'off',
     '@typescript-eslint/no-invalid-void-type'           : 'off',
@@ -265,10 +216,11 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/no-magic-numbers'               : [
       'warn',
       {
-        ...defaultConfig.rules['no-magic-numbers'][1],
-        ignoreEnums                  : true,
-        ignoreNumericLiteralTypes    : true,
-        ignoreReadonlyClassProperties: true,
+        ...noMagicNumbers[1] ?? [
+        ],
+        'ignoreEnums'                  : true,
+        'ignoreNumericLiteralTypes'    : true,
+        'ignoreReadonlyClassProperties': true,
       },
     ],
     '@typescript-eslint/no-meaningless-void-operator'           : 'off',
@@ -284,7 +236,7 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/no-restricted-imports'                  : 'off',
     '@typescript-eslint/no-shadow'                              : 'off',
     '@typescript-eslint/no-this-alias'                          : 'warn',
-    '@typescript-eslint/no-throw-literal'                       : defaultConfig.rules['no-throw-literal'],
+    '@typescript-eslint/no-throw-literal'                       : noThrowLiteral,
     '@typescript-eslint/no-type-alias'                          : 'off',
     '@typescript-eslint/no-unnecessary-boolean-literal-compare' : 'off',
     '@typescript-eslint/no-unnecessary-condition'               : 'off',
@@ -297,15 +249,77 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/no-unsafe-call'                         : 'off',
     '@typescript-eslint/no-unsafe-member-access'                : 'off',
     '@typescript-eslint/no-unsafe-return'                       : 'off',
-
-    // New rules, to be implemented.
-    '@typescript-eslint/no-unused-expressions'               : defaultConfig.rules['no-unused-expressions'],
-    '@typescript-eslint/no-unused-vars'                      : defaultConfig.rules['no-unused-vars'],
-    '@typescript-eslint/no-use-before-define'                : defaultConfig.rules['no-use-before-define'],
-    '@typescript-eslint/no-useless-constructor'              : es6Config.rules['no-useless-constructor'],
-    '@typescript-eslint/no-var-requires'                     : 'warn',
-    '@typescript-eslint/non-nullable-type-assertion-style'   : 'off',
-    '@typescript-eslint/object-curly-spacing'                : 'off',
+    '@typescript-eslint/no-unused-expressions'                  : noUnusedExpressions,
+    '@typescript-eslint/no-unused-vars'                         : noUnusedVars,
+    '@typescript-eslint/no-use-before-define'                   : noUseBeforeDefine,
+    '@typescript-eslint/no-useless-constructor'                 : noUselessConstructor,
+    '@typescript-eslint/no-var-requires'                        : 'warn',
+    '@typescript-eslint/non-nullable-type-assertion-style'      : 'off',
+    '@typescript-eslint/object-curly-spacing'                   : 'off',
+    '@typescript-eslint/padding-line-between-statements'        : [
+      'warn',
+      {
+        'blankLine': 'always',
+        'prev'     : 'export',
+        'next'     : '*',
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : 'export',
+        'next'     : 'export',
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : 'import',
+        'next'     : '*',
+      },
+      {
+        'blankLine': 'never',
+        'prev'     : 'import',
+        'next'     : 'import',
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : 'block-like',
+        'next'     : '*',
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : '*',
+        'next'     : 'block',
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : 'block',
+        'next'     : '*',
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : '*',
+        'next'     : 'if',
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : 'if',
+        'next'     : '*',
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : '*',
+        'next'     : [
+          'interface',
+          'type',
+        ],
+      },
+      {
+        'blankLine': 'always',
+        'prev'     : [
+          'interface',
+          'type',
+        ],
+        'next': '*',
+      },
+    ],
     '@typescript-eslint/prefer-as-const'                     : 'off',
     '@typescript-eslint/prefer-enum-initializers'            : 'off',
     '@typescript-eslint/prefer-for-of'                       : 'warn',
@@ -323,20 +337,20 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/prefer-string-starts-ends-with'      : 'warn',
     '@typescript-eslint/prefer-ts-expect-error'              : 'off',
     '@typescript-eslint/promise-function-async'              : 'off',
-    '@typescript-eslint/quotes'                              : defaultConfig.rules.quotes,
+    '@typescript-eslint/quotes'                              : quotes,
     '@typescript-eslint/require-array-sort-compare'          : 'off',
-    '@typescript-eslint/require-await'                       : es6Config.rules['require-await'],
+    '@typescript-eslint/require-await'                       : requireAwait,
     '@typescript-eslint/restrict-plus-operands'              : 'warn',
     '@typescript-eslint/restrict-template-expressions'       : 'off',
     '@typescript-eslint/return-await'                        : 'warn',
-    '@typescript-eslint/semi'                                : defaultConfig.rules.semi,
+    '@typescript-eslint/semi'                                : semi,
     '@typescript-eslint/sort-type-union-intersection-members': 'off',
     '@typescript-eslint/space-before-function-paren'         : [
       'warn',
       {
-        anonymous : 'never',
-        named     : 'never',
-        asyncArrow: 'always',
+        'anonymous' : 'never',
+        'named'     : 'never',
+        'asyncArrow': 'always',
       },
     ],
     '@typescript-eslint/space-infix-ops'            : 'off',
@@ -347,19 +361,17 @@ const typescriptConfig: ESLint.ConfigData = {
     '@typescript-eslint/typedef'                    : [
       'warn',
       {
-        arrowParameter                   : false,
-        objectDestructuring              : false,
-        variableDeclarationIgnoreFunction: true,
+        'arrowParameter'                   : false,
+        'objectDestructuring'              : false,
+        'variableDeclarationIgnoreFunction': true,
       },
     ],
     '@typescript-eslint/unbound-method'    : 'off',
     '@typescript-eslint/unified-signatures': 'warn',
   },
-  settings: {
-    jsdoc: {
-      mode: 'typescript',
+  'settings': {
+    'jsdoc': {
+      'mode': 'typescript',
     },
   },
 };
-
-export default typescriptConfig;

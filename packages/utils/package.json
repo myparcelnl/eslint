@@ -5,13 +5,13 @@
   "license": "MIT",
   "type": "module",
   "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "module": "lib/module.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup-node src/index.ts --format cjs,esm --dts",
     "clean": "rimraf dist"
   },
   "devDependencies": {

@@ -20,7 +20,7 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'packages/eslint-{{ kebabCase type }}-{{ kebabCase name }}/src/index.ts',
+        path: 'packages/eslint-{{ kebabCase type }}-{{ kebabCase name }}/src/config.ts',
         templateFile: 'plop-templates/index.ts.hbs',
       },
       {

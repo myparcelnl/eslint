@@ -1,27 +1,29 @@
-import {ESLint} from 'eslint';
+import {ESLint, Linter} from 'eslint';
 
-const vue3Config: ESLint.ConfigData = {
-  plugins: [
+export const parserOptions: Linter.ParserOptions = {
+  'extraFileExtensions': [
+    '.vue',
+  ],
+  'ecmaFeatures': {
+    'jsx': true,
+  },
+};
+
+export const config: ESLint.ConfigData = {
+  'plugins': [
     'vue',
   ],
-  parserOptions: {
-    extraFileExtensions: [
-      '.vue',
-    ],
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  extends: [
-    require.resolve('@myparcel-eslint/eslint-config-vue2'),
+  parserOptions,
+  'extends': [
+    '@myparcel-eslint/eslint-config-vue2',
     'plugin:vue/vue3-recommended',
   ],
-  rules: {
+  'rules': {
     'vue/block-lang': [
       'warn',
       {
-        script: {
-          lang: 'ts',
+        'script': {
+          'lang': 'ts',
         },
       },
     ],
@@ -34,10 +36,8 @@ const vue3Config: ESLint.ConfigData = {
       'warn',
       'never',
       {
-        autofix: true,
+        'autofix': true,
       },
     ],
   },
 };
-
-export default vue3Config;

@@ -6,37 +6,42 @@
   "repository": "github:myparcelnl/eslint",
   "license": "MIT",
   "author": "Edie Lemoine <edie@myparcel.nl>",
-  "main": "index.js",
+  "module": "lib/module.mjs",
   "workspaces": [
     "packages/**"
   ],
   "scripts": {
     "build": "nx run-many --target=build --parallel 10",
     "clean": "nx run-many --target=clean --parallel 10",
-    "prepare": "is-ci || husky install"
+    "prepare": "is-ci || husky install",
+    "ws:build": "cd $0 && sh $NX_WORKSPACE_ROOT/scripts/build.sh",
+    "ws:clean": "cd $0 && rimraf dist index.js",
+    "ws:dts": "cd $0 && ts-node src/index.ts --dts-only"
   },
   "lint-staged": {
-    "*.{ts}": "eslint --fix",
+    "*.{json,md}": "prettier --write",
+    "*.ts": "eslint --fix",
     "package.json": "npx sort-package-json"
   },
   "devDependencies": {
-    "@monodeploy/plugin-github": "^0.6.2",
+    "@monodeploy/plugin-github": "^0.8.0",
     "@myparcel-eslint/eslint-config-es6": "workspace:*",
     "@myparcel-eslint/eslint-config-esnext": "workspace:*",
     "@myparcel-eslint/eslint-config-typescript": "workspace:*",
     "@types/eslint": "^8.4.10",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "eslint": "*",
-    "husky": "^8.0.2",
+    "husky": "^8.0.3",
     "is-ci": "^3.0.1",
-    "lint-staged": "^13.0.3",
-    "monodeploy": "^3.3.1",
-    "nx": "^15.0.13",
+    "lint-staged": "^13.1.0",
+    "monodeploy": "^3.6.0",
+    "nx": "^15.4.4",
     "plop": "^3.1.1",
+    "rimraf": "^3.0.2",
     "tsup": "^6.5.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.4"
   },
   "packageManager": "yarn@3.2.4"
 }

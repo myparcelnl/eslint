@@ -1,11 +1,11 @@
 import {ESLint} from 'eslint';
 import {overridePluginRule} from '@myparcel-eslint/utils';
 
-const tailwindcssConfig: ESLint.ConfigData = {
-  plugins: [
+export const config: ESLint.ConfigData = {
+  'plugins': [
     'tailwindcss',
   ],
-  rules: {
+  'rules': {
     ...overridePluginRule('vue/static-class-names-order'),
     'tailwindcss/classnames-order'                  : 'warn',
     'tailwindcss/enforces-negative-arbitrary-values': 'warn',
@@ -16,5 +16,3 @@ const tailwindcssConfig: ESLint.ConfigData = {
     'tailwindcss/no-custom-classname'               : 'warn',
   },
 };
-
-export default tailwindcssConfig;

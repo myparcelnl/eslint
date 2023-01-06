@@ -1,3 +1,5 @@
-import config from '@myparcel-eslint/eslint-config-vue3';
+import {Linter} from 'eslint';
 
-export default config;
+export const config: Linter.Config = {
+  'extends': '@myparcel-eslint/eslint-config-vue3',
+};
