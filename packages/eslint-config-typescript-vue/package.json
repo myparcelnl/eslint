@@ -21,11 +21,13 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.0.0-alpha.8",
-    "@myparcel-eslint/eslint-config-vue": "workspace:^1.0.0-alpha.7",
+    "@myparcel-eslint/eslint-config-typescript": "workspace:*",
+    "@myparcel-eslint/eslint-config-vue": "workspace:*",
     "@vue/eslint-config-typescript": "*",
-    "eslint": "*",
     "eslint-plugin-vue": "*"
+  },
+  "peerDependencies": {
+    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"

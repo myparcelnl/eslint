@@ -20,9 +20,11 @@
   },
   "dependencies": {
     "@myparcel/prettier-config": "*",
-    "eslint": "*",
     "eslint-config-prettier": "*",
-    "eslint-plugin-prettier": "*",
+    "eslint-plugin-prettier": "*"
+  },
+  "peerDependencies": {
+    "eslint": "*",
     "prettier": "*"
   },
   "publishConfig": {

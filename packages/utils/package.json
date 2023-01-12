@@ -15,6 +15,9 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
+    "eslint": "^8"
+  },
+  "peerDependencies": {
     "eslint": "*"
   },
   "publishConfig": {

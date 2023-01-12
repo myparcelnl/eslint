@@ -19,10 +19,12 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-es6": "workspace:^1.0.0-alpha.7",
-    "@myparcel-eslint/eslint-config-esnext": "workspace:^1.0.0-alpha.7",
+    "@myparcel-eslint/eslint-config-es6": "workspace:*",
+    "@myparcel-eslint/eslint-config-esnext": "workspace:*",
     "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*",
+    "@typescript-eslint/parser": "*"
+  },
+  "peerDependencies": {
     "eslint": "*"
   },
   "publishConfig": {

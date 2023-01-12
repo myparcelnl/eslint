@@ -20,8 +20,10 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.0.0-alpha.4",
-    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.0.0-alpha.8",
+    "@myparcel-eslint/eslint-config-prettier": "workspace:*",
+    "@myparcel-eslint/eslint-config-typescript": "workspace:*"
+  },
+  "peerDependencies": {
     "eslint": "*",
     "prettier": "*"
   },

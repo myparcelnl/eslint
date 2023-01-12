@@ -20,11 +20,13 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-esnext": "workspace:^1.0.0-alpha.7",
-    "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.3",
+    "@myparcel-eslint/eslint-config-esnext": "workspace:*",
+    "@myparcel-eslint/utils": "workspace:*",
     "@rushstack/eslint-patch": "^1.2.0",
-    "eslint": "*",
     "eslint-plugin-vue": "*"
+  },
+  "peerDependencies": {
+    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"

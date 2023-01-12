@@ -20,9 +20,11 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-vue3": "workspace:^1.0.0-alpha.7",
-    "eslint": "*",
+    "@myparcel-eslint/eslint-config-vue3": "workspace:*",
     "eslint-plugin-vue": "*"
+  },
+  "peerDependencies": {
+    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"

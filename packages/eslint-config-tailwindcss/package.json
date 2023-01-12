@@ -19,9 +19,11 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/utils": "workspace:^1.0.0-alpha.3",
-    "eslint": "*",
+    "@myparcel-eslint/utils": "workspace:*",
     "eslint-plugin-tailwindcss": "*"
+  },
+  "peerDependencies": {
+    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"

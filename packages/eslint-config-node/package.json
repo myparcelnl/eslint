@@ -19,7 +19,9 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config": "workspace:^1.0.0-alpha.5",
+    "@myparcel-eslint/eslint-config": "workspace:*"
+  },
+  "peerDependencies": {
     "eslint": "*"
   },
   "publishConfig": {

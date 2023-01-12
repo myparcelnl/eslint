@@ -19,7 +19,7 @@
     "ws:dts": "cd $0 && ts-node src/index.ts --dts-only"
   },
   "lint-staged": {
-    "*.{json,md}": "prettier --write",
+    "*.md": "prettier --write",
     "*.ts": "eslint --fix",
     "package.json": "npx sort-package-json"
   },
@@ -32,7 +32,7 @@
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
     "conventional-changelog-conventionalcommits": "^5.0.0",
-    "eslint": "*",
+    "eslint": "^8.31.0",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
     "lint-staged": "^13.1.0",
