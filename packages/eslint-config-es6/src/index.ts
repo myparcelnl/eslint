@@ -61,8 +61,8 @@ export const config: Linter.Config = {
     'no-useless-constructor'   : noUselessConstructor,
     'no-useless-rename'        : 'warn',
     'no-var'                   : 'warn',
-    'object-shorthand'         : 'off',
-    'prefer-arrow-callback'    : 'off',
+    'object-shorthand'         : 'warn',
+    'prefer-arrow-callback'    : 'warn',
     'prefer-const'             : 'warn',
     'prefer-destructuring'     : [
       'warn',
