@@ -1,0 +1,35 @@
+{
+  "name": "@myparcel-eslint/eslint-config-prettier-vue2",
+  "version": "1.0.0-alpha.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "prettier",
+    "vue",
+    "vue3"
+  ],
+  "repository": "github:myparcelnl/eslint",
+  "license": "MIT",
+  "module": "lib/module.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "run ws:build \"$(pwd)\"",
+    "clean": "run ws:clean \"$(pwd)\""
+  },
+  "dependencies": {
+    "@myparcel-eslint/eslint-config-prettier": "workspace:*",
+    "@myparcel-eslint/eslint-config-vue2": "workspace:*",
+    "@vue/eslint-config-prettier": "*"
+  },
+  "peerDependencies": {
+    "eslint": "*",
+    "prettier": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

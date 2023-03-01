@@ -512,6 +512,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@myparcel-eslint/eslint-config-prettier-vue2@workspace:packages/eslint-config-prettier-vue2":
+  version: 0.0.0-use.local
+  resolution: "@myparcel-eslint/eslint-config-prettier-vue2@workspace:packages/eslint-config-prettier-vue2"
+  dependencies:
+    "@myparcel-eslint/eslint-config-prettier": "workspace:*"
+    "@myparcel-eslint/eslint-config-vue2": "workspace:*"
+    "@vue/eslint-config-prettier": "*"
+  peerDependencies:
+    eslint: "*"
+    prettier: "*"
+  languageName: unknown
+  linkType: soft
+
 "@myparcel-eslint/eslint-config-prettier-vue@workspace:packages/eslint-config-prettier-vue":
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config-prettier-vue@workspace:packages/eslint-config-prettier-vue"
