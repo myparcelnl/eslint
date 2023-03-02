@@ -1,4 +1,4 @@
-name: 'Publish new release 🚀'
+name: "Publish new release 🚀"
 
 on:
   push:
@@ -17,20 +17,28 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+          token: ${{ secrets.GH_REPO_TOKEN }}
 
-      - uses: myparcelnl/actions/yarn2-install@v2
-
-      - name: 'Build packages'
-        run: |
-          yarn nx run-many \
-            --target=build \
-            --output-style static
-
+      # TODO: Switch to v3 with app credentials when GitHub apps are allowed to bypass status checks. https://github.com/orgs/community/discussions/43460
       - uses: myparcelnl/actions/setup-git-credentials@v2
         with:
           token: ${{ secrets.GH_REPO_TOKEN }}
 
-      - name: 'Run monodeploy'
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_REPO_TOKEN }}
+
+      - uses: myparcelnl/actions/yarn-install@v3
+
+      - name: "Build packages"
+        run: |
+          yarn nx run-many \
+            --parallel \
+            --target=build \
+            --output-style static
+
+      - name: "Run monodeploy"
         run: |
           yarn monodeploy \
             --config-file monodeploy.config.cjs \
