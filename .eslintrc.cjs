@@ -10,8 +10,9 @@ module.exports = {
   overrides: [
     {
       files: [
-        './*.js',
-        './packages/*/*.js',
+        './**/*.js',
+        './**/*.cjs',
+        './**/*.mjs',
       ],
       extends: [
         '@myparcel-eslint/eslint-config-node',
@@ -39,18 +40,18 @@ module.exports = {
         'key-spacing': [
           'error',
           {
-            'beforeColon': false,
-            'afterColon': true,
-            'align': 'colon',
+            beforeColon: false,
+            afterColon: true,
+            align: 'colon',
           },
         ],
         'max-len': 'off',
         'object-curly-newline': [
           'error',
           {
-            'ObjectExpression': 'always',
-            'ObjectPattern': 'never',
-            'ImportDeclaration': 'never',
+            ObjectExpression: 'always',
+            ObjectPattern: 'never',
+            ImportDeclaration: 'never',
           },
         ],
         'object-property-newline': [
@@ -60,7 +61,7 @@ module.exports = {
           'error',
           'always',
         ],
-        'quotes': [
+        quotes: [
           'error',
           'single',
         ],
