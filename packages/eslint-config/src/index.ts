@@ -1,8 +1,27 @@
-import {Linter} from 'eslint';
+import {ESLint, Linter} from 'eslint';
+
+export const arrayBracketNewline: Linter.RuleEntry = [
+  'warn',
+  'consistent',
+];
+
+export const arrayBracketSpacing: Linter.RuleEntry = [
+  'warn',
+  'never',
+];
+
+export const blockSpacing: Linter.RuleEntry = 'warn';
 
 export const braceStyle: Linter.RuleEntry = [
   'warn',
   '1tbs',
+];
+
+export const camelcase: Linter.RuleEntry = [
+  'warn',
+  {
+    'ignoreDestructuring': true, 'ignoreImports': true, 'properties': 'never',
+  },
 ];
 
 export const commaDangle: Linter.RuleEntry = [
@@ -13,9 +32,22 @@ export const commaDangle: Linter.RuleEntry = [
 export const commaSpacing: Linter.RuleEntry = [
   'warn',
   {
-    'before': false,
-    'after' : true,
+    'before': false, 'after': true,
   },
+];
+
+export const commaStyle: Linter.RuleEntry = 'warn';
+
+export const dotLocation: Linter.RuleEntry = [
+  'warn',
+  'property',
+];
+
+export const dotNotation: Linter.RuleEntry = 'warn';
+
+export const eqeqeq: Linter.RuleEntry = [
+  'warn',
+  'smart',
 ];
 
 export const funcCallSpacing: Linter.RuleEntry = [
@@ -31,15 +63,53 @@ export const indent: Linter.RuleEntry = [
   },
 ];
 
+export const keySpacing: Linter.RuleEntry = 'warn';
+
+export const keywordSpacing: Linter.RuleEntry = [
+  'warn',
+  {
+    'before': true, 'after': true,
+  },
+];
+
+export const maxLen: Linter.RuleEntry = [
+  'warn',
+  120,
+];
+
 export const noArrayConstructor: Linter.RuleEntry = 'warn';
 
 export const noEmptyFunction: Linter.RuleEntry = 'warn';
+
+export const noEmptyPattern: Linter.RuleEntry = 'warn';
 
 export const noExtraParens: Linter.RuleEntry = 'warn';
 
 export const noExtraSemi: Linter.RuleEntry = 'warn';
 
 export const noImpliedEval: Linter.RuleEntry = 'warn';
+
+export const noIrregularWhitespace: Linter.RuleEntry = 'warn';
+
+export const noLossOfPrecision: Linter.RuleEntry = 'warn';
+
+export const noMisleadingCharacterClass: Linter.RuleEntry = 'off';
+
+export const noMixedOperators: Linter.RuleEntry = 'warn';
+
+export const noMixedRequires: Linter.RuleEntry = 'off';
+
+export const noMixedSpacesAndTabs: Linter.RuleEntry = 'warn';
+
+export const noMultiAssign: Linter.RuleEntry = 'warn';
+
+export const noMultiSpaces: Linter.RuleEntry = 'warn';
+
+export const noMultiStr: Linter.RuleEntry = 'off';
+
+export const noRestrictedSyntax: Linter.RuleEntry = 'warn';
+
+export const noSparseArrays: Linter.RuleEntry = 'off';
 
 export const noThrowLiteral: Linter.RuleEntry = 'off';
 
@@ -54,6 +124,39 @@ export const noUnusedVars: Linter.RuleEntry = [
 
 export const noUseBeforeDefine: Linter.RuleEntry = 'off';
 
+export const objectCurlyNewline: Linter.RuleEntry = [
+  'warn',
+  {
+    'ObjectExpression': {
+      'consistent': true,
+    },
+    'ObjectPattern': {
+      'consistent': true,
+    },
+    'ImportDeclaration': {
+      'consistent': true,
+    },
+    'ExportDeclaration': 'never',
+  },
+];
+
+export const objectCurlySpacing: Linter.RuleEntry = [
+  'warn',
+  'never',
+];
+
+export const objectPropertyNewline: Linter.RuleEntry = [
+  'warn',
+  {
+    'allowAllPropertiesOnSameLine': true,
+  },
+];
+
+export const operatorLinebreak: Linter.RuleEntry = [
+  'warn',
+  'before',
+];
+
 export const quotes: Linter.RuleEntry = [
   'warn',
   'single',
@@ -64,42 +167,70 @@ export const semi: Linter.RuleEntry = [
   'always',
 ];
 
-export const config = {
+export const sortKeys: Linter.RuleEntry = 'off';
+
+export const sortVars: Linter.RuleEntry = 'off';
+
+export const spaceBeforeBlocks: Linter.RuleEntry = [
+  'warn',
+  'always',
+];
+
+export const spaceBeforeFunctionParen: Linter.RuleEntry = [
+  'warn',
+  'never',
+];
+
+export const spaceInParens: Linter.RuleEntry = [
+  'warn',
+  'never',
+];
+
+export const spaceInfixOps: Linter.RuleEntry = 'warn';
+
+export const spaceUnaryOps: Linter.RuleEntry = [
+  'warn',
+  {
+    'words': true, 'nonwords': false,
+  },
+];
+
+export const spacedComment: Linter.RuleEntry = [
+  'warn',
+  'always',
+  {
+    'block': {
+      'balanced': true,
+    },
+    'markers': [
+      '/',
+    ],
+  },
+];
+
+export const config: ESLint.ConfigData = {
   'env': {
     'browser': true,
   },
   'rules': {
     'accessor-pairs'       : 'off',
-    'array-bracket-newline': [
-      'warn',
-      'consistent',
-    ],
-    'array-bracket-spacing': [
-      'warn',
-      'never',
-    ],
+    'array-bracket-newline': arrayBracketNewline,
+    'array-bracket-spacing': arrayBracketSpacing,
     'array-callback-return': 'warn',
     'array-element-newline': [
       'warn',
       'consistent',
     ],
-    'block-scoped-var': 'warn',
-    'block-spacing'   : 'warn',
-    'brace-style'     : braceStyle,
-    'callback-return' : 'off',
-    'camelcase'       : [
-      'warn',
-      {
-        'ignoreDestructuring': true,
-        'ignoreImports'      : true,
-        'properties'         : 'never',
-      },
-    ],
+    'block-scoped-var'      : 'warn',
+    'block-spacing'         : blockSpacing,
+    'brace-style'           : braceStyle,
+    'callback-return'       : 'off',
+    camelcase,
     'capitalized-comments'  : 'off',
     'class-methods-use-this': 'warn',
     'comma-dangle'          : commaDangle,
     'comma-spacing'         : commaSpacing,
-    'comma-style'           : 'warn',
+    'comma-style'           : commaStyle,
     'complexity'            : [
       'warn',
       {
@@ -119,16 +250,10 @@ export const config = {
     'default-case'      : 'off',
     'default-case-last' : 'warn',
     'default-param-last': 'warn',
-    'dot-location'      : [
-      'warn',
-      'property',
-    ],
-    'dot-notation': 'warn',
-    'eol-last'    : 'warn',
-    'eqeqeq'      : [
-      'warn',
-      'smart',
-    ],
+    'dot-location'      : dotLocation,
+    'dot-notation'      : dotNotation,
+    'eol-last'          : 'warn',
+    eqeqeq,
     'for-direction'     : 'warn',
     'func-call-spacing' : funcCallSpacing,
     'func-name-matching': 'off',
@@ -176,18 +301,12 @@ export const config = {
       'warn',
       'beside',
     ],
-    'indent'           : indent,
-    'indent-legacy'    : 'off',
-    'init-declarations': 'off',
-    'jsx-quotes'       : 'off',
-    'key-spacing'      : 'warn',
-    'keyword-spacing'  : [
-      'warn',
-      {
-        'before': true,
-        'after' : true,
-      },
-    ],
+    indent,
+    'indent-legacy'        : 'off',
+    'init-declarations'    : 'off',
+    'jsx-quotes'           : 'off',
+    'key-spacing'          : keySpacing,
+    'keyword-spacing'      : keywordSpacing,
     'line-comment-position': [
       'warn',
       {
@@ -229,10 +348,7 @@ export const config = {
         'max': 3,
       },
     ],
-    'max-len': [
-      'warn',
-      120,
-    ],
+    'max-len'               : maxLen,
     'max-lines'             : 'off',
     'max-lines-per-function': [
       'warn',
@@ -290,7 +406,7 @@ export const config = {
     'no-empty'                : 'warn',
     'no-empty-character-class': 'warn',
     'no-empty-function'       : noEmptyFunction,
-    'no-empty-pattern'        : 'warn',
+    'no-empty-pattern'        : noEmptyPattern,
     'no-eq-null'              : 'warn',
     'no-eval'                 : 'warn',
     'no-ex-assign'            : 'warn',
@@ -317,14 +433,14 @@ export const config = {
     'no-inner-declarations'  : 'off',
     'no-invalid-regexp'      : 'warn',
     'no-invalid-this'        : 'warn',
-    'no-irregular-whitespace': 'warn',
+    'no-irregular-whitespace': noIrregularWhitespace,
     'no-iterator'            : 'warn',
     'no-label-var'           : 'warn',
     'no-labels'              : 'off',
     'no-lone-blocks'         : 'off',
     'no-lonely-if'           : 'warn',
     'no-loop-func'           : 'off',
-    'no-loss-of-precision'   : 'warn',
+    'no-loss-of-precision'   : noLossOfPrecision,
     'no-magic-numbers'       : [
       'warn',
       {
@@ -338,13 +454,13 @@ export const config = {
         'detectObjects': true,
       },
     ],
-    'no-misleading-character-class': 'off',
-    'no-mixed-operators'           : 'warn',
-    'no-mixed-requires'            : 'off',
-    'no-mixed-spaces-and-tabs'     : 'warn',
-    'no-multi-assign'              : 'warn',
-    'no-multi-spaces'              : 'warn',
-    'no-multi-str'                 : 'off',
+    'no-misleading-character-class': noMisleadingCharacterClass,
+    'no-mixed-operators'           : noMixedOperators,
+    'no-mixed-requires'            : noMixedRequires,
+    'no-mixed-spaces-and-tabs'     : noMixedSpacesAndTabs,
+    'no-multi-assign'              : noMultiAssign,
+    'no-multi-spaces'              : noMultiSpaces,
+    'no-multi-str'                 : noMultiStr,
     'no-multiple-empty-lines'      : [
       'warn',
       {
@@ -380,7 +496,7 @@ export const config = {
     'no-restricted-globals'      : 'warn',
     'no-restricted-modules'      : 'warn',
     'no-restricted-properties'   : 'warn',
-    'no-restricted-syntax'       : 'warn',
+    'no-restricted-syntax'       : noRestrictedSyntax,
     'no-return-assign'           : 'warn',
     'no-script-url'              : 'off',
     'no-self-assign'             : 'off',
@@ -390,7 +506,7 @@ export const config = {
     'no-shadow'                  : 'off',
     'no-shadow-restricted-names' : 'off',
     'no-spaced-func'             : 'off',
-    'no-sparse-arrays'           : 'off',
+    'no-sparse-arrays'           : noSparseArrays,
     'no-sync'                    : 'off',
     'no-tabs'                    : 'warn',
     'no-template-curly-in-string': 'warn',
@@ -430,32 +546,10 @@ export const config = {
     'no-whitespace-before-property'   : 'warn',
     'no-with'                         : 'warn',
     'nonblock-statement-body-position': 'off',
-    'object-curly-newline'            : [
-      'warn',
-      {
-        'ObjectExpression': {
-          'consistent': true,
-        },
-        'ObjectPattern': {
-          'consistent': true,
-        },
-        'ImportDeclaration': {
-          'consistent': true,
-        },
-        'ExportDeclaration': 'never',
-      },
-    ],
-    'object-curly-spacing': [
-      'warn',
-      'never',
-    ],
-    'object-property-newline': [
-      'warn',
-      {
-        'allowAllPropertiesOnSameLine': true,
-      },
-    ],
-    'one-var': [
+    'object-curly-newline'            : objectCurlyNewline,
+    'object-curly-spacing'            : objectCurlySpacing,
+    'object-property-newline'         : objectPropertyNewline,
+    'one-var'                         : [
       'warn',
       'never',
     ],
@@ -464,11 +558,8 @@ export const config = {
       'always',
     ],
     'operator-assignment': 'warn',
-    'operator-linebreak' : [
-      'warn',
-      'before',
-    ],
-    'padded-blocks': [
+    'operator-linebreak' : operatorLinebreak,
+    'padded-blocks'      : [
       'warn',
       {
         'blocks'  : 'never',
@@ -559,63 +650,37 @@ export const config = {
       'warn',
       'as-needed',
     ],
-    'quotes': quotes,
-    'radix' : [
+    quotes,
+    'radix': [
       'warn',
       'as-needed',
     ],
     'require-atomic-updates': 'off',
     'require-unicode-regexp': 'off',
-    'semi'                  : semi,
+    semi,
     'semi-spacing'          : 'warn',
     'semi-style'            : [
       'warn',
       'last',
     ],
-    'sort-keys'          : 'off',
-    'sort-vars'          : 'off',
-    'space-before-blocks': [
-      'warn',
-      'always',
-    ],
-    'space-before-function-paren': [
-      'warn',
-      'never',
-    ],
-    'space-in-parens': [
-      'warn',
-      'never',
-    ],
-    'space-infix-ops': 'warn',
-    'space-unary-ops': [
-      'warn',
-      {
-        'words'   : true,
-        'nonwords': false,
-      },
-    ],
-    'spaced-comment': [
-      'warn',
-      'always',
-      {
-        'block': {
-          'balanced': true,
-        },
-        'markers': [
-          '/',
-        ],
-      },
-    ],
-    'strict'              : 'off',
-    'switch-colon-spacing': 'warn',
-    'template-tag-spacing': 'off',
-    'unicode-bom'         : 'off',
-    'use-isnan'           : 'off',
-    'valid-typeof'        : 'warn',
-    'vars-on-top'         : 'warn',
-    'wrap-iife'           : 'off',
-    'wrap-regex'          : 'warn',
-    'yoda'                : [
+    'sort-keys'                  : sortKeys,
+    'sort-vars'                  : sortVars,
+    'space-before-blocks'        : spaceBeforeBlocks,
+    'space-before-function-paren': spaceBeforeFunctionParen,
+    'space-in-parens'            : spaceInParens,
+    'space-infix-ops'            : spaceInfixOps,
+    'space-unary-ops'            : spaceUnaryOps,
+    'spaced-comment'             : spacedComment,
+    'strict'                     : 'off',
+    'switch-colon-spacing'       : 'warn',
+    'template-tag-spacing'       : 'off',
+    'unicode-bom'                : 'off',
+    'use-isnan'                  : 'off',
+    'valid-typeof'               : 'warn',
+    'vars-on-top'                : 'warn',
+    'wrap-iife'                  : 'off',
+    'wrap-regex'                 : 'warn',
+    'yoda'                       : [
       'warn',
       'never',
     ],
