@@ -20,18 +20,11 @@ jobs:
 
       - uses: myparcelnl/actions/yarn2-install@v2
 
-      - name: 'Handle Nx cache'
-        uses: actions/cache@v3
-        with:
-          path: node_modules/.cache/nx
-          key: ${{ runner.os }}-nx-${{ hashFiles('**/package.json') }}-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-nx-${{ hashFiles('**/package.json') }}-
-            ${{ runner.os }}-nx-
-
       - name: 'Build packages'
         run: |
-          yarn build --output-style stream
+          yarn nx run-many \
+            --target=build \
+            --output-style static
 
       - uses: myparcelnl/actions/setup-git-credentials@v2
         with:

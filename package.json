@@ -15,8 +15,7 @@
     "clean": "nx run-many --target=clean --parallel 10",
     "prepare": "is-ci || husky install",
     "ws:build": "cd $0 && sh $NX_WORKSPACE_ROOT/scripts/build.sh",
-    "ws:clean": "cd $0 && rimraf dist index.js",
-    "ws:dts": "cd $0 && ts-node src/index.ts --dts-only"
+    "ws:clean": "cd $0 && rimraf dist index.js"
   },
   "lint-staged": {
     "*.md": "prettier --write",
@@ -28,6 +27,7 @@
     "@myparcel-eslint/eslint-config-es6": "workspace:*",
     "@myparcel-eslint/eslint-config-esnext": "workspace:*",
     "@myparcel-eslint/eslint-config-typescript": "workspace:*",
+    "@nrwl/nx-cloud": "latest",
     "@types/eslint": "^8.4.10",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",

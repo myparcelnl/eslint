@@ -15,21 +15,29 @@
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^dts", "^build"],
-      "inputs": ["default", "{workspaceRoot}/scripts/build.sh"],
-      "outputs": ["{projectRoot}/dist/index.js", "{projectRoot}/index.js"]
-    },
-    "dts": {
-      "dependsOn": ["^dts"],
-      "outputs": ["{projectRoot}/dist/index.d.ts"]
+      "dependsOn": [
+        "^dts",
+        "^build"
+      ],
+      "inputs": [
+        "default",
+        "{workspaceRoot}/scripts/build.sh"
+      ],
+      "outputs": [
+        "{projectRoot}/dist/index.js",
+        "{projectRoot}/index.js"
+      ]
     }
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
         "parallel": 10,
-        "cacheableOperations": ["build"]
+        "cacheableOperations": [
+          "build"
+        ],
+        "accessToken": "NjAwMjIzZDgtNTJiOC00NGFiLThlMWItNWM2NDhlMjM2Y2QwfHJlYWQtd3JpdGU="
       }
     }
   }
