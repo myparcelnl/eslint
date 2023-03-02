@@ -2,6 +2,18 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript-vue@1.2.2...@myparcel-eslint/eslint-config-typescript-vue@1.2.3) "@myparcel-eslint/eslint-config-typescript-vue" (2023-03-02)
+
+
+### Bug Fixes
+
+* correctly set peer dependencies ([da4b647](https://github/myparcelnl/eslint/commit/da4b6474c8f3b996ecfb3fe571c46e4c97eb0104))
+* reduce output file sizes ([d603bc8](https://github/myparcelnl/eslint/commit/d603bc80a73f0911e6734fcbf2049bf110704821))
+* **vue:** move vue/block-lang rule to typescript-vue ([869253d](https://github/myparcelnl/eslint/commit/869253dfe0838e554b20437879e03a4f15ebe28b))
+
+
+
+
 ## [1.0.0-alpha.5](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript-vue@1.0.0-alpha.4...@myparcel-eslint/eslint-config-typescript-vue@1.0.0-alpha.5) "@myparcel-eslint/eslint-config-typescript-vue" (2022-11-03)
 
 

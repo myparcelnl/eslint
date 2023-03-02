@@ -2,6 +2,18 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-es6@1.2.2...@myparcel-eslint/eslint-config-es6@1.2.3) "@myparcel-eslint/eslint-config-es6" (2023-03-02)
+
+
+### Bug Fixes
+
+* correctly set peer dependencies ([da4b647](https://github/myparcelnl/eslint/commit/da4b6474c8f3b996ecfb3fe571c46e4c97eb0104))
+* **es6:** enable more rules ([259ad3a](https://github/myparcelnl/eslint/commit/259ad3a7f3ebdc3ca98fbeec26f7b193eacdea93))
+* reduce output file sizes ([d603bc8](https://github/myparcelnl/eslint/commit/d603bc80a73f0911e6734fcbf2049bf110704821))
+
+
+
+
 ## [1.0.0-alpha.7](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-es6@1.0.0-alpha.6...@myparcel-eslint/eslint-config-es6@1.0.0-alpha.7) "@myparcel-eslint/eslint-config-es6" (2022-11-11)
 
 

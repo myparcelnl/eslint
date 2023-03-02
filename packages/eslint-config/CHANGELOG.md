@@ -2,6 +2,19 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config@1.2.2...@myparcel-eslint/eslint-config@1.2.3) "@myparcel-eslint/eslint-config" (2023-03-02)
+
+
+### Bug Fixes
+
+* **core:** disable no-continue and no-fallthrough ([1e42f2e](https://github/myparcelnl/eslint/commit/1e42f2e3b6915b0adc6d4c746399508847076ccd))
+* correctly set peer dependencies ([da4b647](https://github/myparcelnl/eslint/commit/da4b6474c8f3b996ecfb3fe571c46e4c97eb0104))
+* export more reusable rules ([afb34c9](https://github/myparcelnl/eslint/commit/afb34c9ca716798fe187e707e281790a21794200))
+* reduce output file sizes ([d603bc8](https://github/myparcelnl/eslint/commit/d603bc80a73f0911e6734fcbf2049bf110704821))
+
+
+
+
 ## [1.0.0-alpha.5](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config@1.0.0-alpha.4...@myparcel-eslint/eslint-config@1.0.0-alpha.5) "@myparcel-eslint/eslint-config" (2022-11-10)
 
 

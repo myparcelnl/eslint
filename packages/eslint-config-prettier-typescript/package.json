@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-prettier-typescript",
-  "version": "1.0.0-alpha.8",
+  "version": "1.2.3",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -20,8 +20,8 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-prettier": "workspace:*",
-    "@myparcel-eslint/eslint-config-typescript": "workspace:*"
+    "@myparcel-eslint/eslint-config-prettier": "workspace:^1.2.3",
+    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.2.3"
   },
   "peerDependencies": {
     "eslint": "*",
