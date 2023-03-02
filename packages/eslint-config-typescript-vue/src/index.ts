@@ -13,4 +13,14 @@ export const config: ESLint.ConfigData = {
     '@myparcel-eslint/eslint-config-vue3',
     '@vue/eslint-config-typescript/recommended',
   ],
+  'rules': {
+    'vue/block-lang': [
+      'warn',
+      {
+        'script': {
+          'lang': 'ts',
+        },
+      },
+    ],
+  },
 };

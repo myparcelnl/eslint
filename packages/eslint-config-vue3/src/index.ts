@@ -19,14 +19,6 @@ export const config: ESLint.ConfigData = {
     'plugin:vue/vue3-recommended',
   ],
   'rules': {
-    'vue/block-lang': [
-      'warn',
-      {
-        'script': {
-          'lang': 'ts',
-        },
-      },
-    ],
     'vue/multi-word-component-names'    : 'off',
     'vue/no-multiple-template-root'     : 'off',
     'vue/no-v-for-template-key'         : 'off',
