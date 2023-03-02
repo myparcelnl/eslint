@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.2.3...@myparcel-eslint/eslint-config-typescript@1.2.4) "@myparcel-eslint/eslint-config-typescript" (2023-03-02)
+
+
+### Bug Fixes
+
+* **typescript:** change enum member format to StrictPascalCase ([63168a2](https://github/myparcelnl/eslint/commit/63168a2fe1768c1bf6a6327f68c918a92f2dbf12))
+
+
+
+
 ## [1.2.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.2.2...@myparcel-eslint/eslint-config-typescript@1.2.3) "@myparcel-eslint/eslint-config-typescript" (2023-03-02)
 
 
