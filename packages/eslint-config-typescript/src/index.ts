@@ -164,15 +164,12 @@ export const config: Linter.Config = {
         'format': null,
       },
       {
-        'selector': 'typeLike',
-        'format'  : [
-          'StrictPascalCase',
+        'selector': [
+          'typeLike',
+          'enumMember',
         ],
-      },
-      {
-        'selector': 'enumMember',
-        'format'  : [
-          'UPPER_CASE',
+        'format': [
+          'StrictPascalCase',
         ],
       },
       {
