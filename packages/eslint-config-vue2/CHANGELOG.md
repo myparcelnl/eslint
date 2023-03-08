@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-vue2@1.2.3...@myparcel-eslint/eslint-config-vue2@1.2.4) "@myparcel-eslint/eslint-config-vue2" (2023-03-08)
+
+
+### Bug Fixes
+
+* **vue:** fix vue/no-unused-vars receiving undefined options ([cc15795](https://github/myparcelnl/eslint/commit/cc15795e8b1772a303c99164e34fb96911c78b70))
+
+
+
+
 ## [1.2.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-vue2@1.2.2...@myparcel-eslint/eslint-config-vue2@1.2.3) "@myparcel-eslint/eslint-config-vue2" (2023-03-02)
 
 

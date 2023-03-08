@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-prettier-vue",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@myparcel-eslint/eslint-config-prettier": "workspace:^1.2.3",
-    "@myparcel-eslint/eslint-config-vue": "workspace:^1.2.3",
+    "@myparcel-eslint/eslint-config-vue": "workspace:^1.2.4",
     "@vue/eslint-config-prettier": "*"
   },
   "peerDependencies": {
