@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-vue3",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -20,7 +20,7 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-vue2": "workspace:^1.2.3"
+    "@myparcel-eslint/eslint-config-vue2": "workspace:^1.2.5"
   },
   "peerDependencies": {
     "eslint": "*"

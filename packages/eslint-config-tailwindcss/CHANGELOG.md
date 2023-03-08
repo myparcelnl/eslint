@@ -2,6 +2,11 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-tailwindcss@1.2.3...@myparcel-eslint/eslint-config-tailwindcss@1.2.4) "@myparcel-eslint/eslint-config-tailwindcss" (2023-03-08)
+
+
+
+
 ## [1.2.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-tailwindcss@1.2.2...@myparcel-eslint/eslint-config-tailwindcss@1.2.3) "@myparcel-eslint/eslint-config-tailwindcss" (2023-03-02)
 
 
