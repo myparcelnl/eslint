@@ -1,0 +1,28 @@
+{
+  "name": "@myparcel-eslint/eslint-config-import",
+  "version": "1.0.0-alpha.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "import",
+    "export"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "run ws:build \"$(pwd)\"",
+    "clean": "run ws:clean \"$(pwd)\""
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.27.5"
+  },
+  "peerDependencies": {
+    "eslint": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
