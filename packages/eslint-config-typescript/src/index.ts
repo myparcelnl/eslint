@@ -15,7 +15,7 @@ import {braceStyle,
   quotes,
   semi} from '@myparcel-eslint/eslint-config';
 import {noMagicNumbers, noUselessConstructor, requireAwait} from '@myparcel-eslint/eslint-config-es6';
-import {Linter} from 'eslint';
+import {type Linter} from 'eslint';
 
 /**
  * Overridden rules from other plugins or presets.
@@ -78,20 +78,31 @@ export const config: Linter.Config = {
     '@typescript-eslint/consistent-indexed-object-style': 'warn',
     '@typescript-eslint/consistent-type-assertions'     : 'warn',
     '@typescript-eslint/consistent-type-definitions'    : 'off',
-    '@typescript-eslint/consistent-type-exports'        : 'off',
-    '@typescript-eslint/consistent-type-imports'        : 'off',
-    '@typescript-eslint/default-param-last'             : 'warn',
-    '@typescript-eslint/dot-notation'                   : 'off',
-    '@typescript-eslint/explicit-function-return-type'  : 'warn',
-    '@typescript-eslint/explicit-member-accessibility'  : 'warn',
-    '@typescript-eslint/explicit-module-boundary-types' : 'warn',
-    '@typescript-eslint/func-call-spacing'              : funcCallSpacing,
-    '@typescript-eslint/indent'                         : indent,
-    '@typescript-eslint/init-declarations'              : 'off',
-    '@typescript-eslint/keyword-spacing'                : 'off',
-    '@typescript-eslint/lines-between-class-members'    : 'off',
-    '@typescript-eslint/member-delimiter-style'         : 'warn',
-    '@typescript-eslint/member-ordering'                : [
+    '@typescript-eslint/consistent-type-exports'        : [
+      'warn',
+      {
+        'fixMixedExportsWithInlineTypeSpecifier': true,
+      },
+    ],
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      {
+        'prefer'  : 'type-imports',
+        'fixStyle': 'inline-type-imports',
+      },
+    ],
+    '@typescript-eslint/default-param-last'            : 'warn',
+    '@typescript-eslint/dot-notation'                  : 'off',
+    '@typescript-eslint/explicit-function-return-type' : 'warn',
+    '@typescript-eslint/explicit-member-accessibility' : 'warn',
+    '@typescript-eslint/explicit-module-boundary-types': 'warn',
+    '@typescript-eslint/func-call-spacing'             : funcCallSpacing,
+    '@typescript-eslint/indent'                        : indent,
+    '@typescript-eslint/init-declarations'             : 'off',
+    '@typescript-eslint/keyword-spacing'               : 'off',
+    '@typescript-eslint/lines-between-class-members'   : 'off',
+    '@typescript-eslint/member-delimiter-style'        : 'warn',
+    '@typescript-eslint/member-ordering'               : [
       'warn',
       {
         'default': [
