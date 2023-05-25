@@ -2,6 +2,10 @@
 
 [![@myparcel-eslint/eslint-config-typescript on npm](https://img.shields.io/npm/v/@myparcel-eslint/eslint-config-typescript?style=for-the-badge)](https://npmjs.com/package/@myparcel-eslint/eslint-config-typescript)
 
+## Prerequisites
+
+- TypeScript 4.5 or higher
+
 ## Install
 
 You can install `@myparcel-eslint/eslint-config-typescript` via your package manager of choice.
