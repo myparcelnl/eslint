@@ -23,7 +23,7 @@
     "@myparcel-eslint/eslint-config-vue2": "workspace:^1.2.5"
   },
   "peerDependencies": {
-    "eslint": "*"
+    "eslint": ">= 8"
   },
   "publishConfig": {
     "access": "public"

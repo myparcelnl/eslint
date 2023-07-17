@@ -23,7 +23,7 @@
     "eslint-plugin-tailwindcss": "*"
   },
   "peerDependencies": {
-    "eslint": "*",
+    "eslint": ">= 8",
     "tailwindcss": "*"
   },
   "publishConfig": {

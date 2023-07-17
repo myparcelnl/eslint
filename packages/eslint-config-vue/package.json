@@ -24,7 +24,7 @@
     "eslint-plugin-vue": "*"
   },
   "peerDependencies": {
-    "eslint": "*"
+    "eslint": ">= 8"
   },
   "publishConfig": {
     "access": "public"
