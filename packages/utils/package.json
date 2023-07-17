@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/utils",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "repository": "github:myparcelnl/eslint",
   "license": "MIT",
   "type": "module",

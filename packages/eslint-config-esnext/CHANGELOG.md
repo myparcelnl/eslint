@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.4](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-esnext@1.2.3...@myparcel-eslint/eslint-config-esnext@1.2.4) "@myparcel-eslint/eslint-config-esnext" (2023-07-17)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency versions to last major version ([5b14ffa](https://github/myparcelnl/eslint/commit/5b14ffa38c220bd614d46bfe61845c40e638255c))
+
+
+
+
 ## [1.2.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-esnext@1.2.2...@myparcel-eslint/eslint-config-esnext@1.2.3) "@myparcel-eslint/eslint-config-esnext" (2023-03-02)
 
 

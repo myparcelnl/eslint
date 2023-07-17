@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-typescript-vue",
-  "version": "1.2.6",
+  "version": "1.2.9",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -21,8 +21,8 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.2.4",
-    "@myparcel-eslint/eslint-config-vue": "workspace:^1.2.5",
+    "@myparcel-eslint/eslint-config-typescript": "workspace:^1.2.7",
+    "@myparcel-eslint/eslint-config-vue": "workspace:^1.2.6",
     "@vue/eslint-config-typescript": "*",
     "eslint-plugin-vue": "*"
   },
