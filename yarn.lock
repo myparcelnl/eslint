@@ -441,7 +441,7 @@ __metadata:
   dependencies:
     eslint-plugin-cypress: "*"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -451,7 +451,7 @@ __metadata:
   dependencies:
     "@myparcel-eslint/eslint-config": "workspace:^1.2.3"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -461,7 +461,7 @@ __metadata:
   dependencies:
     "@myparcel-eslint/eslint-config": "workspace:^1.2.3"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -471,7 +471,7 @@ __metadata:
   dependencies:
     "@myparcel-eslint/eslint-config-es6": "workspace:^1.2.3"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -482,7 +482,7 @@ __metadata:
     eslint-plugin-i: ^2.27.5-1
     eslint-plugin-import: "npm:eslint-plugin-i@^2.27.5-1"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -492,7 +492,7 @@ __metadata:
   dependencies:
     "@myparcel-eslint/eslint-config": "workspace:^1.2.3"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -506,8 +506,8 @@ __metadata:
     "@vue/eslint-config-typescript": "*"
     eslint-plugin-vue: "*"
   peerDependencies:
-    eslint: "*"
-    prettier: "*"
+    eslint: ">= 8"
+    prettier: ">= 2"
   languageName: unknown
   linkType: soft
 
@@ -518,8 +518,8 @@ __metadata:
     "@myparcel-eslint/eslint-config-prettier": "workspace:^1.2.3"
     "@myparcel-eslint/eslint-config-typescript": "workspace:^1.2.4"
   peerDependencies:
-    eslint: "*"
-    prettier: "*"
+    eslint: ">= 8"
+    prettier: ">= 2"
   languageName: unknown
   linkType: soft
 
@@ -531,8 +531,8 @@ __metadata:
     "@myparcel-eslint/eslint-config-vue2": "workspace:^1.2.5"
     "@vue/eslint-config-prettier": "*"
   peerDependencies:
-    eslint: "*"
-    prettier: "*"
+    eslint: ">= 8"
+    prettier: ">= 2"
   languageName: unknown
   linkType: soft
 
@@ -544,8 +544,8 @@ __metadata:
     "@myparcel-eslint/eslint-config-vue": "workspace:^1.2.5"
     "@vue/eslint-config-prettier": "*"
   peerDependencies:
-    eslint: "*"
-    prettier: "*"
+    eslint: ">= 8"
+    prettier: ">= 2"
   languageName: unknown
   linkType: soft
 
@@ -554,11 +554,11 @@ __metadata:
   resolution: "@myparcel-eslint/eslint-config-prettier@workspace:packages/eslint-config-prettier"
   dependencies:
     "@myparcel/prettier-config": "*"
-    eslint-config-prettier: "*"
-    eslint-plugin-prettier: "*"
+    eslint-config-prettier: ^8.0.0
+    eslint-plugin-prettier: ^4.0.0
   peerDependencies:
-    eslint: "*"
-    prettier: "*"
+    eslint: ">= 8"
+    prettier: ">= 2"
   languageName: unknown
   linkType: soft
 
@@ -569,7 +569,7 @@ __metadata:
     "@myparcel-eslint/utils": "workspace:^1.2.3"
     eslint-plugin-tailwindcss: "*"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
     tailwindcss: "*"
   languageName: unknown
   linkType: soft
@@ -583,7 +583,7 @@ __metadata:
     "@vue/eslint-config-typescript": "*"
     eslint-plugin-vue: "*"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -596,7 +596,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "*"
     "@typescript-eslint/parser": "*"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -609,7 +609,7 @@ __metadata:
     "@rushstack/eslint-patch": ^1.2.0
     eslint-plugin-vue: "*"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -619,7 +619,7 @@ __metadata:
   dependencies:
     "@myparcel-eslint/eslint-config-vue2": "workspace:^1.2.5"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -630,7 +630,7 @@ __metadata:
     "@myparcel-eslint/eslint-config-vue3": "workspace:^1.2.5"
     eslint-plugin-vue: "*"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -638,7 +638,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-eslint/eslint-config@workspace:packages/eslint-config"
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -674,7 +674,7 @@ __metadata:
   dependencies:
     eslint: ^8
   peerDependencies:
-    eslint: "*"
+    eslint: ">= 8"
   languageName: unknown
   linkType: soft
 
@@ -3226,7 +3226,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:*, eslint-config-prettier@npm:^8.3.0":
+"eslint-config-prettier@npm:^8.0.0":
+  version: 8.8.0
+  resolution: "eslint-config-prettier@npm:8.8.0"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: bin/cli.js
+  checksum: 1e94c3882c4d5e41e1dcfa2c368dbccbfe3134f6ac7d40101644d3bfbe3eb2f2ffac757f3145910b5eacf20c0e85e02b91293d3126d770cbf3dc390b3564681c
+  languageName: node
+  linkType: hard
+
+"eslint-config-prettier@npm:^8.3.0":
   version: 8.6.0
   resolution: "eslint-config-prettier@npm:8.6.0"
   peerDependencies:
@@ -3296,7 +3307,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:*, eslint-plugin-prettier@npm:^4.0.0":
+"eslint-plugin-prettier@npm:^4.0.0":
   version: 4.2.1
   resolution: "eslint-plugin-prettier@npm:4.2.1"
   dependencies:
