@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.1](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-import@1.2.0...@myparcel-eslint/eslint-config-import@1.2.1) "@myparcel-eslint/eslint-config-import" (2023-08-01)
+
+
+### Bug Fixes
+
+* **npm:** change path to main js file ([9cc12d7](https://github/myparcelnl/eslint/commit/9cc12d729d6267bf438eae98315340f2410514d4))
+
+
+
+
 ## [1.2.0](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-import@1.1.1...@myparcel-eslint/eslint-config-import@1.2.0) "@myparcel-eslint/eslint-config-import" (2023-08-01)
 
 
