@@ -21,11 +21,11 @@
   "dependencies": {
     "@myparcel-eslint/eslint-config-es6": "workspace:^1.2.4",
     "@myparcel-eslint/eslint-config-esnext": "workspace:^1.2.4",
-    "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*"
+    "@typescript-eslint/eslint-plugin": "1 - 5",
+    "@typescript-eslint/parser": "1 - 5"
   },
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": "7 - 8"
   },
   "publishConfig": {
     "access": "public"

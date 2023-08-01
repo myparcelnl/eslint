@@ -17,11 +17,11 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "eslint-plugin-i": "^2.27.5-1",
-    "eslint-plugin-import": "npm:eslint-plugin-i@^2.27.5-1"
+    "eslint-plugin-i": "1 - 2",
+    "eslint-plugin-import": "npm:eslint-plugin-i@*"
   },
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": "7 - 8"
   },
   "publishConfig": {
     "access": "public"

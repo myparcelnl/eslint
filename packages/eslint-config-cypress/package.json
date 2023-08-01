@@ -19,10 +19,10 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "eslint-plugin-cypress": "*"
+    "eslint-plugin-cypress": "1 - 2"
   },
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": "7 - 8"
   },
   "publishConfig": {
     "access": "public"

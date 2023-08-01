@@ -22,11 +22,11 @@
   "dependencies": {
     "@myparcel-eslint/eslint-config-esnext": "workspace:^1.2.4",
     "@myparcel-eslint/utils": "workspace:^1.2.4",
-    "@rushstack/eslint-patch": "^1.2.0",
-    "eslint-plugin-vue": "*"
+    "@rushstack/eslint-patch": ">= 1",
+    "eslint-plugin-vue": "1 - 9"
   },
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": "7 - 8"
   },
   "publishConfig": {
     "access": "public"
