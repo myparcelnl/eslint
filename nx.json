@@ -1,42 +1,31 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultBase": "main",
-  "npmScope": "@myparcel-eslint",
   "workspaceLayout": {
     "appsDir": "packages",
     "libsDir": "packages"
   },
   "namedInputs": {
     "default": [
-      "{projectRoot}/**/*",
+      "{projectRoot}/src/**/*",
+      "{projectRoot}/package.json",
       "{workspaceRoot}/package.json",
       "{workspaceRoot}/tsconfig.json"
     ]
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^dts",
-        "^build"
-      ],
-      "inputs": [
-        "default",
-        "{workspaceRoot}/scripts/build.sh"
-      ],
-      "outputs": [
-        "{projectRoot}/dist/index.js",
-        "{projectRoot}/index.js"
-      ]
+      "dependsOn": ["^build"],
+      "inputs": ["default", "{workspaceRoot}/scripts/build.sh"],
+      "outputs": ["{projectRoot}/dist/**/*", "{projectRoot}/index.js"]
     }
   },
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "parallel": 10,
-        "cacheableOperations": [
-          "build"
-        ],
+        "parallel": 30,
+        "cacheableOperations": ["build"],
         "accessToken": "NjAwMjIzZDgtNTJiOC00NGFiLThlMWItNWM2NDhlMjM2Y2QwfHJlYWQtd3JpdGU="
       }
     }
