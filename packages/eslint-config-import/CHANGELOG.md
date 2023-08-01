@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.0](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-import@1.1.1...@myparcel-eslint/eslint-config-import@1.2.0) "@myparcel-eslint/eslint-config-import" (2023-08-01)
+
+
+### Features
+
+* **build:** add type declarations ([a2fd901](https://github/myparcelnl/eslint/commit/a2fd901740f9ee4a536f7672ebf0f46441512697))
+
+
+
+
 ## [1.1.1](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-import@1.1.0...@myparcel-eslint/eslint-config-import@1.1.1) "@myparcel-eslint/eslint-config-import" (2023-08-01)
 
 

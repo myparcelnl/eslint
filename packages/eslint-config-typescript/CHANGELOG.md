@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.3.0](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.2.8...@myparcel-eslint/eslint-config-typescript@1.3.0) "@myparcel-eslint/eslint-config-typescript" (2023-08-01)
+
+
+### Features
+
+* **build:** add type declarations ([a2fd901](https://github/myparcelnl/eslint/commit/a2fd901740f9ee4a536f7672ebf0f46441512697))
+
+
+
+
 ## [1.2.8](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.2.7...@myparcel-eslint/eslint-config-typescript@1.2.8) "@myparcel-eslint/eslint-config-typescript" (2023-08-01)
 
 
