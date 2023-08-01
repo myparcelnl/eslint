@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-vue2",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -20,8 +20,8 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-esnext": "workspace:^1.2.4",
-    "@myparcel-eslint/utils": "workspace:^1.2.4",
+    "@myparcel-eslint/eslint-config-esnext": "workspace:^1.2.5",
+    "@myparcel-eslint/utils": "workspace:^1.2.5",
     "@rushstack/eslint-patch": ">= 1",
     "eslint-plugin-vue": "1 - 9"
   },

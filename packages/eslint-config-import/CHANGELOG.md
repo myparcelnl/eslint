@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.1.1](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-import@1.1.0...@myparcel-eslint/eslint-config-import@1.1.1) "@myparcel-eslint/eslint-config-import" (2023-08-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency version ranges ([5de72d5](https://github/myparcelnl/eslint/commit/5de72d5238ff39c4b010926c159bcaeb4b8ccf53))
+
+
+
+
 ## [1.1.0](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-import@1.0.0...@myparcel-eslint/eslint-config-import@1.1.0) "@myparcel-eslint/eslint-config-import" (2023-07-17)
 
 

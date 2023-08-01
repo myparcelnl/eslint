@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.2.8](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.2.7...@myparcel-eslint/eslint-config-typescript@1.2.8) "@myparcel-eslint/eslint-config-typescript" (2023-08-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency version ranges ([5de72d5](https://github/myparcelnl/eslint/commit/5de72d5238ff39c4b010926c159bcaeb4b8ccf53))
+
+
+
+
 ## [1.2.7](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-typescript@1.2.6...@myparcel-eslint/eslint-config-typescript@1.2.7) "@myparcel-eslint/eslint-config-typescript" (2023-07-17)
 
 

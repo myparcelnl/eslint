@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-typescript",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -19,8 +19,8 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-eslint/eslint-config-es6": "workspace:^1.2.4",
-    "@myparcel-eslint/eslint-config-esnext": "workspace:^1.2.4",
+    "@myparcel-eslint/eslint-config-es6": "workspace:^1.2.5",
+    "@myparcel-eslint/eslint-config-esnext": "workspace:^1.2.5",
     "@typescript-eslint/eslint-plugin": "1 - 5",
     "@typescript-eslint/parser": "1 - 5"
   },

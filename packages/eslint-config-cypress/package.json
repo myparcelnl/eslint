@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-eslint/eslint-config-cypress",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "keywords": [
     "eslint",
     "eslintconfig",
