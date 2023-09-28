@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.3.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-prettier-vue2@1.3.2...@myparcel-eslint/eslint-config-prettier-vue2@1.3.3) "@myparcel-eslint/eslint-config-prettier-vue2" (2023-09-28)
+
+
+### Bug Fixes
+
+* **prettier-vue:** remove @vue/eslint-config-prettier ([9c7956d](https://github/myparcelnl/eslint/commit/9c7956d0c8af7fca871912369f9a21d3e765e079))
+
+
+
+
 ## [1.3.1](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-prettier-vue2@1.3.0...@myparcel-eslint/eslint-config-prettier-vue2@1.3.1) "@myparcel-eslint/eslint-config-prettier-vue2" (2023-08-01)
 
 
