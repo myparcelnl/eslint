@@ -28,8 +28,7 @@
   },
   "dependencies": {
     "@myparcel-eslint/eslint-config-prettier": "workspace:^1.3.1",
-    "@myparcel-eslint/eslint-config-vue2": "workspace:^1.3.1",
-    "@vue/eslint-config-prettier": "1 - 8"
+    "@myparcel-eslint/eslint-config-vue2": "workspace:^1.3.1"
   },
   "peerDependencies": {
     "eslint": "7 - 8",
