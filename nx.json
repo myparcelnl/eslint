@@ -9,7 +9,6 @@
     "default": [
       "{projectRoot}/src/**/*",
       "{projectRoot}/package.json",
-      "{workspaceRoot}/package.json",
       "{workspaceRoot}/tsconfig.json"
     ]
   },
