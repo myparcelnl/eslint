@@ -27,10 +27,10 @@ import {arrayBracketNewline,
   sortKeys,
   spaceInParens,
   spaceInfixOps,
-  spaceUnaryOps} from '@myparcel-eslint/eslint-config';
-import {arrowSpacing, preferTemplate, templateCurlySpacing} from '@myparcel-eslint/eslint-config-es6';
+  spaceUnaryOps} from '@myparcel-dev/eslint-config';
+import {arrowSpacing, preferTemplate, templateCurlySpacing} from '@myparcel-dev/eslint-config-es6';
 import {ESLint} from 'eslint';
-import {overridePluginRule} from '@myparcel-eslint/utils';
+import {overridePluginRule} from '@myparcel-dev/utils';
 
 require('@rushstack/eslint-patch/modern-module-resolution');
 
@@ -39,7 +39,7 @@ export const config: ESLint.ConfigData = {
     'node': true,
   },
   'extends': [
-    '@myparcel-eslint/eslint-config-esnext',
+    '@myparcel-dev/eslint-config-esnext',
     'plugin:vue/recommended',
   ],
   'parserOptions': {

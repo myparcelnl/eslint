@@ -1,7 +1,7 @@
 import {ESLint} from 'eslint';
 
 export const config: ESLint.ConfigData = {
-  'extends'      : '@myparcel-eslint/eslint-config',
+  'extends'      : '@myparcel-dev/eslint-config',
   'parserOptions': {
     'ecmaVersion': 5,
   },

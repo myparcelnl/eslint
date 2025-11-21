@@ -1,5 +1,5 @@
 {
-  "name": "@myparcel-eslint/monorepo",
+  "name": "@myparcel-dev/monorepo",
   "version": "1.0.0-alpha.0",
   "private": true,
   "description": "A collection of ESLint configurations.",
@@ -26,9 +26,9 @@
   },
   "devDependencies": {
     "@monodeploy/plugin-github": "^1.0.0",
-    "@myparcel-eslint/eslint-config-es6": "workspace:*",
-    "@myparcel-eslint/eslint-config-esnext": "workspace:*",
-    "@myparcel-eslint/eslint-config-typescript": "workspace:*",
+    "@myparcel-dev/eslint-config-es6": "workspace:*",
+    "@myparcel-dev/eslint-config-esnext": "workspace:*",
+    "@myparcel-dev/eslint-config-typescript": "workspace:*",
     "@nrwl/nx-cloud": "^16.0.0",
     "@types/eslint": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",

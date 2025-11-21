@@ -1,27 +1,27 @@
-# @myparcel-eslint/eslint-config-prettier-typescript
+# @myparcel-dev/eslint-config-prettier-typescript
 
-[![@myparcel-eslint/eslint-config-prettier-typescript on npm](https://img.shields.io/npm/v/@myparcel-eslint/eslint-config-prettier-typescript?style=for-the-badge)](https://npmjs.com/package/@myparcel-eslint/eslint-config-prettier-typescript)
+[![@myparcel-dev/eslint-config-prettier-typescript on npm](https://img.shields.io/npm/v/@myparcel-dev/eslint-config-prettier-typescript?style=for-the-badge)](https://npmjs.com/package/@myparcel-dev/eslint-config-prettier-typescript)
 
 ## Install
 
-You can install `@myparcel-eslint/eslint-config-prettier-typescript` via your package manager of choice.
+You can install `@myparcel-dev/eslint-config-prettier-typescript` via your package manager of choice.
 
 ### npm
 
 ```bash
-npm install --save-dev @myparcel-eslint/eslint-config-prettier-typescript
+npm install --save-dev @myparcel-dev/eslint-config-prettier-typescript
 ```
 
 ### yarn
 
 ```shell
-yarn add --dev @myparcel-eslint/eslint-config-prettier-typescript
+yarn add --dev @myparcel-dev/eslint-config-prettier-typescript
 ```
 
 ### pnpm
 
 ```shell
-pnpm add --save-dev @myparcel-eslint/eslint-config-prettier-typescript
+pnpm add --save-dev @myparcel-dev/eslint-config-prettier-typescript
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Example: `.eslintrc`
 
 ```json
 {
-  "extends": "@myparcel-eslint/eslint-config-prettier-typescript"
+  "extends": "@myparcel-dev/eslint-config-prettier-typescript"
 }
 ```
 

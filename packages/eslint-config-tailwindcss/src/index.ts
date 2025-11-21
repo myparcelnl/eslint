@@ -1,5 +1,5 @@
 import {ESLint} from 'eslint';
-import {overridePluginRule} from '@myparcel-eslint/utils';
+import {overridePluginRule} from '@myparcel-dev/utils';
 
 export const config: ESLint.ConfigData = {
   'plugins': [

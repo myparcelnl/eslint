@@ -4,7 +4,7 @@
     "module": "NodeNext",
     "moduleResolution": "Node",
     "paths": {
-      "@myparcel-eslint/*": ["./packages/*/src"]
+      "@myparcel-dev/*": ["./packages/*/src"]
     },
     "sourceMap": true,
     "strict": true,

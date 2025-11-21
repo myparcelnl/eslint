@@ -3,7 +3,7 @@
  */
 module.exports = {
   root: true,
-  extends: '@myparcel-eslint/eslint-config-es6',
+  extends: '@myparcel-dev/eslint-config-es6',
   rules: {
     'no-magic-numbers': 'off',
   },
@@ -15,14 +15,14 @@ module.exports = {
         './**/*.mjs',
       ],
       extends: [
-        '@myparcel-eslint/eslint-config-node',
+        '@myparcel-dev/eslint-config-node',
       ],
     },
     {
       files: [
         'packages/**/*.ts',
       ],
-      extends: '@myparcel-eslint/eslint-config-typescript',
+      extends: '@myparcel-dev/eslint-config-typescript',
       rules: {
         '@typescript-eslint/no-magic-numbers': 'off',
         'array-bracket-newline': [

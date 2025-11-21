@@ -1,27 +1,27 @@
-# @myparcel-eslint/eslint-config-tailwindcss
+# @myparcel-dev/eslint-config-tailwindcss
 
-[![@myparcel-eslint/eslint-config-tailwindcss on npm](https://img.shields.io/npm/v/@myparcel-eslint/eslint-config-tailwindcss?style=for-the-badge)](https://npmjs.com/package/@myparcel-eslint/eslint-config-tailwindcss)
+[![@myparcel-dev/eslint-config-tailwindcss on npm](https://img.shields.io/npm/v/@myparcel-dev/eslint-config-tailwindcss?style=for-the-badge)](https://npmjs.com/package/@myparcel-dev/eslint-config-tailwindcss)
 
 ## Install
 
-You can install `@myparcel-eslint/eslint-config-tailwindcss` via your package manager of choice.
+You can install `@myparcel-dev/eslint-config-tailwindcss` via your package manager of choice.
 
 ### npm
 
 ```bash
-npm install --save-dev @myparcel-eslint/eslint-config-tailwindcss
+npm install --save-dev @myparcel-dev/eslint-config-tailwindcss
 ```
 
 ### yarn
 
 ```shell
-yarn add --dev @myparcel-eslint/eslint-config-tailwindcss
+yarn add --dev @myparcel-dev/eslint-config-tailwindcss
 ```
 
 ### pnpm
 
 ```shell
-pnpm add --save-dev @myparcel-eslint/eslint-config-tailwindcss
+pnpm add --save-dev @myparcel-dev/eslint-config-tailwindcss
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Example: `.eslintrc`
 
 ```json
 {
-  "extends": "@myparcel-eslint/eslint-config-tailwindcss"
+  "extends": "@myparcel-dev/eslint-config-tailwindcss"
 }
 ```
 
