@@ -1,5 +1,5 @@
 {
-  "name": "@myparcel-eslint/eslint-config-prettier",
+  "name": "@myparcel-dev/eslint-config-prettier",
   "version": "1.3.1",
   "keywords": [
     "eslint",

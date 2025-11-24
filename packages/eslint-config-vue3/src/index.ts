@@ -15,7 +15,7 @@ export const config: ESLint.ConfigData = {
   ],
   parserOptions,
   'extends': [
-    '@myparcel-eslint/eslint-config-vue2',
+    '@myparcel-dev/eslint-config-vue2',
     'plugin:vue/vue3-recommended',
   ],
   'rules': {

@@ -31,7 +31,7 @@ export const requireAwait: Linter.RuleEntry = 'warn';
 export const templateCurlySpacing: Linter.RuleEntry = 'warn';
 
 export const config: Linter.Config = {
-  'extends'      : '@myparcel-eslint/eslint-config',
+  'extends'      : '@myparcel-dev/eslint-config',
   'parserOptions': {
     'ecmaVersion': 6,
   },

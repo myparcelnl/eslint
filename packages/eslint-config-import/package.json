@@ -1,5 +1,5 @@
 {
-  "name": "@myparcel-eslint/eslint-config-import",
+  "name": "@myparcel-dev/eslint-config-import",
   "version": "1.2.1",
   "keywords": [
     "eslint",

@@ -1,27 +1,27 @@
-# @myparcel-eslint/eslint-config
+# @myparcel-dev/eslint-config
 
-[![@myparcel-eslint/eslint-config on npm](https://img.shields.io/npm/v/@myparcel-eslint/eslint-config?style=for-the-badge)](https://npmjs.com/package/@myparcel-eslint/eslint-config)
+[![@myparcel-dev/eslint-config on npm](https://img.shields.io/npm/v/@myparcel-dev/eslint-config?style=for-the-badge)](https://npmjs.com/package/@myparcel-dev/eslint-config)
 
 ## Install
 
-You can install `@myparcel-eslint/eslint-config` via your package manager of choice.
+You can install `@myparcel-dev/eslint-config` via your package manager of choice.
 
 ### npm
 
 ```bash
-npm install --save-dev @myparcel-eslint/eslint-config
+npm install --save-dev @myparcel-dev/eslint-config
 ```
 
 ### yarn
 
 ```shell
-yarn add --dev @myparcel-eslint/eslint-config
+yarn add --dev @myparcel-dev/eslint-config
 ```
 
 ### pnpm
 
 ```shell
-pnpm add --save-dev @myparcel-eslint/eslint-config
+pnpm add --save-dev @myparcel-dev/eslint-config
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Example: `.eslintrc`
 
 ```json
 {
-  "extends": "@myparcel-eslint/eslint-config"
+  "extends": "@myparcel-dev/eslint-config"
 }
 ```
 

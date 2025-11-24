@@ -1,27 +1,27 @@
-# @myparcel-eslint/eslint-config-cypress
+# @myparcel-dev/eslint-config-cypress
 
-[![@myparcel-eslint/eslint-config-cypress on npm](https://img.shields.io/npm/v/@myparcel-eslint/eslint-config-cypress?style=for-the-badge)](https://npmjs.com/package/@myparcel-eslint/eslint-config-cypress)
+[![@myparcel-dev/eslint-config-cypress on npm](https://img.shields.io/npm/v/@myparcel-dev/eslint-config-cypress?style=for-the-badge)](https://npmjs.com/package/@myparcel-dev/eslint-config-cypress)
 
 ## Install
 
-You can install `@myparcel-eslint/eslint-config-cypress` via your package manager of choice.
+You can install `@myparcel-dev/eslint-config-cypress` via your package manager of choice.
 
 ### npm
 
 ```bash
-npm install --save-dev @myparcel-eslint/eslint-config-cypress
+npm install --save-dev @myparcel-dev/eslint-config-cypress
 ```
 
 ### yarn
 
 ```shell
-yarn add --dev @myparcel-eslint/eslint-config-cypress
+yarn add --dev @myparcel-dev/eslint-config-cypress
 ```
 
 ### pnpm
 
 ```shell
-pnpm add --save-dev @myparcel-eslint/eslint-config-cypress
+pnpm add --save-dev @myparcel-dev/eslint-config-cypress
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Example: `.eslintrc`
 
 ```json
 {
-  "extends": "@myparcel-eslint/eslint-config-cypress"
+  "extends": "@myparcel-dev/eslint-config-cypress"
 }
 ```
 

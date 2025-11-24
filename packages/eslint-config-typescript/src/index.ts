@@ -13,8 +13,8 @@ import {braceStyle,
   noUnusedVars,
   noUseBeforeDefine,
   quotes,
-  semi} from '@myparcel-eslint/eslint-config';
-import {noMagicNumbers, noUselessConstructor, requireAwait} from '@myparcel-eslint/eslint-config-es6';
+  semi} from '@myparcel-dev/eslint-config';
+import {noMagicNumbers, noUselessConstructor, requireAwait} from '@myparcel-dev/eslint-config-es6';
 import {type Linter} from 'eslint';
 
 /**
@@ -54,7 +54,7 @@ export const parserOptions: Linter.ParserOptions | undefined = {
 
 export const config: Linter.Config = {
   'extends': [
-    '@myparcel-eslint/eslint-config-esnext',
+    '@myparcel-dev/eslint-config-esnext',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
