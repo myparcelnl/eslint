@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.4.0](https://github/myparcelnl/eslint/compare/@myparcel-dev/eslint-config-prettier-typescript-vue@1.3.3...@myparcel-dev/eslint-config-prettier-typescript-vue@1.4.0) "@myparcel-dev/eslint-config-prettier-typescript-vue" (2025-11-24)
+
+
+### Features
+
+* migrate to [@myparcel-dev](https://github/myparcel-dev) scope ([#8](https://github/myparcelnl/eslint/issues/8)) ([c222049](https://github/myparcelnl/eslint/commit/c2220499f97d2cbe4a6bb4a8ce9bd09e5febef77))
+
+
+
+
 ## [1.3.3](https://github/myparcelnl/eslint/compare/@myparcel-eslint/eslint-config-prettier-typescript-vue@1.3.2...@myparcel-eslint/eslint-config-prettier-typescript-vue@1.3.3) "@myparcel-eslint/eslint-config-prettier-typescript-vue" (2023-09-28)
 
 

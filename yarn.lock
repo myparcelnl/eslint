@@ -490,27 +490,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-es5@workspace:packages/eslint-config-es5"
   dependencies:
-    "@myparcel-dev/eslint-config": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config": "workspace:^1.4.0"
   peerDependencies:
     eslint: 7 - 8
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config-es6@workspace:*, @myparcel-dev/eslint-config-es6@workspace:^1.3.1, @myparcel-dev/eslint-config-es6@workspace:packages/eslint-config-es6":
+"@myparcel-dev/eslint-config-es6@workspace:*, @myparcel-dev/eslint-config-es6@workspace:^1.4.0, @myparcel-dev/eslint-config-es6@workspace:packages/eslint-config-es6":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-es6@workspace:packages/eslint-config-es6"
   dependencies:
-    "@myparcel-dev/eslint-config": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config": "workspace:^1.4.0"
   peerDependencies:
     eslint: 7 - 8
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config-esnext@workspace:*, @myparcel-dev/eslint-config-esnext@workspace:^1.3.1, @myparcel-dev/eslint-config-esnext@workspace:packages/eslint-config-esnext":
+"@myparcel-dev/eslint-config-esnext@workspace:*, @myparcel-dev/eslint-config-esnext@workspace:^1.4.0, @myparcel-dev/eslint-config-esnext@workspace:packages/eslint-config-esnext":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-esnext@workspace:packages/eslint-config-esnext"
   dependencies:
-    "@myparcel-dev/eslint-config-es6": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-es6": "workspace:^1.4.0"
   peerDependencies:
     eslint: 7 - 8
   languageName: unknown
@@ -531,7 +531,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
-    "@myparcel-dev/eslint-config": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config": "workspace:^1.4.0"
   peerDependencies:
     eslint: 7 - 8
   languageName: unknown
@@ -541,8 +541,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-prettier-typescript-vue@workspace:packages/eslint-config-prettier-typescript-vue"
   dependencies:
-    "@myparcel-dev/eslint-config-prettier": "workspace:^1.3.1"
-    "@myparcel-dev/eslint-config-typescript-vue": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.0"
+    "@myparcel-dev/eslint-config-typescript-vue": "workspace:^1.4.0"
     "@vue/eslint-config-typescript": 1 - 11
     eslint-plugin-vue: 1 - 9
   peerDependencies:
@@ -555,8 +555,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-prettier-typescript@workspace:packages/eslint-config-prettier-typescript"
   dependencies:
-    "@myparcel-dev/eslint-config-prettier": "workspace:^1.3.1"
-    "@myparcel-dev/eslint-config-typescript": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.0"
+    "@myparcel-dev/eslint-config-typescript": "workspace:^1.4.0"
   peerDependencies:
     eslint: 7 - 8
     prettier: ">= 2"
@@ -567,8 +567,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-prettier-vue2@workspace:packages/eslint-config-prettier-vue2"
   dependencies:
-    "@myparcel-dev/eslint-config-prettier": "workspace:^1.3.1"
-    "@myparcel-dev/eslint-config-vue2": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.0"
+    "@myparcel-dev/eslint-config-vue2": "workspace:^1.4.0"
   peerDependencies:
     eslint: 7 - 8
     prettier: ">= 2"
@@ -579,15 +579,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-prettier-vue@workspace:packages/eslint-config-prettier-vue"
   dependencies:
-    "@myparcel-dev/eslint-config-prettier": "workspace:^1.3.1"
-    "@myparcel-dev/eslint-config-vue": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.0"
+    "@myparcel-dev/eslint-config-vue": "workspace:^1.4.0"
   peerDependencies:
     eslint: 7 - 8
     prettier: ">= 2"
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config-prettier@workspace:^1.3.1, @myparcel-dev/eslint-config-prettier@workspace:packages/eslint-config-prettier":
+"@myparcel-dev/eslint-config-prettier@workspace:^1.4.0, @myparcel-dev/eslint-config-prettier@workspace:packages/eslint-config-prettier":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-prettier@workspace:packages/eslint-config-prettier"
   dependencies:
@@ -604,7 +604,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-tailwindcss@workspace:packages/eslint-config-tailwindcss"
   dependencies:
-    "@myparcel-dev/utils": "workspace:^1.3.1"
+    "@myparcel-dev/utils": "workspace:^1.4.0"
     eslint-plugin-tailwindcss: 1 - 3
   peerDependencies:
     eslint: 7 - 8
@@ -612,12 +612,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config-typescript-vue@workspace:^1.3.1, @myparcel-dev/eslint-config-typescript-vue@workspace:packages/eslint-config-typescript-vue":
+"@myparcel-dev/eslint-config-typescript-vue@workspace:^1.4.0, @myparcel-dev/eslint-config-typescript-vue@workspace:packages/eslint-config-typescript-vue":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-typescript-vue@workspace:packages/eslint-config-typescript-vue"
   dependencies:
-    "@myparcel-dev/eslint-config-typescript": "workspace:^1.3.1"
-    "@myparcel-dev/eslint-config-vue": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-typescript": "workspace:^1.4.0"
+    "@myparcel-dev/eslint-config-vue": "workspace:^1.4.0"
     "@vue/eslint-config-typescript": 1 - 11
     eslint-plugin-vue: 1 - 9
   peerDependencies:
@@ -625,12 +625,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config-typescript@workspace:*, @myparcel-dev/eslint-config-typescript@workspace:^1.3.1, @myparcel-dev/eslint-config-typescript@workspace:packages/eslint-config-typescript":
+"@myparcel-dev/eslint-config-typescript@workspace:*, @myparcel-dev/eslint-config-typescript@workspace:^1.4.0, @myparcel-dev/eslint-config-typescript@workspace:packages/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-typescript@workspace:packages/eslint-config-typescript"
   dependencies:
-    "@myparcel-dev/eslint-config-es6": "workspace:^1.3.1"
-    "@myparcel-dev/eslint-config-esnext": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-es6": "workspace:^1.4.0"
+    "@myparcel-dev/eslint-config-esnext": "workspace:^1.4.0"
     "@typescript-eslint/eslint-plugin": 1 - 5
     "@typescript-eslint/parser": 1 - 5
   peerDependencies:
@@ -638,12 +638,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config-vue2@workspace:^1.3.1, @myparcel-dev/eslint-config-vue2@workspace:packages/eslint-config-vue2":
+"@myparcel-dev/eslint-config-vue2@workspace:^1.4.0, @myparcel-dev/eslint-config-vue2@workspace:packages/eslint-config-vue2":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-vue2@workspace:packages/eslint-config-vue2"
   dependencies:
-    "@myparcel-dev/eslint-config-esnext": "workspace:^1.3.1"
-    "@myparcel-dev/utils": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-esnext": "workspace:^1.4.0"
+    "@myparcel-dev/utils": "workspace:^1.4.0"
     "@rushstack/eslint-patch": ">= 1"
     eslint-plugin-vue: 1 - 9
   peerDependencies:
@@ -651,28 +651,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config-vue3@workspace:^1.3.1, @myparcel-dev/eslint-config-vue3@workspace:packages/eslint-config-vue3":
+"@myparcel-dev/eslint-config-vue3@workspace:^1.4.0, @myparcel-dev/eslint-config-vue3@workspace:packages/eslint-config-vue3":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-vue3@workspace:packages/eslint-config-vue3"
   dependencies:
-    "@myparcel-dev/eslint-config-vue2": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-vue2": "workspace:^1.4.0"
   peerDependencies:
     eslint: 7 - 8
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config-vue@workspace:^1.3.1, @myparcel-dev/eslint-config-vue@workspace:packages/eslint-config-vue":
+"@myparcel-dev/eslint-config-vue@workspace:^1.4.0, @myparcel-dev/eslint-config-vue@workspace:packages/eslint-config-vue":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-vue@workspace:packages/eslint-config-vue"
   dependencies:
-    "@myparcel-dev/eslint-config-vue3": "workspace:^1.3.1"
+    "@myparcel-dev/eslint-config-vue3": "workspace:^1.4.0"
     eslint-plugin-vue: 1 - 9
   peerDependencies:
     eslint: 7 - 8
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/eslint-config@workspace:^1.3.1, @myparcel-dev/eslint-config@workspace:packages/eslint-config":
+"@myparcel-dev/eslint-config@workspace:^1.4.0, @myparcel-dev/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config@workspace:packages/eslint-config"
   peerDependencies:
@@ -706,7 +706,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@myparcel-dev/utils@workspace:^1.3.1, @myparcel-dev/utils@workspace:packages/utils":
+"@myparcel-dev/utils@workspace:^1.4.0, @myparcel-dev/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/utils@workspace:packages/utils"
   dependencies:
@@ -7459,11 +7459,11 @@ __metadata:
 
 "typescript@patch:typescript@^5.0.0#~builtin<compat/typescript>":
   version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=1f5320"
+  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 21e88b0a0c0226f9cb9fd25b9626fb05b4c0f3fddac521844a13e1f30beb8f14e90bd409a9ac43c812c5946d714d6e0dee12d5d02dfc1c562c5aacfa1f49b606
+  checksum: f53bfe97f7c8b2b6d23cf572750d4e7d1e0c5fff1c36d859d0ec84556a827b8785077bc27676bf7e71fae538e517c3ecc0f37e7f593be913d884805d931bc8be
   languageName: node
   linkType: hard
 
