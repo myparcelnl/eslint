@@ -18,15 +18,5 @@
       "inputs": ["default", "{workspaceRoot}/scripts/build.sh"],
       "outputs": ["{projectRoot}/dist/**/*", "{projectRoot}/index.js"]
     }
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "parallel": 30,
-        "cacheableOperations": ["build"],
-        "accessToken": "NjAwMjIzZDgtNTJiOC00NGFiLThlMWItNWM2NDhlMjM2Y2QwfHJlYWQtd3JpdGU="
-      }
-    }
   }
 }
