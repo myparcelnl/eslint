@@ -22,7 +22,8 @@
     "package.json": "npx sort-package-json"
   },
   "resolutions": {
-    "nx": "16.5.3"
+    "nx": "16.5.3",
+    "axios": "1.15.0"
   },
   "devDependencies": {
     "@monodeploy/plugin-github": "^1.0.0",
