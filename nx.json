@@ -18,5 +18,14 @@
       "inputs": ["default", "{workspaceRoot}/scripts/build.sh"],
       "outputs": ["{projectRoot}/dist/**/*", "{projectRoot}/index.js"]
     }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "parallel": 30,
+        "cacheableOperations": ["build"]
+      }
+    }
   }
 }
