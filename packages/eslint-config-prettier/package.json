@@ -25,7 +25,6 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel/prettier-config": ">= 1",
     "eslint-config-prettier": "1 - 8",
     "eslint-plugin-prettier": "1 - 4"
   },

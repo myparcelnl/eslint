@@ -591,7 +591,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/eslint-config-prettier@workspace:packages/eslint-config-prettier"
   dependencies:
-    "@myparcel/prettier-config": ">= 1"
     eslint-config-prettier: 1 - 8
     eslint-plugin-prettier: 1 - 4
   peerDependencies:
@@ -715,13 +714,6 @@ __metadata:
     eslint: 7 - 8
   languageName: unknown
   linkType: soft
-
-"@myparcel/prettier-config@npm:>= 1":
-  version: 1.1.0
-  resolution: "@myparcel/prettier-config@npm:1.1.0"
-  checksum: c10890fdd77cd630500b65301dd43fe32ea82a383fdf51d64300744325210e9c4e4b80b6f274c761f7beabb21e128f54ea52955132de8fbe5c5d92aaa3baa3c1
-  languageName: node
-  linkType: hard
 
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
