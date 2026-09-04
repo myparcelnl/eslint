@@ -2,6 +2,16 @@
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.4.1](https://github/myparcelnl/eslint/compare/@myparcel-dev/eslint-config-prettier@1.4.0...@myparcel-dev/eslint-config-prettier@1.4.1) "@myparcel-dev/eslint-config-prettier" (2026-09-04)
+
+
+### Bug Fixes
+
+* **prettier:** drop the unused @myparcel/prettier-config dependency ([#12](https://github/myparcelnl/eslint/issues/12)) ([dee59e3](https://github/myparcelnl/eslint/commit/dee59e3ca250f5eced2603822f743f2c722ebee7))
+
+
+
+
 ## [1.4.0](https://github/myparcelnl/eslint/compare/@myparcel-dev/eslint-config-prettier@1.3.1...@myparcel-dev/eslint-config-prettier@1.4.0) "@myparcel-dev/eslint-config-prettier" (2025-11-24)
 
 

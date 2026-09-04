@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-dev/eslint-config-prettier-vue2",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -27,7 +27,7 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.0",
+    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.1",
     "@myparcel-dev/eslint-config-vue2": "workspace:^1.4.0"
   },
   "peerDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-dev/eslint-config-prettier-typescript-vue",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -28,7 +28,7 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.0",
+    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.1",
     "@myparcel-dev/eslint-config-typescript-vue": "workspace:^1.4.0",
     "@vue/eslint-config-typescript": "1 - 11",
     "eslint-plugin-vue": "1 - 9"
