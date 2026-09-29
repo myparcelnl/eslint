@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@myparcel-dev/eslint-config-vue3": "workspace:^1.4.0",
-    "eslint-plugin-vue": "1 - 9"
+    "eslint-plugin-vue": "1 - 11"
   },
   "peerDependencies": {
     "eslint": "7 - 8"
