@@ -20,10 +20,10 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
-    "eslint": "7 - 8"
+    "eslint": "7 - 11"
   },
   "peerDependencies": {
-    "eslint": "7 - 8"
+    "eslint": "7 - 11"
   },
   "publishConfig": {
     "access": "public"
