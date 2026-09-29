@@ -29,7 +29,7 @@
     "@myparcel-dev/eslint-config-esnext": "workspace:^1.4.0",
     "@myparcel-dev/utils": "workspace:^1.4.0",
     "@rushstack/eslint-patch": ">= 1",
-    "eslint-plugin-vue": "1 - 9"
+    "eslint-plugin-vue": "1 - 11"
   },
   "peerDependencies": {
     "eslint": "7 - 8"
