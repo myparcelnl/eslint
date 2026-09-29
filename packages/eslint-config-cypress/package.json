@@ -25,7 +25,7 @@
     "clean": "run ws:clean \"$(pwd)\""
   },
   "dependencies": {
-    "eslint-plugin-cypress": "1 - 2"
+    "eslint-plugin-cypress": "1 - 8"
   },
   "peerDependencies": {
     "eslint": "7 - 8"
