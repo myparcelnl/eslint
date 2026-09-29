@@ -40,7 +40,7 @@
     "lint-staged": "^13.0.0",
     "monodeploy": "^4.0.0",
     "nx": "^16.0.0",
-    "plop": "^3.0.0",
+    "plop": "^4.0.5",
     "rimraf": "^5.0.0",
     "tsup": "^8.5.1",
     "typescript": "^5.0.0"
