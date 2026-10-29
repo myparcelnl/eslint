@@ -30,7 +30,7 @@
     "@myparcel-dev/eslint-config-typescript": "workspace:^1.4.0",
     "@myparcel-dev/eslint-config-vue": "workspace:^1.4.0",
     "@vue/eslint-config-typescript": "1 - 11",
-    "eslint-plugin-vue": "1 - 9"
+    "eslint-plugin-vue": "1 - 11"
   },
   "peerDependencies": {
     "eslint": "7 - 8"
