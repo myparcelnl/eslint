@@ -28,7 +28,7 @@
     "@myparcel-dev/eslint-config-es6": "workspace:^1.4.0",
     "@myparcel-dev/eslint-config-esnext": "workspace:^1.4.0",
     "@typescript-eslint/eslint-plugin": "1 - 5",
-    "@typescript-eslint/parser": "1 - 5"
+    "@typescript-eslint/parser": "1 - 9"
   },
   "peerDependencies": {
     "eslint": "7 - 8"
