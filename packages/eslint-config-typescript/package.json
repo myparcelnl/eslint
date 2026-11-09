@@ -20,20 +20,25 @@
     "dist",
     "index.js"
   ],
-  "scripts": {
-    "build": "run ws:build \"$(pwd)\"",
-    "clean": "run ws:clean \"$(pwd)\""
-  },
   "dependencies": {
     "@myparcel-dev/eslint-config-es6": "workspace:^1.4.0",
     "@myparcel-dev/eslint-config-esnext": "workspace:^1.4.0",
     "@typescript-eslint/eslint-plugin": "1 - 5",
     "@typescript-eslint/parser": "1 - 5"
   },
+  "devDependencies": {
+    "@myparcel-dev/eslint-config": "workspace:*"
+  },
   "peerDependencies": {
     "eslint": "7 - 8"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "nx": {
+    "targets": {
+      "build": {},
+      "clean": {}
+    }
   }
 }

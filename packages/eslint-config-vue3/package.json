@@ -21,10 +21,6 @@
     "dist",
     "index.js"
   ],
-  "scripts": {
-    "build": "run ws:build \"$(pwd)\"",
-    "clean": "run ws:clean \"$(pwd)\""
-  },
   "dependencies": {
     "@myparcel-dev/eslint-config-vue2": "workspace:^1.4.0"
   },
@@ -33,5 +29,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "nx": {
+    "targets": {
+      "build": {},
+      "clean": {}
+    }
   }
 }

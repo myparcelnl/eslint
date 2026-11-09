@@ -13,38 +13,40 @@ jobs:
   release:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: myparcelnl/actions/setup-git-credentials@v6
+        id: credentials
+        with:
+          app-id: ${{ secrets.MYPARCEL_APP_ID }}
+          private-key: ${{ secrets.MYPARCEL_APP_PRIVATE_KEY }}
+
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          persist-credentials: false
-          token: ${{ secrets.GH_REPO_TOKEN }}
+          token: ${{ steps.credentials.outputs.token }}
 
-      # TODO: Switch to v3 with app credentials when GitHub apps are allowed to bypass status checks. https://github.com/orgs/community/discussions/43460
-      - uses: myparcelnl/actions/setup-git-credentials@v2
+      - uses: pnpm/setup@v3
         with:
-          token: ${{ secrets.GH_REPO_TOKEN }}
-
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GH_REPO_TOKEN }}
-
-      - uses: myparcelnl/actions/yarn-install@v3
+          cache: true
+          require-lockfile: true
 
       - name: "Build packages"
-        run: |
-          yarn nx run-many \
-            --parallel \
-            --target=build \
-            --output-style static
+        run: pnpm build --output-style static
 
-      - name: "Run monodeploy"
+      # Not nx release publish: it runs npm view, which npm refuses in a repository whose devEngines names pnpm.
+      - name: "Release"
         run: |
-          yarn monodeploy \
-            --config-file monodeploy.config.cjs \
-            --log-level 0
+          if [ "$GITHUB_REF_NAME" != "$DEFAULT_BRANCH" ]; then
+            PREID=(--preid "$GITHUB_REF_NAME")
+            TAG=(--tag "$GITHUB_REF_NAME")
+          fi
+
+          pnpm nx release --skip-publish --yes "${PREID[@]}"
+
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          pnpm -r publish --no-git-checks "${TAG[@]}"
         env:
-          GH_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          GH_TOKEN: ${{ steps.credentials.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   rebase-prs:
@@ -52,7 +54,7 @@ jobs:
     if: always()
     runs-on: ubuntu-22.04
     steps:
-      - uses: myparcelnl/actions/setup-git-credentials@v3
+      - uses: myparcelnl/actions/setup-git-credentials@v6
         id: credentials
         with:
           app-id: ${{ secrets.MYPARCEL_APP_ID }}
