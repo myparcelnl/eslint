@@ -46,7 +46,8 @@
       "pattern": "{projectName}@{version}"
     },
     "version": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "applyPreidToDependents": true
     },
     "changelog": {
       "automaticFromRef": true,
