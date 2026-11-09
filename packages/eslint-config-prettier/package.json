@@ -18,7 +18,8 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "index.js"
+    "index.js",
+    "CHANGELOG.md"
   ],
   "dependencies": {
     "eslint-config-prettier": "1 - 8",

@@ -20,7 +20,8 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "index.js"
+    "index.js",
+    "CHANGELOG.md"
   ],
   "dependencies": {
     "@myparcel-dev/eslint-config-typescript": "workspace:^1.4.0",
