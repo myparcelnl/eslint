@@ -35,17 +35,18 @@ jobs:
       # Not nx release publish: it runs npm view, which npm refuses in a repository whose devEngines names pnpm.
       - name: "Release"
         run: |
-          if [ "$GITHUB_REF_NAME" != "$DEFAULT_BRANCH" ]; then
-            PREID=(--preid "$GITHUB_REF_NAME")
-            TAG=(--tag "$GITHUB_REF_NAME")
-          fi
+          case "$GITHUB_REF_NAME" in
+            next|alpha|beta)
+              PREID=(--preid "$GITHUB_REF_NAME")
+              TAG=(--tag "$GITHUB_REF_NAME")
+              ;;
+          esac
 
           pnpm nx release --skip-publish --yes "${PREID[@]}"
 
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
           pnpm -r publish --no-git-checks "${TAG[@]}"
         env:
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           GH_TOKEN: ${{ steps.credentials.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
