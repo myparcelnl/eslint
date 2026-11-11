@@ -1,3 +1,11 @@
+## 1.4.1 (2026-11-11)
+
+### 🧱 Updated Dependencies
+
+- Updated @myparcel-dev/eslint-config-typescript to 1.4.1
+- Updated @myparcel-dev/eslint-config-vue3 to 1.4.1
+- Updated @myparcel-dev/eslint-config-vue to 1.4.1
+
 # Changelog
 
 <!-- MONODEPLOY:BELOW -->

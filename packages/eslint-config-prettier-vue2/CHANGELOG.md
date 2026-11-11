@@ -1,3 +1,9 @@
+## 1.4.2 (2026-11-11)
+
+### 🧱 Updated Dependencies
+
+- Updated @myparcel-dev/eslint-config-vue2 to 1.4.1
+
 # Changelog
 
 <!-- MONODEPLOY:BELOW -->

@@ -1,3 +1,7 @@
+## 1.4.1 (2026-11-11)
+
+This was a version bump only for @myparcel-dev/eslint-config-tailwindcss to align it with other projects, there were no code changes.
+
 # Changelog
 
 <!-- MONODEPLOY:BELOW -->
