@@ -252,7 +252,7 @@ importers:
   packages/eslint-config-es5:
     dependencies:
       '@myparcel-dev/eslint-config':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config
       eslint:
         specifier: 7 - 8
@@ -261,7 +261,7 @@ importers:
   packages/eslint-config-es6:
     dependencies:
       '@myparcel-dev/eslint-config':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config
       eslint:
         specifier: 7 - 8
@@ -270,7 +270,7 @@ importers:
   packages/eslint-config-esnext:
     dependencies:
       '@myparcel-dev/eslint-config-es6':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-es6
       eslint:
         specifier: 7 - 8
@@ -291,7 +291,7 @@ importers:
   packages/eslint-config-node:
     dependencies:
       '@myparcel-dev/eslint-config':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config
       eslint:
         specifier: 7 - 8
@@ -315,10 +315,10 @@ importers:
   packages/eslint-config-prettier-typescript:
     dependencies:
       '@myparcel-dev/eslint-config-prettier':
-        specifier: workspace:^1.4.1
+        specifier: workspace:^
         version: link:../eslint-config-prettier
       '@myparcel-dev/eslint-config-typescript':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-typescript
       eslint:
         specifier: 7 - 8
@@ -330,10 +330,10 @@ importers:
   packages/eslint-config-prettier-typescript-vue:
     dependencies:
       '@myparcel-dev/eslint-config-prettier':
-        specifier: workspace:^1.4.1
+        specifier: workspace:^
         version: link:../eslint-config-prettier
       '@myparcel-dev/eslint-config-typescript-vue':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-typescript-vue
       '@vue/eslint-config-typescript':
         specifier: 1 - 11
@@ -351,10 +351,10 @@ importers:
   packages/eslint-config-prettier-vue:
     dependencies:
       '@myparcel-dev/eslint-config-prettier':
-        specifier: workspace:^1.4.1
+        specifier: workspace:^
         version: link:../eslint-config-prettier
       '@myparcel-dev/eslint-config-vue':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-vue
       eslint:
         specifier: 7 - 8
@@ -366,10 +366,10 @@ importers:
   packages/eslint-config-prettier-vue2:
     dependencies:
       '@myparcel-dev/eslint-config-prettier':
-        specifier: workspace:^1.4.1
+        specifier: workspace:^
         version: link:../eslint-config-prettier
       '@myparcel-dev/eslint-config-vue2':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-vue2
       eslint:
         specifier: 7 - 8
@@ -393,10 +393,10 @@ importers:
   packages/eslint-config-typescript:
     dependencies:
       '@myparcel-dev/eslint-config-es6':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-es6
       '@myparcel-dev/eslint-config-esnext':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-esnext
       '@typescript-eslint/eslint-plugin':
         specifier: 1 - 5
@@ -415,10 +415,10 @@ importers:
   packages/eslint-config-typescript-vue:
     dependencies:
       '@myparcel-dev/eslint-config-typescript':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-typescript
       '@myparcel-dev/eslint-config-vue':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-vue
       '@vue/eslint-config-typescript':
         specifier: 1 - 11
@@ -437,7 +437,7 @@ importers:
   packages/eslint-config-vue:
     dependencies:
       '@myparcel-dev/eslint-config-vue3':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-vue3
       eslint:
         specifier: 7 - 8
@@ -449,7 +449,7 @@ importers:
   packages/eslint-config-vue2:
     dependencies:
       '@myparcel-dev/eslint-config-esnext':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-esnext
       '@rushstack/eslint-patch':
         specifier: '>= 1'
@@ -471,7 +471,7 @@ importers:
   packages/eslint-config-vue3:
     dependencies:
       '@myparcel-dev/eslint-config-vue2':
-        specifier: workspace:^1.4.0
+        specifier: workspace:^
         version: link:../eslint-config-vue2
       eslint:
         specifier: 7 - 8

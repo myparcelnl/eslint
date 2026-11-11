@@ -23,7 +23,7 @@
     "CHANGELOG.md"
   ],
   "dependencies": {
-    "@myparcel-dev/eslint-config-vue2": "workspace:^1.4.0"
+    "@myparcel-dev/eslint-config-vue2": "workspace:^"
   },
   "peerDependencies": {
     "eslint": "7 - 8"

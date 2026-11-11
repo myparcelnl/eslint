@@ -22,8 +22,8 @@
     "CHANGELOG.md"
   ],
   "dependencies": {
-    "@myparcel-dev/eslint-config-es6": "workspace:^1.4.0",
-    "@myparcel-dev/eslint-config-esnext": "workspace:^1.4.0",
+    "@myparcel-dev/eslint-config-es6": "workspace:^",
+    "@myparcel-dev/eslint-config-esnext": "workspace:^",
     "@typescript-eslint/eslint-plugin": "1 - 5",
     "@typescript-eslint/parser": "1 - 5"
   },

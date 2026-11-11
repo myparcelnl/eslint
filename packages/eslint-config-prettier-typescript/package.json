@@ -23,8 +23,8 @@
     "CHANGELOG.md"
   ],
   "dependencies": {
-    "@myparcel-dev/eslint-config-prettier": "workspace:^1.4.1",
-    "@myparcel-dev/eslint-config-typescript": "workspace:^1.4.0"
+    "@myparcel-dev/eslint-config-prettier": "workspace:^",
+    "@myparcel-dev/eslint-config-typescript": "workspace:^"
   },
   "peerDependencies": {
     "eslint": "7 - 8",
