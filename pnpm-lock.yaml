@@ -380,9 +380,6 @@ importers:
 
   packages/eslint-config-tailwindcss:
     dependencies:
-      '@myparcel-dev/utils':
-        specifier: workspace:^1.4.0
-        version: link:../utils
       eslint:
         specifier: 7 - 8
         version: 8.46.0(supports-color@7.2.0)
@@ -454,9 +451,6 @@ importers:
       '@myparcel-dev/eslint-config-esnext':
         specifier: workspace:^1.4.0
         version: link:../eslint-config-esnext
-      '@myparcel-dev/utils':
-        specifier: workspace:^1.4.0
-        version: link:../utils
       '@rushstack/eslint-patch':
         specifier: '>= 1'
         version: 1.3.2
@@ -479,12 +473,6 @@ importers:
       '@myparcel-dev/eslint-config-vue2':
         specifier: workspace:^1.4.0
         version: link:../eslint-config-vue2
-      eslint:
-        specifier: 7 - 8
-        version: 8.46.0(supports-color@7.2.0)
-
-  packages/utils:
-    devDependencies:
       eslint:
         specifier: 7 - 8
         version: 8.46.0(supports-color@7.2.0)

@@ -29,8 +29,7 @@ import {arrayBracketNewline,
   spaceInfixOps,
   spaceUnaryOps} from '@myparcel-dev/eslint-config';
 import {arrowSpacing, preferTemplate, templateCurlySpacing} from '@myparcel-dev/eslint-config-es6';
-import {ESLint} from 'eslint';
-import {overridePluginRule} from '@myparcel-dev/utils';
+import {type ESLint} from 'eslint';
 
 require('@rushstack/eslint-patch/modern-module-resolution');
 
@@ -53,20 +52,6 @@ export const config: ESLint.ConfigData = {
     'sourceType': 'module',
   },
   'rules': {
-    ...overridePluginRule('babel/object-curly-spacing', [
-      'warn',
-      'always',
-    ]),
-    ...overridePluginRule('jsdoc/no-undefined-types', [
-      'warn',
-      {
-        'definedTypes': [
-          'VNode',
-          'webpack',
-        ],
-      },
-    ]),
-
     'id-length': [
       'warn',
       {
