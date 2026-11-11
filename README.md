@@ -170,6 +170,22 @@ Dependencies
 
 > Read more: [Source](./packages/eslint-config-vue3)
 
+## Contributing
+
+Requirements:
+
+- Node.js 24, version 24.21 or later
+- pnpm 12, version 12.11 or later
+- No Volta on your machine. Its `yarn` does not go through corepack, so the `packageManager` field in `package.json`
+  does not stop it.
+
+Install the dependencies with `pnpm install`, and build every package with `pnpm build`.
+
+`build` and `clean` are nx targets in `targetDefaults` in `nx.json`. Run one in a single package with
+`pnpm nx <target> <package name>`, for example `pnpm nx build @myparcel-dev/eslint-config`.
+
+Releases run in CI with `nx release`. Each package has its own version, based on the conventional commits that touch it.
+
 [@myparcel-dev/eslint-config-cypress]: #myparcel-eslinteslint-config-cypress
 [@myparcel-dev/eslint-config-es5]: #myparcel-eslinteslint-config-es5
 [@myparcel-dev/eslint-config-es6]: #myparcel-eslinteslint-config-es6

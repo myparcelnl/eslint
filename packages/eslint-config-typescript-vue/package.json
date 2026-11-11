@@ -20,22 +20,28 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "index.js"
+    "index.js",
+    "CHANGELOG.md"
   ],
-  "scripts": {
-    "build": "run ws:build \"$(pwd)\"",
-    "clean": "run ws:clean \"$(pwd)\""
-  },
   "dependencies": {
-    "@myparcel-dev/eslint-config-typescript": "workspace:^1.4.0",
-    "@myparcel-dev/eslint-config-vue": "workspace:^1.4.0",
+    "@myparcel-dev/eslint-config-typescript": "workspace:^",
+    "@myparcel-dev/eslint-config-vue": "workspace:^",
     "@vue/eslint-config-typescript": "1 - 11",
     "eslint-plugin-vue": "1 - 9"
+  },
+  "devDependencies": {
+    "@myparcel-dev/eslint-config-vue3": "workspace:*"
   },
   "peerDependencies": {
     "eslint": "7 - 8"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "nx": {
+    "targets": {
+      "build": {},
+      "clean": {}
+    }
   }
 }

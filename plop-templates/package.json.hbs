@@ -8,12 +8,9 @@
   "license": "MIT",
   "files": [
     "dist",
-    "index.js"
+    "index.js",
+    "CHANGELOG.md"
   ],
-  "scripts": {
-    "build": "run ws:build \"$(pwd)\"",
-    "clean": "run ws:clean \"$(pwd)\""
-  },
   "dependencies": {
     "@myparcel-dev/eslint-config": "workspace:*"
   },
@@ -22,5 +19,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "nx": {
+    "targets": {
+      "build": {},
+      "clean": {}
+    }
   }
 }

@@ -18,12 +18,9 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "index.js"
+    "index.js",
+    "CHANGELOG.md"
   ],
-  "scripts": {
-    "build": "run ws:build \"$(pwd)\"",
-    "clean": "run ws:clean \"$(pwd)\""
-  },
   "dependencies": {
     "eslint-plugin-i": "1 - 2",
     "eslint-plugin-import": "npm:eslint-plugin-i@*"
@@ -33,5 +30,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "nx": {
+    "targets": {
+      "build": {},
+      "clean": {}
+    }
   }
 }

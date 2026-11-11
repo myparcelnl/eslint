@@ -32,3 +32,9 @@ yarn-error.log*
 **/node_modules/
 
 packages/*/index.js
+
+.nx/cache
+.nx/workspace-data
+.nx/polygraph
+.nx/self-healing
+.nx/migrate-runs

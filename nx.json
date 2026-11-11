@@ -14,18 +14,52 @@
   },
   "targetDefaults": {
     "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "{projectRoot}",
+        "command": "sh ../../scripts/build.sh"
+      },
       "dependsOn": ["^build"],
       "inputs": ["default", "{workspaceRoot}/scripts/build.sh"],
-      "outputs": ["{projectRoot}/dist/**/*", "{projectRoot}/index.js"]
+      "outputs": ["{projectRoot}/dist/**/*", "{projectRoot}/index.js"],
+      "cache": true
+    },
+    "clean": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "{projectRoot}",
+        "command": "rimraf dist index.js"
+      }
     }
   },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "parallel": 30,
-        "cacheableOperations": ["build"]
+  "parallel": 30,
+  "useInferencePlugins": false,
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "release": {
+    "projects": ["packages/*"],
+    "projectsRelationship": "independent",
+    "releaseTag": {
+      "pattern": "{projectName}@{version}"
+    },
+    "version": {
+      "conventionalCommits": true,
+      "applyPreidToDependents": true
+    },
+    "changelog": {
+      "automaticFromRef": true,
+      "workspaceChangelog": false,
+      "projectChangelogs": {
+        "file": "{projectRoot}/CHANGELOG.md",
+        "createRelease": "github"
       }
+    },
+    "git": {
+      "commitMessage": "chore: release [skip ci]",
+      "push": true
     }
   }
 }

@@ -19,14 +19,11 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "index.js"
+    "index.js",
+    "CHANGELOG.md"
   ],
-  "scripts": {
-    "build": "run ws:build \"$(pwd)\"",
-    "clean": "run ws:clean \"$(pwd)\""
-  },
   "dependencies": {
-    "@myparcel-dev/eslint-config-vue3": "workspace:^1.4.0",
+    "@myparcel-dev/eslint-config-vue3": "workspace:^",
     "eslint-plugin-vue": "1 - 9"
   },
   "peerDependencies": {
@@ -34,5 +31,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "nx": {
+    "targets": {
+      "build": {},
+      "clean": {}
+    }
   }
 }
