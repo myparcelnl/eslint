@@ -6,7 +6,11 @@
     "eslintconfig",
     "es5"
   ],
-  "repository": "github:myparcelnl/eslint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myparcelnl/eslint.git",
+    "directory": "packages/eslint-config-es5"
+  },
   "license": "MIT",
   "exports": {
     "types": "./dist/index.d.ts",
