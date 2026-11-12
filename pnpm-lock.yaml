@@ -166,9 +166,6 @@ settings:
   excludeLinksFromLockfile: false
   linkWorkspacePackages: false
 
-overrides:
-  axios: 1.15.0
-
 importers:
 
   .:

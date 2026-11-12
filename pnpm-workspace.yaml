@@ -15,8 +15,5 @@ minimumReleaseAgeExclude:
   - '@myparcel-eslint/*'
   - '@myparcel-pdk/*'
 
-overrides:
-  axios: 1.15.0
-
 packages:
   - 'packages/**'
