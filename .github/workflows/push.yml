@@ -1,72 +1,40 @@
-name: "Publish new release 🚀"
+name: "Verify npm trusted publishing"
 
+# One-time test for INT-2237. Same filename as the real release workflow, because npm
+# matches the trusted publisher on the workflow filename, not on the branch.
 on:
-  push:
-    branches:
-      - main
-      - alpha
-      - beta
-
   workflow_dispatch:
+
+concurrency:
+  group: int-2237-oidc-pilot
+  cancel-in-progress: false
 
 jobs:
   release:
+    if: github.ref == 'refs/heads/ci/INT-2237-oidc-pilot'
     runs-on: ubuntu-22.04
     permissions:
-      id-token: write # npm trusted publishing (OIDC) exchanges this token for a short-lived npm token
       contents: read
+      id-token: write
     steps:
-      - uses: myparcelnl/actions/setup-git-credentials@v6
-        id: credentials
-        with:
-          app-id: ${{ secrets.MYPARCEL_APP_ID }}
-          private-key: ${{ secrets.MYPARCEL_APP_PRIVATE_KEY }}
-
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          token: ${{ steps.credentials.outputs.token }}
+          persist-credentials: false
 
       - uses: pnpm/setup@v3
         with:
           cache: true
           require-lockfile: true
 
+      - name: "Prepare beta versions for all packages"
+        run: |
+          pnpm nx release version prerelease --preid beta-oidc \
+            --git-commit=false --git-tag=false --git-push=false --stage-changes=false
+
       - name: "Build packages"
         run: pnpm build --output-style static
 
-      # Not nx release publish: it runs npm view, which npm refuses in a repository whose devEngines names pnpm.
-      - name: "Release"
-        run: |
-          case "$GITHUB_REF_NAME" in
-            next|alpha|beta)
-              PREID=(--preid "$GITHUB_REF_NAME")
-              TAG=(--tag "$GITHUB_REF_NAME")
-              ;;
-          esac
-
-          pnpm nx release --skip-publish "${PREID[@]}"
-
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-          pnpm -r publish --no-git-checks "${TAG[@]}"
-        env:
-          GH_TOKEN: ${{ steps.credentials.outputs.token }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-  rebase-prs:
-    needs: release
-    if: always()
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: myparcelnl/actions/setup-git-credentials@v6
-        id: credentials
-        with:
-          app-id: ${{ secrets.MYPARCEL_APP_ID }}
-          private-key: ${{ secrets.MYPARCEL_APP_PRIVATE_KEY }}
-
-      - uses: peter-evans/rebase@v2
-        with:
-          token: ${{ steps.credentials.outputs.token }}
-          base: ${{ github.ref_name }}
-          exclude-drafts: true
-          exclude-labels: "dependencies"
+      # No token in ~/.npmrc: the publish succeeds only through OIDC.
+      - name: "Publish the OIDC beta versions"
+        run: pnpm -r publish --no-git-checks --tag beta-oidc
