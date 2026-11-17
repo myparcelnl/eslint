@@ -6,7 +6,11 @@
     "eslintconfig",
     "prettier"
   ],
-  "repository": "github:myparcelnl/eslint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myparcelnl/eslint.git",
+    "directory": "packages/eslint-config-prettier"
+  },
   "license": "MIT",
   "exports": {
     "types": "./dist/index.d.ts",
