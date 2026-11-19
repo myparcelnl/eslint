@@ -220,7 +220,7 @@ importers:
         version: 3.1.2(@types/node@18.14.3)
       prettier:
         specifier: ^3.9.10
-        version: 3.9.10
+        version: 3.10.1
       rimraf:
         specifier: ^5.0.0
         version: 5.0.1
@@ -304,10 +304,10 @@ importers:
         version: 8.9.0(eslint@8.46.0(supports-color@7.2.0))
       eslint-plugin-prettier:
         specifier: 1 - 4
-        version: 4.2.1(eslint-config-prettier@8.9.0(eslint@8.46.0(supports-color@7.2.0)))(eslint@8.46.0(supports-color@7.2.0))(prettier@3.9.10)
+        version: 4.2.1(eslint-config-prettier@8.9.0(eslint@8.46.0(supports-color@7.2.0)))(eslint@8.46.0(supports-color@7.2.0))(prettier@3.10.1)
       prettier:
         specifier: '>= 2'
-        version: 3.9.10
+        version: 3.10.1
 
   packages/eslint-config-prettier-typescript:
     dependencies:
@@ -322,7 +322,7 @@ importers:
         version: 8.46.0(supports-color@7.2.0)
       prettier:
         specifier: '>= 2'
-        version: 3.9.10
+        version: 3.10.1
 
   packages/eslint-config-prettier-typescript-vue:
     dependencies:
@@ -343,7 +343,7 @@ importers:
         version: 9.16.1(eslint@8.46.0(supports-color@7.2.0))(supports-color@7.2.0)
       prettier:
         specifier: '>= 2'
-        version: 3.9.10
+        version: 3.10.1
 
   packages/eslint-config-prettier-vue:
     dependencies:
@@ -358,7 +358,7 @@ importers:
         version: 8.46.0(supports-color@7.2.0)
       prettier:
         specifier: '>= 2'
-        version: 3.9.10
+        version: 3.10.1
 
   packages/eslint-config-prettier-vue2:
     dependencies:
@@ -373,7 +373,7 @@ importers:
         version: 8.46.0(supports-color@7.2.0)
       prettier:
         specifier: '>= 2'
-        version: 3.9.10
+        version: 3.10.1
 
   packages/eslint-config-tailwindcss:
     dependencies:
@@ -450,7 +450,7 @@ importers:
         version: link:../eslint-config-esnext
       '@rushstack/eslint-patch':
         specifier: '>= 1'
-        version: 1.3.2
+        version: 1.16.1
       eslint:
         specifier: 7 - 8
         version: 8.46.0(supports-color@7.2.0)
@@ -1501,8 +1501,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rushstack/eslint-patch@1.3.2':
-    resolution: {integrity: sha512-V+MvGwaHH03hYhY+k6Ef/xKd6RYlc4q8WBx+2ANmipHJcKuktNcI/NgEsJgdSUF6Lw32njT6OnrRsKYCdgHjYw==}
+  '@rushstack/eslint-patch@1.16.1':
+    resolution: {integrity: sha512-TvZbIpeKqGQQ7X0zSCvPH9riMSFQFSggnfBjFZ1mEoILW+UuXCKwOoPcgjMwiUtRqFZ8jWhPJc4um14vC6I4ag==}
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -3088,8 +3088,8 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
-  prettier@3.9.10:
-    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
+  prettier@3.10.1:
+    resolution: {integrity: sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4649,7 +4649,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.63.1':
     optional: true
 
-  '@rushstack/eslint-patch@1.3.2': {}
+  '@rushstack/eslint-patch@1.16.1': {}
 
   '@tybys/wasm-util@0.9.0':
     dependencies:
@@ -5292,10 +5292,10 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.9.0(eslint@8.46.0(supports-color@7.2.0)))(eslint@8.46.0(supports-color@7.2.0))(prettier@3.9.10):
+  eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.9.0(eslint@8.46.0(supports-color@7.2.0)))(eslint@8.46.0(supports-color@7.2.0))(prettier@3.10.1):
     dependencies:
       eslint: 8.46.0(supports-color@7.2.0)
-      prettier: 3.9.10
+      prettier: 3.10.1
       prettier-linter-helpers: 1.0.0
     optionalDependencies:
       eslint-config-prettier: 8.9.0(eslint@8.46.0(supports-color@7.2.0))
@@ -6281,7 +6281,7 @@ snapshots:
     dependencies:
       fast-diff: 1.2.0
 
-  prettier@3.9.10: {}
+  prettier@3.10.1: {}
 
   punycode@2.3.0: {}
 
